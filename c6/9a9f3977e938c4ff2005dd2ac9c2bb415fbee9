@@ -1,0 +1,3387 @@
+python/sglang/srt/arg_groups/speculative_hook.py
+  s_2af2e12d6510ef::t_814847a337e8d0 9,14-18,96,402,460,1040,1113
+python/sglang/srt/mem_cache/memory_pool.py
+  s_2af2e12d6510ef::t_d7330c23ef8780 49-55,87,519,4344-4346
+  s_2af2e12d6510ef::t_90b01de7df91ea 4347
+python/sglang/srt/managers/scheduler.py
+  s_2af2e12d6510ef::t_c7de133dc4edbe 28-38,56,104,230,234-235,304-309,313,325,408,416,794-795,877,1383,1386-1392,1438,1470-1476,1578-1580,2584,2667,2669-2671,2749,2797,2817-2825,2851,3309,3324,3333,3351-3366,3679,3699,3742,3744,3749,3751-3763,3773,3789-3791,3793,3798-3801,3803-3805,3807-3809,3986-3996,4010-4011,4043,4046-4047,4055,4187-4189,4373-4383,4583,4607-4609,4715-4758,4779-4780,4786,4788,4791-4792,4797,4862,5715-5719,5721-5736,5740,5748-5752,6019,6043-6063,6065,6068,6074-6075,6079-6081,6154,6178,6186
+test/registered/unit/managers/test_scheduler_ubtree_admission.py
+  s_2af2e12d6510ef::t_c7de133dc4edbe 53,63-64,68,98-109
+  s_2af2e12d6510ef::t_c558045b4c2e0f 110
+.agents/skills/cookbook-add-model/references/mintlify-authoring.md
+  s_2af2e12d6510ef::t_db22a533b56b37 102
+.agents/skills/cookbook-add-model/templates/config.jsx.tmpl
+  s_2af2e12d6510ef::t_a11982246400df 94
+.agents/skills/cookbook-review-pr/SKILL.md
+  s_2af2e12d6510ef::t_b7351aee816b19 123
+.agents/skills/llm-torch-profiler-analysis/references/fuse-overlap-catalog.md
+  s_2af2e12d6510ef::t_a1698cc430eb60 75,97
+.agents/skills/llm-torch-profiler-analysis/references/overlap-catalog.md
+  s_2af2e12d6510ef::t_056c8d665af37c 54
+.agents/skills/llm-torch-profiler-analysis/references/source-map.md
+  s_2af2e12d6510ef::t_f2e1aa998c5d42 15
+.agents/skills/llm-torch-profiler-analysis/scripts/triage_kernel_helpers.py
+  s_2af2e12d6510ef::t_8052c0913bf5a8 767
+.agents/skills/sglang-runtime-context/SKILL.md
+  s_2af2e12d6510ef::t_f2eb9284d37b7c 446-448
+.github/CODEOWNERS
+  s_2af2e12d6510ef::t_0c7a9dcd823887 1-2,27,72
+.github/workflows/_pr-test-stage-cpu.yml
+  s_2af2e12d6510ef::t_cc9e611ef4a7db 156-159
+.github/workflows/nightly-amd-mi355x-disagg.yml
+  s_2af2e12d6510ef::t_5b9f95c1da9e17 5,9,152-160,175-180,206-215,219-222,226-228,251-253,271,282-285
+.github/workflows/nightly-test-amd-miles-rocm10-mi30x.yml
+  s_2af2e12d6510ef::t_3684618022b183 40-41,45-46,48,53-62,64-65,69,76,134-135
+.github/workflows/nightly-test-amd-miles-rocm10.yml
+  s_2af2e12d6510ef::t_92369a4514fa96 112-113
+.github/workflows/nightly-test-npu.yml
+  s_2af2e12d6510ef::t_3b05a914f37153 280-294,321,325,328-343,393-405,432
+.github/workflows/pr-test-amd.yml
+  s_2af2e12d6510ef::t_df3f8fcd49ae07 634-637,640
+.github/workflows/pr-test-sgl-router.yml
+  s_2af2e12d6510ef::t_b9f7bfaa3a00b9 361-362
+.github/workflows/pr-test-xpu.yml
+  s_2af2e12d6510ef::t_88a8deaf50826a 74,175-176,182,282-283
+.github/workflows/rerun-test.yml
+  s_2af2e12d6510ef::t_75a9002501ee09 300-303,317,320-321
+.pre-commit-config.yaml
+  s_2af2e12d6510ef::t_f2a3acb93e8721 144-148
+3rdparty/amd/profiling/PROFILING.md
+  s_2af2e12d6510ef::t_55ab002459ba61 365
+3rdparty/amd/profiling/client.sh
+  s_2af2e12d6510ef::t_9cf8f16adfb28c 12
+benchmark/bench_linear_attention/bench_kda_flashinfer_mtp.py
+  s_2af2e12d6510ef::t_ef5d3d54d3ec8f 5
+benchmark/blog_v0_2/405b_sglang.sh
+  s_2af2e12d6510ef::t_ed4e78800ef62d 12-17,20-24
+benchmark/blog_v0_2/405b_trt.sh
+  s_2af2e12d6510ef::t_91be63b5c3d61e 5-10,13-17
+benchmark/blog_v0_2/405b_vllm.sh
+  s_2af2e12d6510ef::t_4550f1623979a7 12-17,20-24
+benchmark/blog_v0_2/README.md
+  s_2af2e12d6510ef::t_f9599720693166 52-57,64-68,94
+benchmark/deepseek_v3/README.md
+  s_2af2e12d6510ef::t_b45d9a9659f290 243,279,332
+benchmark/hicache/bench_mix.py
+  s_2af2e12d6510ef::t_bedb42d6125e62 16
+benchmark/hicache/bench_multiturn.py
+  s_2af2e12d6510ef::t_957580840e1363 15
+benchmark/hicache/bench_serving.py
+  s_2af2e12d6510ef::t_9bb59342c81cb7 10,12-13
+benchmark/hicache/bench_warm_cache.py
+  s_2af2e12d6510ef::t_e945d5fbfaba6d 1
+benchmark/io/bench_mm_token_padding.py
+  s_2af2e12d6510ef::t_8e875c26693353 28-30
+benchmark/kernels/fused_moe_triton/common_utils.py
+  s_2af2e12d6510ef::t_e1de548222c8fb 12
+benchmark/kernels/fused_moe_triton/tuning_fused_moe_triton.py
+  s_2af2e12d6510ef::t_38714b01a18285 39
+benchmark/lora/lora_bench.py
+  s_2af2e12d6510ef::t_1a84bf98575415 31-32
+docker/Dockerfile
+  s_2af2e12d6510ef::t_58a68405bd845e 22,168,275-294,433-443
+docker/Dockerfile.cu134
+  s_2af2e12d6510ef::t_5c3a6aeb530145 2,5,14-15,184,561-581,719-729
+docker/xpu.Dockerfile
+  s_2af2e12d6510ef::t_24fdb22fe718c0 90-96,101-102,117-226
+docs/cookbook/autoregressive/DeepSeek/DeepSeek-Math-V2.mdx
+  s_2af2e12d6510ef::t_304f1b19e0fcba 422,480
+docs/cookbook/autoregressive/DeepSeek/DeepSeek-OCR-2.mdx
+  s_2af2e12d6510ef::t_bcff9a2205b56b 132,202
+docs/cookbook/autoregressive/DeepSeek/DeepSeek-OCR.mdx
+  s_2af2e12d6510ef::t_a62ecfa837e033 124,193
+docs/cookbook/autoregressive/DeepSeek/DeepSeek-R1.mdx
+  s_2af2e12d6510ef::t_f4acf54167fdfe 467,520,573,628,681,734,789,842,895
+docs/cookbook/autoregressive/DeepSeek/DeepSeek-V3.mdx
+  s_2af2e12d6510ef::t_f164f45c979099 467,537
+docs/cookbook/autoregressive/DeepSeek/DeepSeek-V3_1.mdx
+  s_2af2e12d6510ef::t_b874cf8e86dba0 464,517,570,625,678,731,786,839,892
+docs/cookbook/autoregressive/DeepSeek/DeepSeek-V3_2.mdx
+  s_2af2e12d6510ef::t_f30a486ddbaf6f 572,644,888,947
+docs/cookbook/autoregressive/Ernie/Ernie4.5.mdx
+  s_2af2e12d6510ef::t_ac3e5370d03495 181,236,291,347,402,456,513,568,623
+docs/cookbook/autoregressive/GLM/GLM-4.5.mdx
+  s_2af2e12d6510ef::t_4a51ac2d824117 361,374,387,403,416,429,444,457,470
+docs/cookbook/autoregressive/GLM/GLM-4.6.mdx
+  s_2af2e12d6510ef::t_6737ff9fdc2939 401,454,507,562,613,665,719,770,822
+docs/cookbook/autoregressive/GLM/GLM-4.6V.mdx
+  s_2af2e12d6510ef::t_d3a3a8b3ab626f 410
+docs/cookbook/autoregressive/GLM/GLM-4.7-Flash.mdx
+  s_2af2e12d6510ef::t_743ff812b9c81f 409,463,517,573,626,679,734,787,840
+docs/cookbook/autoregressive/GLM/GLM-4.7.mdx
+  s_2af2e12d6510ef::t_0079fab267ff5b 495,508,521,537,550,563,578,591,604,637,681,725,782,826,870
+docs/cookbook/autoregressive/GLM/GLM-5.1.mdx
+  s_2af2e12d6510ef::t_cd131356c9627a 530,585
+docs/cookbook/autoregressive/GLM/GLM-5.mdx
+  s_2af2e12d6510ef::t_3b610e4ff40d49 461,516
+docs/cookbook/autoregressive/GLM/GLM-Glyph.mdx
+  s_2af2e12d6510ef::t_7c34013c7c2569 328,382,436,491,544,597,652,705,759
+docs/cookbook/autoregressive/Google/Gemma4.mdx
+  s_2af2e12d6510ef::t_4abef4c0ba30df 110,606,633,663,690,1010,1037,1071,1098,1132,1158,1186
+docs/cookbook/autoregressive/InclusionAI/LLaDA-2.1.mdx
+  s_2af2e12d6510ef::t_a07189448693c8 447,503,574,630
+docs/cookbook/autoregressive/InclusionAI/Ling-3.1-flash.mdx
+  s_2af2e12d6510ef::t_2f43eb75aa354f 114,128
+docs/cookbook/autoregressive/InclusionAI/Ring-2.6-1T.mdx
+  s_2af2e12d6510ef::t_0d7240ec6ed500 170,254
+docs/cookbook/autoregressive/Meta/Llama3.3-70B.mdx
+  s_2af2e12d6510ef::t_8b5b913ffa0def 203
+docs/cookbook/autoregressive/Meta/Llama4.mdx
+  s_2af2e12d6510ef::t_1b24f9c6790d82 153,206,258,331,383,435
+docs/cookbook/autoregressive/MiniMax/MiniMax-M2.5.mdx
+  s_2af2e12d6510ef::t_4d39de3f762c3a 597,649,701,765,817,869,943,995,1047,1200,1313,1413,1441,1465
+docs/cookbook/autoregressive/MiniMax/MiniMax-M2.7.mdx
+  s_2af2e12d6510ef::t_add87de8ffb48e 632,674
+docs/cookbook/autoregressive/MiniMax/MiniMax-M2.mdx
+  s_2af2e12d6510ef::t_c16a6ec8e81aa4 430,485,539
+docs/cookbook/autoregressive/Mistral/Devstral-2.mdx
+  s_2af2e12d6510ef::t_2bef394cb1108f 310,364,418
+docs/cookbook/autoregressive/Mistral/Ministral-3.mdx
+  s_2af2e12d6510ef::t_7e6d8dde37fde9 108,162,215
+docs/cookbook/autoregressive/Mistral/Mistral-Medium-3.5.mdx
+  s_2af2e12d6510ef::t_164e0609c6d9dc 373,402,434
+docs/cookbook/autoregressive/Mistral/Mistral-Small-4.mdx
+  s_2af2e12d6510ef::t_6659cf7d8bad89 369,387
+docs/cookbook/autoregressive/Moonshotai/Kimi-K2.5.mdx
+  s_2af2e12d6510ef::t_8a9dbe696f6316 574,630,684,742,796,850,870,924,978,1052,1072,1090,1141,1197
+docs/cookbook/autoregressive/Moonshotai/Kimi-K2.6.mdx
+  s_2af2e12d6510ef::t_16af993a52cd38 843,897,951,1007,1061,1117,1171,1225,1314,1370
+docs/cookbook/autoregressive/Moonshotai/Kimi-K2.7-Code.mdx
+  s_2af2e12d6510ef::t_695b8acb87f11f 642
+docs/cookbook/autoregressive/Moonshotai/Kimi-K2.mdx
+  s_2af2e12d6510ef::t_9cd486929cb007 371,439
+docs/cookbook/autoregressive/Moonshotai/Kimi-K3.mdx
+  s_2af2e12d6510ef::t_dbb066283ba1f7 173-206,220-280,296-331,433-458,500-529,538-571,612-637,663-703
+docs/cookbook/autoregressive/Moonshotai/Kimi-Linear.mdx
+  s_2af2e12d6510ef::t_fb7b768c2c55f5 111,165,220
+docs/cookbook/autoregressive/NVIDIA/Nemotron3-Nano-Omni.mdx
+  s_2af2e12d6510ef::t_4d7cba947cc5d5 499
+docs/cookbook/autoregressive/NVIDIA/Nemotron3-Nano.mdx
+  s_2af2e12d6510ef::t_5784fec2cf7421 226,295
+docs/cookbook/autoregressive/NVIDIA/Nemotron3-Super.mdx
+  s_2af2e12d6510ef::t_6c43558e51214d 417
+docs/cookbook/autoregressive/NVIDIA/Nemotron3-Ultra.mdx
+  s_2af2e12d6510ef::t_6b0dafca40040d 425,456
+docs/cookbook/autoregressive/OpenAI/GPT-OSS.mdx
+  s_2af2e12d6510ef::t_db70d2c994a4eb 527,587
+docs/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_6.mdx
+  s_2af2e12d6510ef::t_ee86c73f2cb895 378,432,490,549
+docs/cookbook/autoregressive/Poolside/Laguna-XS.2.mdx
+  s_2af2e12d6510ef::t_b723db4078999f 284,290,307
+docs/cookbook/autoregressive/Qwen/Qwen2.5-VL.mdx
+  s_2af2e12d6510ef::t_d5071157d30dc7 214,284
+docs/cookbook/autoregressive/Qwen/Qwen3-Coder-Next.mdx
+  s_2af2e12d6510ef::t_74c4f468d094e9 284,341,398,467,526,585,645,703,761
+docs/cookbook/autoregressive/Qwen/Qwen3-Coder.mdx
+  s_2af2e12d6510ef::t_2eaa0fc8e5b64e 319,376,433
+docs/cookbook/autoregressive/Qwen/Qwen3-Next.mdx
+  s_2af2e12d6510ef::t_7ee187f51b8309 613,673
+docs/cookbook/autoregressive/Qwen/Qwen3-VL.mdx
+  s_2af2e12d6510ef::t_e331d6e1cdc4fc 47,547,619,691
+docs/cookbook/autoregressive/Qwen/Qwen3.5.mdx
+  s_2af2e12d6510ef::t_08e1268f939491 1013,1068,1127,1149
+docs/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next.mdx
+  s_2af2e12d6510ef::t_4e41f1e2997c80 83,87,89,91,93-94,97,132-165
+docs/cookbook/autoregressive/Qwen/Qwen3.mdx
+  s_2af2e12d6510ef::t_6da8b5025ad1bc 45,358,414,470,536,592,648,706,762,818
+docs/cookbook/autoregressive/StepFun/Step3-VL-10B.mdx
+  s_2af2e12d6510ef::t_909e5c52832f8d 505,567
+docs/cookbook/autoregressive/StepFun/Step3.5.mdx
+  s_2af2e12d6510ef::t_275ca135463039 344,401,458
+docs/cookbook/autoregressive/Tencent/Hunyuan3-Preview.mdx
+  s_2af2e12d6510ef::t_f7090b6a50f82e 498,519
+docs/cookbook/autoregressive/Xiaomi/MiMo-V2.5.mdx
+  s_2af2e12d6510ef::t_3d7dd5715d8ea3 357,432,491,560,620,680,790
+docs/cookbook/base/benchmarks/autoregressive_model_benchmark.mdx
+  s_2af2e12d6510ef::t_f368d67e79b0ff 4,7,16,24
+docs/cookbook/diffusion/MiniMax/MiniMax-H3.mdx
+  s_2af2e12d6510ef::t_3606da99c9e16e 1025-1035,1055-1057
+docs/cookbook/diffusion/Qwen-Image/Qwen-Image-2.1.mdx
+  s_2af2e12d6510ef::t_6a0a0f7dcb8dd2 62,68-70
+docs/docs.json
+  s_2af2e12d6510ef::t_bf5a804fe9353c 1412,1543-1544,1548,1550-1553,1557,1580,1587,1593,1613,1619,1625,1637,1650,1652,1671,1673,1692
+docs/docs/advanced_features/hisparse_guide.mdx
+  s_2af2e12d6510ef::t_c771951155af6c 180
+docs/docs/advanced_features/paged_experts.mdx
+  s_2af2e12d6510ef::t_4b071dbc937dec 33,36-42,47-49,132-152,155-157,160-196
+docs/docs/advanced_features/pd_disaggregation.mdx
+  s_2af2e12d6510ef::t_ddec0f75d20790 112-113,307,483-484
+docs/docs/advanced_features/quantization.mdx
+  s_2af2e12d6510ef::t_ce21abd947d030 264-274
+docs/docs/advanced_features/server_arguments.mdx
+  s_2af2e12d6510ef::t_aefb90b93c95cb 477,483,1543,1545,2317,2323-2325
+docs/docs/developer_guide/bench_serving.mdx
+  s_2af2e12d6510ef::t_748c8a3cae303f 6,42,52,65,78,152,169,186,253,288,303,315,327,342,357,374,387,407,419,430,442,467,480
+docs/docs/developer_guide/benchmark_and_profiling.mdx
+  s_2af2e12d6510ef::t_d97ba1750ff059 52,58,81,91,119,126,135,138,292,394,435,513,541
+docs/docs/developer_guide/evaluating_new_models.mdx
+  s_2af2e12d6510ef::t_1e24b356e6d258 97,111,125
+docs/docs/get-started/install.mdx
+  s_2af2e12d6510ef::t_2c609c929f5305 110-124
+docs/docs/hardware-platforms/amd_gpu.mdx
+  s_2af2e12d6510ef::t_93015aa086d8d5 108
+docs/docs/hardware-platforms/ascend-npus/evaluation/performance_testing.mdx
+  s_2af2e12d6510ef::t_eb52803669d7ab 296,614,705
+docs/docs/hardware-platforms/ascend-npus/faq.mdx
+  s_2af2e12d6510ef::t_f0a46b1845b206 280
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/deepseek_r1.mdx
+  s_2af2e12d6510ef::t_1e86dee846863a 218,325,526,730,930,1130,1328
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/deepseek_v3_2.mdx
+  s_2af2e12d6510ef::t_347ee9bdaa33ab 218,414,609
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/deepseek_v4_flash.mdx
+  s_2af2e12d6510ef::t_276bc601124e93 217,348
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/glm_5_1.mdx
+  s_2af2e12d6510ef::t_cd1d356ca671e1 137,349,551,761,964,1169
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/glm_5_2.mdx
+  s_2af2e12d6510ef::t_0c05feaf86ec27 215
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/kimi_k2_6.mdx
+  s_2af2e12d6510ef::t_6b70aea9773d74 150,344,543,735,930,1041,1150,1265,1376
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/mimo_v2_5_pro.mdx
+  s_2af2e12d6510ef::t_795d9e5ce3fc0a 143,161
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/mimo_v2_flash.mdx
+  s_2af2e12d6510ef::t_4c9f90519dd2a4 205,388,571,754
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/minimax_m2_5.mdx
+  s_2af2e12d6510ef::t_55c16c4aabeecf 135,242,352,459,562
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/qwen3_235b_a22b.mdx
+  s_2af2e12d6510ef::t_79a0e91b920191 118,225
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/qwen3_30b_a3b.mdx
+  s_2af2e12d6510ef::t_6994334cca76b1 126,226,326,425
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/qwen3_32b.mdx
+  s_2af2e12d6510ef::t_c3206b53b02498 119,218,317
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/qwen3_5_397b.mdx
+  s_2af2e12d6510ef::t_8cf17df151f7cd 132,241,356,470,584,697,810,924,1040,1153
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/qwen3_6_27b.mdx
+  s_2af2e12d6510ef::t_e238c6effd8c2d 117,217,316,414,504,595,690,785
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/qwen3_6_35b_a3b.mdx
+  s_2af2e12d6510ef::t_dd3cc9f7a75e6e 122,222,323,421,517,614,710,809,907
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/qwen3_8b.mdx
+  s_2af2e12d6510ef::t_e5f69c70b48657 120,216,312
+docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/qwen3_next_80b_a3b_instruct.mdx
+  s_2af2e12d6510ef::t_230a98dc8be2e8 135,250,365
+docs/docs/hardware-platforms/ascend-npus/optimization/profiling.mdx
+  s_2af2e12d6510ef::t_2b8e95c3f1cc14 189,203,276
+docs/docs/hardware-platforms/cpu_server.mdx
+  s_2af2e12d6510ef::t_f27c3df05f3462 240,252
+docs/docs/hardware-platforms/mthreads_gpu.mdx
+  s_2af2e12d6510ef::t_d0bd4bec808aaf 110
+docs/docs/hardware-platforms/sail.mdx
+  s_2af2e12d6510ef::t_aa587bf46f0e3b 77
+docs/docs/hardware-platforms/xpu.mdx
+  s_2af2e12d6510ef::t_79b6f7c361c680 34-37,39,50-58,160,172,363,394,396,398-441,443,448,457,481
+docs/docs/references/environment_variables.mdx
+  s_2af2e12d6510ef::t_3244bcc031533f 1719-1728
+docs/docs/references/production_metrics.mdx
+  s_2af2e12d6510ef::t_bf3f87f1acde9f 222,243
+docs/index.mdx
+  s_2af2e12d6510ef::t_8d2ba52cde5900 95,116-117,136,145,150,171-172,191,200,205,226-227,246,255,260,281-282,301,310,315,336-337,356,365,370,391-392,411,420
+docs/src/snippets/agentx/MiniMaxAI/minimax-m3.1.jsx
+  s_2af2e12d6510ef::t_ace1cbec95872d 3,6,9,11-13,16-23,26-28,31-34,36-39,41-44,46-49,51-53,81-146,211,215,217-218,220-221,238-241,243,249,255-256,260-262,270,276-277,283-284,288-290,298,304-305,311-312,316-318,326,332-333,338-340,342,344-346,349-358,362,365-374,376-377,383,387-411,417,423-424,432-433,442-443,447,452-453,456-459,462-467,470-480,487,491,514-517,519,524-525,528-748,760,821,844-846,848,1045,1095,1098-1100,1122-1125,1127,1131-1133,1135,1138-1140,1147-1149,1157-1158,1165-1167,1174-1175,1184-1266,1281-1284,1287,1364-1366,1368,1371-1434,1440-1469,1480-1481,1485,1535-1536,1538-1539,1541,1557-1558,1562-1565,1567,1571-1573,1578-1580,1582,1587-1590,1599-1602,1609-1611,1613,1618-1621,1630-1633,1646-1655,1657,1707-1708,1710-1714,1716-1717,1729-1730,1734-1737,1739,1743-1745,1747,1772-1778,1783-1812,1815-1820,1823-1833,1840-1841,1843-1850,1862-1863,1867-1870,1872,1877-1878,1880,1883-1885,1894-1895,1902-1903,1905-1906,1933-1939,1944-1966,1969-1974,1977-1987,1994-1995,1997,1999-2001,2003-2011,2019,2022-2023,2027-2030,2032,2036-2038,2044,2065-2071,2074-2127,2129-2171,2174-2178,2181-2206,2209-2224,2231-2232,2234-2238,2240-2248,2256,2259-2260,2264-2267,2269,2273,2275,2277-2326,2328-3159,3272-3275,3277,3327-3328,3333,3346,3349-3350,3354-3357,3388,3395,3445-3446,3448-3451,3464,3467-3468,3472-3475,3482-3483,3489-3490,3515-3517,3524-3525,3534-3535,3542-3544,3551-3552,3561-3562,3569-3571,3578-3579,3588-3589,3604-3728,3731,3781-3782,3784-3788,3790-3798,3806,3809-3810,3814-3819,3823-3825,3852-3966,3969-3970,3973-3975,3978-3984,3987-4000,4007-4008,4010-4014,4016-4024,4032,4035-4036,4040-4045,4049-4051,4078-4084,4087-4101,4104-4108,4111-4136,4139-4153,4160-4161,4163-4167,4169-4177,4185,4188-4189,4193-4198,4202-4204,4231-4237,4240-4243,4246-4271,4274-4299,4302-4316,4323-4324,4329,4342,4345-4347,4351-4354,4560-4561,4566,4579,4582-4584,4588-4591,4596,4628,4665-4758,4761-4802,4805-4806,4808-4829,4833-4834,4856-4857,4860-4862,4869-4870,4879-4880,4884-4885,4888-4890,4897-4898,4907-4908,4912-4913,4916-4918,4925-4926,4935-4936,4940-4941,4952-4953,4955,4957-4961,4964,5014-5015,5017-5018,5020,5033,5036-5038,5042-5045,5049-5051,5053,5064-5068,5071,5121-5122,5124,5126-5127,5140,5143-5145,5149-5151,5155-5193,5195-5216,5220-5221,5243-5272,5276-5277,5299-5356,5367-5371,5374,5424-5425,5428,5430,5443,5446-5448,5452-5455,5459-5461,5466-5468,5475-5476,5485-5486,5493-5495,5502-5503,5512-5513,5520,5522,5529-5531,5540-5542,5549-5551,5558-5560,5569-5600,5615-5621,5624,5674,5678,5697-5698,5702-5705,5709-5711,5716,5718,5725-5726,5735-5736,5743-5745,5752-5753,5762-5763,5770-5772,5779-5780,5789-5790,5809,5859,5863,5882-5883,5887-5890,5894-5896,5901-5903,5910-5911,5920-5921,5928-5930,5937-5938,5947-5948,5955-5957,5964-5965,5974-5975,5982-5984,5991-5992,6001-6002,6007-6015,6018-6019,6021-6057,6059-6063,6066-6105,6108,6111,6122-6124,6127,6177-6178,6180-6184,6186-6188,6196,6199-6201,6205-6208,6212-6214,6220-6233,6259,6263,6265-6273,6276-6319,6321-6352,6360-6362,6364-6382,6385-6399,6402,6405-6406,6415-6416,6418-6422,6424-6426,6434,6437-6438,6442-6447,6451-6453,6455-6563,6567,6572-6603,6607,6612-6620,6623-6637,6640,6643-6644,6653-6654,6656-6660,6662-6664,6672,6675-6676,6680-6685,6689,6691,6693,6704-6715,6718-6719,6721-6729,6731-6739,6742-6748,6750-6751,6753-6765,6772-6773,6776,6778-6779,6781-6782,6791,6794-6795,6799-6804,6808-6810,6812,6815-6817,6819,6821,6824-6825,6829-6831,6834-6835,6837,6842,6844,6846,6848,6851-6852,6856-6858,6861-6862,6864,6869-6871,6873,6875,6878-6879,6883-6885,6888-6889,6891,6896-6898,6900-6920,6924,6931,6933-6936,6938-6939,6943,6948-6973,6976,6979-6980,6989-6990,6992-6996,6998-6999,7008,7011-7012,7016-7021,7025-7034,7040,7047-7055,7057-7058,7062,7067-7092,7095,7098-7099,7108,7111-7113,7117,7130,7135,7137-7140,7144-7146,7148,7157,7160,7163,7166-7178,7209
+docs/src/snippets/agentx/Qwen/qwen3.5.jsx
+  s_2af2e12d6510ef::t_d59c5ef4512730 3,6,9,11,13,16-19,21-24,26-44,46-48,227,419,539,656,771-772,1098-1099,1276-1277,1430-1431,1587-1588,1745-1746,1904-1905,2066-2067,2209-2211,2213-2215,2220-2223,2229,2237-2241,2245-2249,2252-2254,2256,2259-2261,2263,2266,2268,2270,2273,2275,2277,2280-2282,2284-2291,2307,2309-2310,2317,2320,2327,2330-2331,2334,2336-2337,2341,2344-2349,2359,2366,2379-2385,2392-2393,2409-2410,2419,2425-2426,2428,2431,2433-2436,2442,2450-2455,2459-2460,2470-2472,2474-2499,2501-2556,2572,2585-2591,2598-2599,2615-2616,2625,2628-2630,2632-2634,2636,2639-2642,2647-2648,2656-2660,2664-2668,2671-2687,2695,2698,2706,2711-2712,2715-2717,2725,2728,2736,2741-2742,2745-2747,2755,2758,2766,2771-2772,2777-2778,2799-2807,2814,2816,2819,2836,2842,2845,2849,2860,2866-2867,2870,2873,2875-2878,2881,2883,2900,2902-2903,2909,2916,2918,2922,2924,2930,2932,2936,2940-2941,2944-2945,2948-2950,2953,2957-2959,2961,2971,2986,3005,3018,3021-3025,3027-3030,3032-3035,3040-3041,3044,3049-3054,3058-3059,3064-3102,3104-3105,3135-3136,3140-3141,3144,3147-3149,3151,3154-3174,3176-3203,3211-3216,3218-3219,3228-3266,3268-3281,3288,3291-3293,3295-3297,3302-3305,3310-3311,3319-3324,3328-3330,3336-3337,3359-3370,3373-3378,3380-3405,3461,3464-3465,3467-3468,3470,3473,3475-3478,3483-3484,3492-3497,3501,3503,3508-3509,3547,3553,3559-3585,3587-3597,3600,3603,3606-3631,3634-3644,3647,3690-3692,3708,3711-3712,3714-3715,3717,3720,3722-3725,3730-3731,3739-3744,3755-3756,3794,3800,3806-3807,3810,3813,3816-3817,3820,3863,4236,4404,5261,5867,6132,6147,6291,6299,7173,7686,7839,7960,8108,9126,9788,10795,11035,11315,11445,11579,11712,11826,11933,12225
+docs/src/snippets/agentx/Qwen/qwen3.8-flash-next.jsx
+  s_2af2e12d6510ef::t_74d6714cca8210 3,6,9,11,13,16-19,21-24,26-34,36-48,82,362,364,369,371,376-387,391,393-396,401,407-416,423-435,444-456,463-465,472-485,494-507,514-516,518,523-543,552-572,579-581,583,588-612,621-645,663-675,677-678,681-687,689-690,692,695,697-707,709-710,712-713,715,718,720-866,1049-1056,1081,1444
+docs/src/snippets/agentx/deepseek-ai/deepseek-v4_1.jsx
+  s_2af2e12d6510ef::t_5e448f5e79991a 3,6,9,11,13,16-19,21-24,26-34,36-48,85-97,205,208-209,215,217-218,399-400,501,503,515,518-519,523,525,527-528,738,742,744,748-900,912,915-916,920,922,924-925,979-980,983-987,990,1047,1049,1061,1064-1065,1069,1071,1073-1074,1176,1246,1248,1258,1270,1273-1274,1278,1280-1283,1287,1289,1322,1327,1334,1449,1451,1465,1486-1656,1725,1752,1755-1756,1762,1764-1765,1770,1804,1820,1830,1905,1932,1935-1936,1942,1944-1945,1950,1984,2000,2010,2395,2631,2989,3172,3337,3742,4002,4443,4705,4893,4910
+docs/src/snippets/agentx/meta-models/muse-spark-open.jsx
+  s_2af2e12d6510ef::t_dbb4c643b9fbdf 3,6,9,11,13,16-19,21-24,26-44,46-48,164,166,176,184,186-189,200,202,209,218,234-239,248-253,273,288,350,373,397,403,420,426,438,440,449,451,454,457,472,474,477,480,500-502,504,506-510,513,523-525,527,529-533,536,694,709,934,937-941,943-944,953,961-966,970-972,977-979,983-986,989-991,993-994,998,1001-1003,1005-1006,1008-1009,1014-1016,1018,1020-1023,1026-1033,1037,1040-1047,1049-1050,1056-1057,1059,1061-1064,1130-1134,1136-1137,1140-1141,1144-1149,1151-1152,1165-1171,1178-1184,1187,1190-1198,1201-1226,1229-1239,1268,1272,1274,1276-1277,1816,1818,1828,1835,1837-1840,1860-1861,1870-1871,1878,1880,1891,1905,1913,1915,1923,1925,1927,1938,1940,1942,1961,1975,1996,2010,2129,2131,2141,2148,2150-2153,2178-2179,2196-2197,2218,2221-2222,2236-2237,2239-2241,2252,2254,2262-2263,2265-2268,2271,2281-2284,2286-2289,2292,2317-2318,2338-2339,2360,2368,2371-2372,2375,2383,2440,2442,2460,2462-2465,2485,2488,2490,2505,2508,2510,2532,2535,2537,2552,2555,2557,2570,2572,2588,2590,2617,2675,2739,2741,2759,2761-2764,2768,2770,2775,2777,2784-2787,2796-2799,2806,2808,2815-2818,2820-2822,2831-2834,2836-2838,2845,2847,2854,2856-2858,2860-2861,2864-2865,2874,2876-2878,2880-2881,2884-2885,2901,2909,2911,2913,2923
+docs/src/snippets/agentx/zai-org/glm-5.2.jsx
+  s_2af2e12d6510ef::t_c0894de15d51e0 3,6,9,11,13,16-19,21-24,26-39,41-48
+docs/src/snippets/agentx/zai-org/glm-5.3.jsx
+  s_2af2e12d6510ef::t_b1ba34a67b437b 3,6,9,11,13,16-19,21-24,26-39,41-48
+docs/src/snippets/autoregressive/qwen3-vl-deployment.jsx
+  s_2af2e12d6510ef::t_6d632a10828b5b 224-228
+docs/src/snippets/configs/LiquidAI/lfm2.5-benchmarks.jsx
+  s_2af2e12d6510ef::t_1f691451fbfd59 2
+docs/src/snippets/configs/LiquidAI/lfm2.5.jsx
+  s_2af2e12d6510ef::t_1b0a8e907b6505 65
+docs/src/snippets/configs/MiniMaxAI/minimax-h3.jsx
+  s_2af2e12d6510ef::t_903919cfd9eafb 618-621
+docs/src/snippets/configs/MiniMaxAI/minimax-m3-benchmarks.jsx
+  s_2af2e12d6510ef::t_f7ae02aae49b17 16
+docs/src/snippets/configs/MiniMaxAI/minimax-m3.jsx
+  s_2af2e12d6510ef::t_daa72c44c3d6b9 55
+docs/src/snippets/configs/OpenMOSS/moss-image.jsx
+  s_2af2e12d6510ef::t_f4d7cf28c5fe8c 48-56,59,62,76,82
+docs/src/snippets/configs/Qwen/qwen-image-2.1.jsx
+  s_2af2e12d6510ef::t_7791fc6125d1de 3-5,88-89,92-97,309,318-321,335,396
+docs/src/snippets/configs/Qwen/qwen3.8-27b-benchmarks.jsx
+  s_2af2e12d6510ef::t_e4d25473fb6810 14
+docs/src/snippets/configs/Qwen/qwen3.8-27b.jsx
+  s_2af2e12d6510ef::t_5f450816c098c5 365
+docs/src/snippets/configs/Qwen/qwen3.8-flash-next.jsx
+  s_2af2e12d6510ef::t_f7d764e69df7ab 169
+docs/src/snippets/configs/Qwen/qwen3.8.jsx
+  s_2af2e12d6510ef::t_f407b10eaed501 76
+docs/src/snippets/configs/ai-sage/gigachat3.5-reasoning.jsx
+  s_2af2e12d6510ef::t_b7f3216cc5d18a 53
+docs/src/snippets/configs/ai-sage/gigachat3.5.jsx
+  s_2af2e12d6510ef::t_7fc72811c01012 53
+docs/src/snippets/configs/deepreinforce-ai/ornith-1.0.jsx
+  s_2af2e12d6510ef::t_4894617969e990 52
+docs/src/snippets/configs/deepseek-ai/deepseek-v4.jsx
+  s_2af2e12d6510ef::t_1531a23490a959 235
+docs/src/snippets/configs/inclusionAI/ling-3.0-flash-vl.jsx
+  s_2af2e12d6510ef::t_c6d4e107b357b0 54
+docs/src/snippets/configs/inclusionAI/ling-3.0-flash.jsx
+  s_2af2e12d6510ef::t_5231284e924c1f 56
+docs/src/snippets/configs/inclusionAI/ling-3.0-tiny.jsx
+  s_2af2e12d6510ef::t_e24d4410b283a8 50
+docs/src/snippets/configs/internlm/intern-s2-mobius.jsx
+  s_2af2e12d6510ef::t_021a37c9a827a5 43
+docs/src/snippets/configs/meituan-longcat/longcat-2.0.jsx
+  s_2af2e12d6510ef::t_aa5a5e918efca3 49
+docs/src/snippets/configs/meta-models/muse-glimmer.jsx
+  s_2af2e12d6510ef::t_5c6212de13900e 89
+docs/src/snippets/configs/mistralai/mistral-large-4.jsx
+  s_2af2e12d6510ef::t_c6df8e364405ac 45
+docs/src/snippets/configs/moonshotai/kimi-k3.jsx
+  s_2af2e12d6510ef::t_5a92efc04e96f5 495
+docs/src/snippets/configs/nvidia/nemotron-3.5-lightning.jsx
+  s_2af2e12d6510ef::t_a8096d5ac53def 44
+docs/src/snippets/configs/openbmb/minicpm-v-4.7-benchmarks.jsx
+  s_2af2e12d6510ef::t_643326e57ce6fd 1
+docs/src/snippets/configs/openbmb/minicpm5-2b-benchmarks.jsx
+  s_2af2e12d6510ef::t_8e921811e2e394 5
+docs/src/snippets/configs/openbmb/minicpm5-2b.jsx
+  s_2af2e12d6510ef::t_f586656c152036 97
+docs/src/snippets/configs/ornith-ai/ornith-1.5.jsx
+  s_2af2e12d6510ef::t_01ef1bc0ed4bc0 52
+docs/src/snippets/configs/poolside/laguna-m1.jsx
+  s_2af2e12d6510ef::t_599502b5b9bc78 74
+docs/src/snippets/configs/poolside/laguna-s21.jsx
+  s_2af2e12d6510ef::t_e85be0f67d7ce6 66
+docs/src/snippets/configs/poolside/laguna-xs21.jsx
+  s_2af2e12d6510ef::t_e53d193f90ebf8 105
+docs/src/snippets/configs/tencent/hy3.jsx
+  s_2af2e12d6510ef::t_d3659aeb096e54 55
+docs/src/snippets/configs/tencent/hy4-preview.jsx
+  s_2af2e12d6510ef::t_b6efa86c95f24d 64
+docs/src/snippets/configs/zai-org/glm-5.2.jsx
+  s_2af2e12d6510ef::t_7b2bea79c14035 64
+docs/src/snippets/configs/zai-org/glm-5.3-flash.jsx
+  s_2af2e12d6510ef::t_e11e10a75df9a7 282
+docs/src/snippets/configs/zai-org/glm-5.3.jsx
+  s_2af2e12d6510ef::t_166b8bf3f58817 62
+examples/runtime/token_in_token_out/token_in_token_out_llm_engine.py
+  s_2af2e12d6510ef::t_636c4cace20b9f 6
+examples/runtime/token_in_token_out/token_in_token_out_llm_server.py
+  s_2af2e12d6510ef::t_a8fe743198f8e9 10
+examples/usage/reasoning_aware_compression/rac_collect_traces.py
+  s_2af2e12d6510ef::t_dc4b2edd70badf 54
+examples/usage/reasoning_aware_compression/rac_serve_and_eval.py
+  s_2af2e12d6510ef::t_4cd883e63b43d4 34
+python/pyproject.toml
+  s_2af2e12d6510ef::t_02d71a1c1c114e 80
+python/pyproject_xpu.toml
+  s_2af2e12d6510ef::t_d709155bf692a3 2,60,71,78-95
+python/sglang/__init__.py
+  s_2af2e12d6510ef::t_34770635d506a8 8-10,17-20
+python/sglang/_logging_once.py
+  s_2af2e12d6510ef::t_ce3ded1ce3602e 1,3-4,7-8,11-13,15-26
+python/sglang/benchmark/offline_throughput.py
+  s_2af2e12d6510ef::t_eef41e6834cc71 33
+python/sglang/benchmark/one_batch.py
+  s_2af2e12d6510ef::t_9f80b19ad22343 67-68,113
+python/sglang/benchmark/one_batch_server.py
+  s_2af2e12d6510ef::t_3c25dfeb2a97f9 42-43,574-576
+python/sglang/benchmark/serving.py
+  s_2af2e12d6510ef::t_7e87a783fd0662 57
+python/sglang/benchmark/utils.py
+  s_2af2e12d6510ef::t_db26a195b740dc 16-20,57,78
+python/sglang/compile_deep_gemm.py
+  s_2af2e12d6510ef::t_2b0f70348b8adc 20-21
+python/sglang/kernels/README.md
+  s_2af2e12d6510ef::t_96e10fdd8903e0 23-24
+python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce_hip.cuh
+  s_2af2e12d6510ef::t_5a1f5225585c19 384-386,410
+python/sglang/kernels/aot/csrc/allreduce/deterministic_all_reduce.hip
+  s_2af2e12d6510ef::t_570aced44de8e6 3-11,29-101,125,127-128,130-131,134-135,143-153,165
+python/sglang/kernels/arch/__init__.py
+  s_2af2e12d6510ef::t_3cc5106808b81c 1-34
+python/sglang/kernels/arch/_cuda.py
+  s_2af2e12d6510ef::t_436f26424d2cdf 1-48
+python/sglang/kernels/arch/_hip.py
+  s_2af2e12d6510ef::t_a8b20692617720 1-16
+python/sglang/kernels/arch/base.py
+  s_2af2e12d6510ef::t_59448305086719 1-79
+python/sglang/kernels/jit/__main__.py
+  s_2af2e12d6510ef::t_7dcf8a865dd5f0 10-14,75,77
+python/sglang/kernels/jit/benchmark/marker.py
+  s_2af2e12d6510ef::t_0fdeb367aece7b 24,108,136
+python/sglang/kernels/jit/csrc/deep_select/README.md
+  s_2af2e12d6510ef::t_cf630f9b0eb61a 20
+python/sglang/kernels/jit/csrc/deep_select/entry.cuh
+  s_2af2e12d6510ef::t_cef5460f907d2c 275
+python/sglang/kernels/jit/csrc/deepseek_v4/fp8_wo_a_group_major_quant.cuh
+  s_2af2e12d6510ef::t_42afeaa3637a00 53-109,146-157,163-169,183-188,192,212-217,219-223,228,235-408
+python/sglang/kernels/jit/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh
+  s_2af2e12d6510ef::t_50bc1643e6ee72 6,186-187,276-287,337-340
+python/sglang/kernels/jit/csrc/deepseek_v4/mhc_post_combine_norm_decode.cuh
+  s_2af2e12d6510ef::t_89292d0638836d 2-3,9,20-46,56,61,64-66,69-70,74-97,102,105-113,120,122,125,165-169,171-174,176-183,187-189,192,238,240,246,252,255,292,306-307,309,311
+python/sglang/kernels/jit/csrc/gemm/hopper_bf16_tiny_gemv.cuh
+  s_2af2e12d6510ef::t_e3ecf1229b951b 1-118
+python/sglang/kernels/jit/csrc/gemm/hopper_fp8_block_gemv.cuh
+  s_2af2e12d6510ef::t_dd025c81e3d8a5 10,14,16-17,19-20,22-27,30-51,53-56,58-63,65-73,76,78-82,84-85,87-90,92-95,97,99-153,155-174,176-179,181,183,185-186,188-196,198-204,206-217,219,221-231,233-234,236-240,242-248,250-254,259-271,276-334,336-346,348-364,367-374,376-387
+python/sglang/kernels/jit/csrc/gemm/router_gate_matvec.cuh
+  s_2af2e12d6510ef::t_04fc31a57720a6 13,15-16,18,20-21,23-32,35-45,50-69,71-74,76-81,83-85,88-95,97-100,103-104,106-109,113-119,122,124-140,142-156,159-162,164,167-190
+python/sglang/kernels/jit/csrc/moe/bailing_moe_topk.cuh
+  s_2af2e12d6510ef::t_3fcaae6cd36bdf 1-3,5,7,13,15,17-29,32-33,35-38,40-43,46-52,54-75,77-78,80-87,89-91,93-101,103-105,107-120,122-126,128-130,132-134,136-143,145-156,158-161,163-164,166-180,184-189,192-193,195-247,249,251-252,254-318,320,322-325,327-344,346-350,352-356,359-386,389-407,409-410,412-416,421-443,445,447-448,450,452-455,459-462,465-466,471-485,488-499,502-527,530-543,545
+python/sglang/kernels/jit/csrc/moe/moe_finalize_fuse_shared.cu
+  s_2af2e12d6510ef::t_4f1abe72664cdd 1-20,22-27,29-31,33-36,38-40,42-46,49-51,53-54,58-100,103-105,108-120,122-135,137-174,176-178,181-185,187-190,192-194,196-198,200-209,211-218,220-221,226-230,232-233,237-238,241-243,246-291,293-321,325-353,356-406,408,410-412,415-416
+python/sglang/kernels/jit/csrc/moe/route_warp.cuh
+  s_2af2e12d6510ef::t_c4c0f350f0652d 1,3-8,11-12,14-19,23-24,29,31-35,37-41,43-47,49-54,56-84,87-90,93-95,97-98,100-103,105-106,109-156,158,160-163,165-167,169-220,223-232,235-236,238-240,242-243,245-249,253-266,268-271,274-282,285-293,295-299,301-302,307-309,311-312,314-316,318-321,323-333,336-340,342-351,354-357,359-360,362-368,370-371,373,376-391,394-395,398-454,456-494,496-533,536,538,540-541
+python/sglang/kernels/jit/cute_aot_cache.py
+  s_2af2e12d6510ef::t_33289f8d103ef0 24-25,98-100
+python/sglang/kernels/jit/include/sgl_kernel/algorithm.cuh
+  s_2af2e12d6510ef::t_06d125115051c6 1-90
+python/sglang/kernels/jit/utils/arch.py
+  s_2af2e12d6510ef::t_353e229a558867 1-5,16,19,31,36-40,113-118,120-122,141,144,161,172
+python/sglang/kernels/jit/utils/common.py
+  s_2af2e12d6510ef::t_cb52cd9ae47f2e 66-68,72-74
+python/sglang/kernels/jit/utils/compile/cache.py
+  s_2af2e12d6510ef::t_f576800af54de0 58,228,254
+python/sglang/kernels/jit/utils/compile/toolchain.py
+  s_2af2e12d6510ef::t_2d88c21124d9d8 24,151,197
+python/sglang/kernels/kda_kernels/flux2_qkv_epilogue_jit.py
+  s_2af2e12d6510ef::t_bc0ca6f5aefdc2 7,82
+python/sglang/kernels/kda_kernels/layernorm_modulate_triton.py
+  s_2af2e12d6510ef::t_8b8f6ed503be9b 50,395,397
+python/sglang/kernels/kda_kernels/ltx2_qknorm_split_rope_jit.py
+  s_2af2e12d6510ef::t_1a75a6f0a7c92b 7-8,18,147
+python/sglang/kernels/kda_kernels/sana_depthwise_glu_triton.py
+  s_2af2e12d6510ef::t_3b85fd02789b24 1-156
+python/sglang/kernels/kda_kernels/silu_temporal_pad.py
+  s_2af2e12d6510ef::t_717ed30ddc72fe 1-2,5-7,10-19,21-35,38-51,53-60
+python/sglang/kernels/ops/activation/__init__.py
+  s_2af2e12d6510ef::t_1f8245118344c7 189-197
+python/sglang/kernels/ops/activation/silu_and_mul_block_quant.py
+  s_2af2e12d6510ef::t_2e766870962d9e 1-5,8-9,11,14-52,54-55,58-90,93-118,121-124,126-127,129-141,144-157,159-182,184
+python/sglang/kernels/ops/attention/__init__.py
+  s_2af2e12d6510ef::t_788f81a9d53f25 348,351
+python/sglang/kernels/ops/attention/attn_res.py
+  s_2af2e12d6510ef::t_b4aaff1f50b6b1 9-10,31-32,45-55
+python/sglang/kernels/ops/attention/decode_attention.py
+  s_2af2e12d6510ef::t_6cc0273a784d30 31,189,1342
+python/sglang/kernels/ops/attention/deep_select.py
+  s_2af2e12d6510ef::t_a733291099bb93 8,82,134,205-206
+python/sglang/kernels/ops/attention/dsa/tilelang_kernel.py
+  s_2af2e12d6510ef::t_186ae901a3733a 9,1202
+python/sglang/kernels/ops/attention/dsa/triton_sparse_mla.py
+  s_2af2e12d6510ef::t_18bc57ff0ad400 19,91-92
+python/sglang/kernels/ops/attention/dsa/triton_sparse_mla_prefill.py
+  s_2af2e12d6510ef::t_5dd106cabf1022 39-40,295,350-352,476
+python/sglang/kernels/ops/attention/dsv4/compact_attention_hip.py
+  s_2af2e12d6510ef::t_4d6976b720b96f 10,403
+python/sglang/kernels/ops/attention/dsv4/dequant_k_cache.py
+  s_2af2e12d6510ef::t_887b9f616ddd04 7-8,119,154-155,160,171-172,363,374,378-382,390-398,401,403,413,424,429-433,441-444,446-456
+python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py
+  s_2af2e12d6510ef::t_f839bddd4210ce 8,650,853
+python/sglang/kernels/ops/attention/dsv4/fp4_indexer_hip.py
+  s_2af2e12d6510ef::t_d390a3bd3e2ea6 20
+python/sglang/kernels/ops/attention/dsv4/index_logits.py
+  s_2af2e12d6510ef::t_3cccb6d72af272 12,24,50-54,66,78
+python/sglang/kernels/ops/attention/fa4_sm120/dispatch.py
+  s_2af2e12d6510ef::t_f82c83598406a7 10-11,44-47
+python/sglang/kernels/ops/attention/fla/chunk_delta_h.py
+  s_2af2e12d6510ef::t_0a27788d51f04d 146-160,163-164,166-167,169-170,172-173,177-180,182-183,185-186,188-189,192-193,195-196,198-199,201-202,204-205,208-209,212-213,216-217,219-221,224-225,230-231,288-289,292-293,296-297,300-301,306-307,309-310,312-313,315-316
+python/sglang/kernels/ops/attention/fla/chunk_fwd.py
+  s_2af2e12d6510ef::t_41624641d080bc 70,76,104-111,115-118,120-123,144-147,152-153,160-161,169-170,306-320,322-325,327-365
+python/sglang/kernels/ops/attention/fla/chunk_intra.py
+  s_2af2e12d6510ef::t_09c310ce3714d3 87,93,119,156-159,161-162,166-168,179-184,186-187,189-190,212-217,219-220,222-223,251-253,255-263,299,301-303,306-307,310-311,313-315,318-320,323-324,328-330,332-334,337-339,342-344,347-348,366-369,371-373,376-378,381-383,386-398,404-411,413-416,418-421,423-426,436-451,556-563,569-573,575-578,599-606,608-611,613-616,618-621,636-644,646-652,654-655,657-658,660-661,683-688,690-691,693-694,696-697,705-727,730-744,746-749,751-754,756-759,761-764,766-769,771-774,776-779,781-784,786-789,827-831,837,861-866,868,870-873,905-911,926
+python/sglang/kernels/ops/attention/fla/chunk_intra_token_parallel.py
+  s_2af2e12d6510ef::t_a9b580b8916bf7 95-100,102-105,108-109,111-112
+python/sglang/kernels/ops/attention/fla/chunk_o.py
+  s_2af2e12d6510ef::t_e6c8007ff06b00 51-55,62,85-87,89-93,95,97,99,108-109,117-119,124
+python/sglang/kernels/ops/attention/fla/cumsum.py
+  s_2af2e12d6510ef::t_055a8fc9c52f6b 37,42,52-53,55-56,58-59,61,68,97,102,118-120,122-123,125-126,128,132
+python/sglang/kernels/ops/attention/fla/fused_norm_gate.py
+  s_2af2e12d6510ef::t_119128056dda7d 10-11,61,63,66-67,69-70,72-73,75-76,79-80,88-89,118-119,126-127,248
+python/sglang/kernels/ops/attention/fla/kda.py
+  s_2af2e12d6510ef::t_1d78895734c834 245-249,255,276-281,288-293,300-301,303-304,309,315-320,347-351,356,375-382,522,527,542-545,547-549,552-556,559,562-566,569-570,576,580-581,584,727-731,737,757-759,762-767,770,773,777,782-786,788,790,793,887,892,907-911,913,916-917,933
+python/sglang/kernels/ops/attention/fla/l2norm.py
+  s_2af2e12d6510ef::t_c946751a970d3b 64-70,73,150,153-155,159-163,165-169,171-174,178,183,187-191,193-195,197
+python/sglang/kernels/ops/attention/fla/wy_fast.py
+  s_2af2e12d6510ef::t_77296f13ce849c 43,48,57-66,69-73,76,79-85,87-88,91
+python/sglang/kernels/ops/attention/flash_attn/cute/flash_fwd_mla_sm100.py
+  s_2af2e12d6510ef::t_d31b282fad5db8 33-34
+python/sglang/kernels/ops/attention/flash_attn/cute/shearing_bias.py
+  s_2af2e12d6510ef::t_c1753fb84bdf6f 19-20
+python/sglang/kernels/ops/attention/kda_decode_mtp.py
+  s_2af2e12d6510ef::t_1e5221e48c428b 16,937,1161,1163
+python/sglang/kernels/ops/attention/kda_fused_decode.py
+  s_2af2e12d6510ef::t_49d4db9931121b 38,70
+python/sglang/kernels/ops/attention/kda_fused_decode_gfx950.py
+  s_2af2e12d6510ef::t_7b51106a1db5e5 17,35-36
+python/sglang/kernels/ops/attention/linear/fused_sigmoid_gating_recurrent.py
+  s_2af2e12d6510ef::t_9694ce419c2d54 1,9,48-59,90-105,1023-1024
+python/sglang/kernels/ops/attention/linear/kda_blackwell/__init__.py
+  s_2af2e12d6510ef::t_42c3fc8e565a6d 10-11,143
+python/sglang/kernels/ops/attention/linear/kda_gfx950_prefill.py
+  s_2af2e12d6510ef::t_2cc01b2e4a6c2c 19,31-32
+python/sglang/kernels/ops/attention/msa_v1/compact_dequant.py
+  s_2af2e12d6510ef::t_600835d53e0a95 9,18-19
+python/sglang/kernels/ops/attention/msa_v1/flashinfer_decode.py
+  s_2af2e12d6510ef::t_8544f336c7c3c5 10-11,110
+python/sglang/kernels/ops/attention/qprep_bf16_fp8_sm90.py
+  s_2af2e12d6510ef::t_0f56ed7ac34458 17,31
+python/sglang/kernels/ops/attention/rocm_mla_decode_rope.py
+  s_2af2e12d6510ef::t_2960a1be8f162a 29
+python/sglang/kernels/ops/attention/set_mla_kv_concat_q.py
+  s_2af2e12d6510ef::t_f192ee28133380 16,52,186
+python/sglang/kernels/ops/attention/subblock_sage_fp8_sm90.py
+  s_2af2e12d6510ef::t_5ec4342daba98c 19-20,162
+python/sglang/kernels/ops/attention/table_qk_norm_rope.py
+  s_2af2e12d6510ef::t_fc7f3dfac736d7 1-2,17-18,22,26-28,31,34-42,44-48,51-52,54-55,57,59-79,83,86-87,102,113-118,128-132,134-136,139-140,145-154,161-162,166,170-173
+python/sglang/kernels/ops/attention/unlimited_ocr_dash/attend.py
+  s_2af2e12d6510ef::t_b296e2078564d7 14-18,178-189,191,306-317,319,418-427,429,527-536,538-544,546
+python/sglang/kernels/ops/attention/unlimited_ocr_dash/common.py
+  s_2af2e12d6510ef::t_b3cd048db3a876 9-10,73-82,85
+python/sglang/kernels/ops/attention/vattn_asm_gfx950/__init__.py
+  s_2af2e12d6510ef::t_c45bec60778c30 26,202-207,307,319
+python/sglang/kernels/ops/communication/all_reduce_fusion.py
+  s_2af2e12d6510ef::t_c797272187212b 29,124
+python/sglang/kernels/ops/communication/muse_spark_all_gather.py
+  s_2af2e12d6510ef::t_b39da266d469da 19,76
+python/sglang/kernels/ops/communication/muse_spark_all_gather_norm_residual.py
+  s_2af2e12d6510ef::t_35c8f9a4b30e43 9,77
+python/sglang/kernels/ops/communication/muse_spark_moe_finalize_all_reduce_cutedsl.py
+  s_2af2e12d6510ef::t_7e17b23cccf172 37-38,511-512,514
+python/sglang/kernels/ops/communication/sp_collective_gemm.py
+  s_2af2e12d6510ef::t_3cf4a91dc0fb76 20-21,101
+python/sglang/kernels/ops/diffusion/README.md
+  s_2af2e12d6510ef::t_eafd7e48a2b0b9 78-85,178,208
+python/sglang/kernels/ops/diffusion/__init__.py
+  s_2af2e12d6510ef::t_d8a2abda8f4eb6 48-53,426-431,820,823
+python/sglang/kernels/ops/diffusion/attention/vdn_delta_factors_jit.py
+  s_2af2e12d6510ef::t_6f3a34c37d3437 14,27-28,85
+python/sglang/kernels/ops/diffusion/common/platform.py
+  s_2af2e12d6510ef::t_944d6190df8aa2 30-31,38,40,42
+python/sglang/kernels/ops/diffusion/gemm/flux3_fp8_prims_ts.py
+  s_2af2e12d6510ef::t_274929a331a5c7 11,176,178
+python/sglang/kernels/ops/diffusion/gemm/flux3_nvfp4_prims_ts.py
+  s_2af2e12d6510ef::t_860ba157850657 18,193,195
+python/sglang/kernels/ops/diffusion/gemm/flux3_prims_ts_config.py
+  s_2af2e12d6510ef::t_227872940dff87 14,147,153
+python/sglang/kernels/ops/diffusion/norm/flux2_gated_resnorm_jit.py
+  s_2af2e12d6510ef::t_55746f0da90bca 7,60
+python/sglang/kernels/ops/diffusion/norm/zimage_qk_rmsnorm_triton.py
+  s_2af2e12d6510ef::t_b17d617111b652 10,156
+python/sglang/kernels/ops/diffusion/quantization/fp8_rowwise_triton.py
+  s_2af2e12d6510ef::t_78b9d5669e2717 8-9,19
+python/sglang/kernels/ops/diffusion/quantization/swiglu_fp8_rowwise_triton.py
+  s_2af2e12d6510ef::t_9f963d947df3ce 8,112,132,138
+python/sglang/kernels/ops/diffusion/rope/flux2_qknorm_rope_triton.py
+  s_2af2e12d6510ef::t_dae61d842f39e5 7,17
+python/sglang/kernels/ops/diffusion/rope/qwen_qkv_epilogue_jit.py
+  s_2af2e12d6510ef::t_5a49042f23d3c6 7,90
+python/sglang/kernels/ops/diffusion/rope/rope_rotate_half_fp32.py
+  s_2af2e12d6510ef::t_a0a651592d24d7 12-13,43-45
+python/sglang/kernels/ops/diffusion/sites/fused_linear_gelu_site.py
+  s_2af2e12d6510ef::t_447539f2b4a1d9 36,134
+python/sglang/kernels/ops/embeddings/engram_gather.py
+  s_2af2e12d6510ef::t_e40f69970fe5b1 1-2,18-72,86,96-105,107,121,125-129,159,178,194-204,220,226,229,253
+python/sglang/kernels/ops/gemm/__init__.py
+  s_2af2e12d6510ef::t_d0275d19f8f36a 592-615
+python/sglang/kernels/ops/gemm/convrot_int8.py
+  s_2af2e12d6510ef::t_b65e22295e5203 17-18,60-63
+python/sglang/kernels/ops/gemm/cutedsl_bf16_gemm.py
+  s_2af2e12d6510ef::t_e6f20a626384cd 41,43,1318,1391,1466
+python/sglang/kernels/ops/gemm/cutedsl_dsv3_fused_a_gemm.py
+  s_2af2e12d6510ef::t_eae963ac50e709 35,309
+python/sglang/kernels/ops/gemm/cutedsl_dual_gemm.py
+  s_2af2e12d6510ef::t_9ff82e24891052 44,1340,1473,1627
+python/sglang/kernels/ops/gemm/fp8_kernel.py
+  s_2af2e12d6510ef::t_6609424f7d9352 11,682
+python/sglang/kernels/ops/gemm/gptq_marlin.py
+  s_2af2e12d6510ef::t_d61b321f4b0d57 7,76
+python/sglang/kernels/ops/gemm/hc_mix.py
+  s_2af2e12d6510ef::t_97054272e1fa73 16-17,195
+python/sglang/kernels/ops/gemm/hopper_bf16_gemv.py
+  s_2af2e12d6510ef::t_34c2a559412bdf 7,30
+python/sglang/kernels/ops/gemm/hopper_bf16_tiny_gemv.py
+  s_2af2e12d6510ef::t_11acbc0a771c1e 3,12-13,16-17,20-28,32-33,36-42
+python/sglang/kernels/ops/gemm/hopper_fp8_block_gemv.py
+  s_2af2e12d6510ef::t_e6e5bfeff8f3c5 1-139
+python/sglang/kernels/ops/gemm/muse_spark_router_gemv_cutedsl.py
+  s_2af2e12d6510ef::t_a332537c6af7ac 18,56
+python/sglang/kernels/ops/gemm/mxfp8_flydsl_gfx95.py
+  s_2af2e12d6510ef::t_d50bd9b04a51ac 42-43,129
+python/sglang/kernels/ops/gemm/mxfp8_native_amd_gfx95.py
+  s_2af2e12d6510ef::t_33847bdb20f5d8 19,81-82,173-174
+python/sglang/kernels/ops/gemm/router_gate_matvec.py
+  s_2af2e12d6510ef::t_ae72119d634ced 8-15,118-123
+python/sglang/kernels/ops/gemm/router_gate_matvec_cuda.py
+  s_2af2e12d6510ef::t_451692fb3e0f2e 3,7,12-14,17-18,21-31,35-53,56-66
+python/sglang/kernels/ops/gemm/small_gemm_bf16.py
+  s_2af2e12d6510ef::t_dce7bdc7169762 14,60
+python/sglang/kernels/ops/gemm/smallm_fp8_gfx950/__init__.py
+  s_2af2e12d6510ef::t_8b9856d0ee804b 16,59-60
+python/sglang/kernels/ops/gemm/tiny_gemm.py
+  s_2af2e12d6510ef::t_28f2fa4b1b5af8 15,113,133
+python/sglang/kernels/ops/kvcache/hicache.py
+  s_2af2e12d6510ef::t_904fccd5531b17 8,134
+python/sglang/kernels/ops/layernorm/__init__.py
+  s_2af2e12d6510ef::t_4707a586fb414a 134-144
+python/sglang/kernels/ops/layernorm/fused_kda_output_quant.py
+  s_2af2e12d6510ef::t_f5765e928b09d8 1-119
+python/sglang/kernels/ops/layernorm/mhc.py
+  s_2af2e12d6510ef::t_a2dce87d595b3c 12,822
+python/sglang/kernels/ops/layernorm/mhc_boundary_hip.py
+  s_2af2e12d6510ef::t_621c9238c6a2fc 16-19
+python/sglang/kernels/ops/layernorm/mhc_post_combine_norm_decode.py
+  s_2af2e12d6510ef::t_0da20da44bad6e 13,17-18,22,26,29,32,38-40,45,48-55,59,77,79,119
+python/sglang/kernels/ops/layernorm/muse_spark_norm_residual_jit.py
+  s_2af2e12d6510ef::t_95d33f962c016d 19,188
+python/sglang/kernels/ops/layernorm/norm.py
+  s_2af2e12d6510ef::t_24dfa6b9c72196 10,100
+python/sglang/kernels/ops/lora/dense/trtllm_lora_temp/gate_up_lora_b.py
+  s_2af2e12d6510ef::t_bbf57e36ba2471 5
+python/sglang/kernels/ops/lora/dense/trtllm_lora_temp/kv_b_lora_absorbed.py
+  s_2af2e12d6510ef::t_64820450b201f8 51
+python/sglang/kernels/ops/lora/dense/trtllm_lora_temp/qkv_lora_b.py
+  s_2af2e12d6510ef::t_8e8ae3ecc15fd9 7
+python/sglang/kernels/ops/lora/dense/trtllm_lora_temp/sgemm_lora_a.py
+  s_2af2e12d6510ef::t_a0a786d3f43d0e 5-6,205
+python/sglang/kernels/ops/lora/dense/trtllm_lora_temp/sgemm_lora_b.py
+  s_2af2e12d6510ef::t_aa1157cc3d3443 5
+python/sglang/kernels/ops/lora/moe/cutedsl/api.py
+  s_2af2e12d6510ef::t_f786bce17dba48 17,54-55,110-111
+python/sglang/kernels/ops/lplb/cuda_solver.py
+  s_2af2e12d6510ef::t_9901796e88cd1a 19-20,34-36
+python/sglang/kernels/ops/mamba/causal_conv1d.py
+  s_2af2e12d6510ef::t_1590c61045fdca 13-14,30
+python/sglang/kernels/ops/mamba/lfm_short_conv.py
+  s_2af2e12d6510ef::t_c911b9ac826d70 16-17,245
+python/sglang/kernels/ops/moe/__init__.py
+  s_2af2e12d6510ef::t_d1f03d2f101cb1 361-369
+python/sglang/kernels/ops/moe/bailing_moe_topk.py
+  s_2af2e12d6510ef::t_0773b8b10b3994 1,5,17,19-23,27-28,30-35,37-39,41-42,44-49,51-53,57,59-62,64-68,70-72,74-80,82-89,91-96,98-100,102
+python/sglang/kernels/ops/moe/fill_padded_rows.py
+  s_2af2e12d6510ef::t_bd532ea9181de9 102-103
+python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py
+  s_2af2e12d6510ef::t_2170daa204b978 8,918-926
+python/sglang/kernels/ops/moe/gguf_moe_vec.py
+  s_2af2e12d6510ef::t_22c8289d60fe84 9-10,45-46
+python/sglang/kernels/ops/moe/inkling_moe.py
+  s_2af2e12d6510ef::t_bcda7aec91bb04 5,355,973
+python/sglang/kernels/ops/moe/moe_finalize_fuse_shared.py
+  s_2af2e12d6510ef::t_1a2a2a89f800fd 3,7,11,14-16,28-46,48-51,57-58
+python/sglang/kernels/ops/moe/moe_fused_gate.py
+  s_2af2e12d6510ef::t_fcc3ffc1e3f96b 10-11,13,383-384,400,430,436,445,473,494-529,561
+python/sglang/kernels/ops/moe/moe_route_radix4.py
+  s_2af2e12d6510ef::t_bb1db80cf71145 15,36-37
+python/sglang/kernels/ops/moe/moe_route_warp.py
+  s_2af2e12d6510ef::t_83456a592d7c6f 1,3-4,6-11,16-17,33-34,36-45,49-59,62-72,75,77-78,82-88,91-214,218-241,244,248,250-255,257,259-261,263,265-268,270
+python/sglang/kernels/ops/moe/moe_wna16_marlin.py
+  s_2af2e12d6510ef::t_5470e0aa614833 7,149
+python/sglang/kernels/ops/moe/muse_spark_routing.py
+  s_2af2e12d6510ef::t_e16b865dedefff 33-36,761-762,764-768,779,781,784,786-789,792,797-798,803,806-807,809-811
+python/sglang/kernels/ops/moe/smallm_moe_gfx950/__init__.py
+  s_2af2e12d6510ef::t_799b81705cc309 26,101-102
+python/sglang/kernels/ops/quantization/__init__.py
+  s_2af2e12d6510ef::t_8807db43c557a8 108
+python/sglang/kernels/ops/quantization/fp8_group_major_quant_ue8m0.py
+  s_2af2e12d6510ef::t_e7f627aeddab9e 39-43,89-143,161,163
+python/sglang/kernels/ops/quantization/fp8_kernel.py
+  s_2af2e12d6510ef::t_a9b628e774d702 20,133-284
+python/sglang/kernels/ops/quantization/fp8_utils.py
+  s_2af2e12d6510ef::t_07dabbac18ddb3 8-9,24-25
+python/sglang/kernels/ops/quantization/per_token_quant_fp8.py
+  s_2af2e12d6510ef::t_d48fc9944e5043 7-8,21
+python/sglang/kernels/ops/speculative/dspark/dspark_schedule.py
+  s_2af2e12d6510ef::t_77ddb60c595e1b 12,23-29,243-248
+python/sglang/kernels/ops/speculative/dspark/simulated_bonus.py
+  s_2af2e12d6510ef::t_27c69112dba7ca 71-73
+python/sglang/kernels/spec.py
+  s_2af2e12d6510ef::t_1b1cfd46b16184 91-98,100-101,104,106-112,141-143
+python/sglang/lang/backend/runtime_endpoint.py
+  s_2af2e12d6510ef::t_1f645bbc3081bf 464-465
+python/sglang/launch_server.py
+  s_2af2e12d6510ef::t_ab334431473274 8
+python/sglang/multimodal_gen/apps/webui/main.py
+  s_2af2e12d6510ef::t_0b904c7b355612 7-8
+python/sglang/multimodal_gen/configs/pipeline_configs/anima.py
+  s_2af2e12d6510ef::t_3c5109ae3b7013 10-11
+python/sglang/multimodal_gen/configs/pipeline_configs/cosmos3.py
+  s_2af2e12d6510ef::t_4d676c1552e913 19,23
+python/sglang/multimodal_gen/configs/pipeline_configs/cosmos3_multiview.py
+  s_2af2e12d6510ef::t_a808bc719cf5e4 31
+python/sglang/multimodal_gen/configs/pipeline_configs/cosmos3_sim_auto.py
+  s_2af2e12d6510ef::t_5f1f5fdbc502a1 35
+python/sglang/multimodal_gen/configs/pipeline_configs/cosmos_dreams.py
+  s_2af2e12d6510ef::t_8263fa6fbbeed5 32
+python/sglang/multimodal_gen/configs/pipeline_configs/cosmos_dreams_transfer.py
+  s_2af2e12d6510ef::t_c4575d6d82589f 22
+python/sglang/multimodal_gen/configs/pipeline_configs/diffusers_generic.py
+  s_2af2e12d6510ef::t_bc65338c3ad784 13-14
+python/sglang/multimodal_gen/configs/pipeline_configs/ernie_image.py
+  s_2af2e12d6510ef::t_641a7cfe83a4a3 17
+python/sglang/multimodal_gen/configs/pipeline_configs/flux.py
+  s_2af2e12d6510ef::t_5310727a7d126d 28
+python/sglang/multimodal_gen/configs/pipeline_configs/flux3_action.py
+  s_2af2e12d6510ef::t_68392089098c33 29-30
+python/sglang/multimodal_gen/configs/pipeline_configs/flux3_image.py
+  s_2af2e12d6510ef::t_8e9d03d50e99b8 15,19-20
+python/sglang/multimodal_gen/configs/pipeline_configs/glm_image.py
+  s_2af2e12d6510ef::t_0cd90f9236f69d 16
+python/sglang/multimodal_gen/configs/pipeline_configs/helios.py
+  s_2af2e12d6510ef::t_e871d472f3878e 12,16
+python/sglang/multimodal_gen/configs/pipeline_configs/hidream_o1_image.py
+  s_2af2e12d6510ef::t_f0fdca19778ae4 11-12
+python/sglang/multimodal_gen/configs/pipeline_configs/hunyuan.py
+  s_2af2e12d6510ef::t_4475151f976b04 25
+python/sglang/multimodal_gen/configs/pipeline_configs/hunyuan3d.py
+  s_2af2e12d6510ef::t_3a7e96f5e33c82 9-10
+python/sglang/multimodal_gen/configs/pipeline_configs/hunyuan_image3.py
+  s_2af2e12d6510ef::t_bcbc9081622685 1-90
+python/sglang/multimodal_gen/configs/pipeline_configs/ideogram.py
+  s_2af2e12d6510ef::t_3eacc56ed60ac3 14-15
+python/sglang/multimodal_gen/configs/pipeline_configs/joy_echo.py
+  s_2af2e12d6510ef::t_23794520f5b009 8
+python/sglang/multimodal_gen/configs/pipeline_configs/joy_image.py
+  s_2af2e12d6510ef::t_537f1747e29c7c 17-18
+python/sglang/multimodal_gen/configs/pipeline_configs/kandinsky6.py
+  s_2af2e12d6510ef::t_19c32d4d5a6325 24,31
+python/sglang/multimodal_gen/configs/pipeline_configs/kandinsky6_sr.py
+  s_2af2e12d6510ef::t_5abaaed140dc12 15-16
+python/sglang/multimodal_gen/configs/pipeline_configs/krea2.py
+  s_2af2e12d6510ef::t_fc861289e00f32 13-14
+python/sglang/multimodal_gen/configs/pipeline_configs/lingbot_video_moe.py
+  s_2af2e12d6510ef::t_ca2124811a08b0 15,19
+python/sglang/multimodal_gen/configs/pipeline_configs/llada_image.py
+  s_2af2e12d6510ef::t_632c527b57110c 20
+python/sglang/multimodal_gen/configs/pipeline_configs/longcat_image.py
+  s_2af2e12d6510ef::t_445a0b1231ea55 24
+python/sglang/multimodal_gen/configs/pipeline_configs/longlive2.py
+  s_2af2e12d6510ef::t_6266c99668bd5d 12
+python/sglang/multimodal_gen/configs/pipeline_configs/ltx_2.py
+  s_2af2e12d6510ef::t_b80142057fc2d2 18,22
+python/sglang/multimodal_gen/configs/pipeline_configs/ltx_2_5.py
+  s_2af2e12d6510ef::t_e394561c084803 12
+python/sglang/multimodal_gen/configs/pipeline_configs/ming_image.py
+  s_2af2e12d6510ef::t_408b81995f628d 11-12
+python/sglang/multimodal_gen/configs/pipeline_configs/minimax_h3.py
+  s_2af2e12d6510ef::t_46dc4e78579bbc 17,21
+python/sglang/multimodal_gen/configs/pipeline_configs/mova.py
+  s_2af2e12d6510ef::t_7af0341039a086 16,21
+python/sglang/multimodal_gen/configs/pipeline_configs/nomas.py
+  s_2af2e12d6510ef::t_ed80a556c21c37 13-14
+python/sglang/multimodal_gen/configs/pipeline_configs/pi05.py
+  s_2af2e12d6510ef::t_44549d40003c7f 5-6
+python/sglang/multimodal_gen/configs/pipeline_configs/qwen_image.py
+  s_2af2e12d6510ef::t_c1440ce9a76116 32
+python/sglang/multimodal_gen/configs/pipeline_configs/qwen_image21.py
+  s_2af2e12d6510ef::t_6069fd0e064519 11-12
+python/sglang/multimodal_gen/configs/pipeline_configs/sana.py
+  s_2af2e12d6510ef::t_63b93eb618202d 33
+python/sglang/multimodal_gen/configs/pipeline_configs/sana_video.py
+  s_2af2e12d6510ef::t_f45391349b6eaa 15-16
+python/sglang/multimodal_gen/configs/pipeline_configs/sana_video2.py
+  s_2af2e12d6510ef::t_dbfbc7abef9cdc 11
+python/sglang/multimodal_gen/configs/pipeline_configs/sana_wm.py
+  s_2af2e12d6510ef::t_962f9e05cc4a89 18,22
+python/sglang/multimodal_gen/configs/pipeline_configs/sensenova_u1.py
+  s_2af2e12d6510ef::t_ff82e553fc4d95 4,12
+python/sglang/multimodal_gen/configs/pipeline_configs/stablediffusion3.py
+  s_2af2e12d6510ef::t_9081e3c9240c43 28
+python/sglang/multimodal_gen/configs/pipeline_configs/wan.py
+  s_2af2e12d6510ef::t_7b6284813982b5 30
+python/sglang/multimodal_gen/configs/pipeline_configs/zimage.py
+  s_2af2e12d6510ef::t_cd9f5939d1b05d 25
+python/sglang/multimodal_gen/configs/sample/action.py
+  s_2af2e12d6510ef::t_f24bedf9829b68 13
+python/sglang/multimodal_gen/configs/sample/cosmos3.py
+  s_2af2e12d6510ef::t_37050174f8f580 16-17
+python/sglang/multimodal_gen/configs/sample/diffusers_generic.py
+  s_2af2e12d6510ef::t_ad6e53b1614f8f 11-12
+python/sglang/multimodal_gen/configs/sample/ideogram.py
+  s_2af2e12d6510ef::t_ce3eb580ad9cb8 5-6
+python/sglang/multimodal_gen/configs/sample/llada_image.py
+  s_2af2e12d6510ef::t_17f760ca8c4632 5-6
+python/sglang/multimodal_gen/configs/sample/minimax_h3.py
+  s_2af2e12d6510ef::t_02408ec7e14ffe 100
+python/sglang/multimodal_gen/configs/sample/nomas.py
+  s_2af2e12d6510ef::t_6a3d25712a42a6 4-5
+python/sglang/multimodal_gen/configs/sample/sana.py
+  s_2af2e12d6510ef::t_77ffc73c0eb886 6-7
+python/sglang/multimodal_gen/configs/sample/sana_video.py
+  s_2af2e12d6510ef::t_58d6a89ad07dbc 6-7
+python/sglang/multimodal_gen/configs/sample/sana_wm.py
+  s_2af2e12d6510ef::t_23f7f1b591967d 7-8
+python/sglang/multimodal_gen/configs/sample/sensenova_u1.py
+  s_2af2e12d6510ef::t_f1337b65d1a1b3 5,17
+python/sglang/multimodal_gen/runtime/disaggregation/scheduler_mixin.py
+  s_2af2e12d6510ef::t_8878eafd2f476e 67-69
+python/sglang/multimodal_gen/runtime/entrypoints/diffusion_generator.py
+  s_2af2e12d6510ef::t_88776457b4416a 18-19,35-37
+python/sglang/multimodal_gen/runtime/entrypoints/openai/utils.py
+  s_2af2e12d6510ef::t_36a03a45671271 19-20
+python/sglang/multimodal_gen/runtime/entrypoints/openai/video_api.py
+  s_2af2e12d6510ef::t_c9a7579c6ca48c 27
+python/sglang/multimodal_gen/runtime/entrypoints/utils.py
+  s_2af2e12d6510ef::t_af413728883d8f 38-39
+python/sglang/multimodal_gen/runtime/layers/attention/backends/ascend_fa.py
+  s_2af2e12d6510ef::t_c3bf0ad0f3c826 38
+python/sglang/multimodal_gen/runtime/managers/gpu_worker.py
+  s_2af2e12d6510ef::t_7eb45de68ce77e 74-75
+python/sglang/multimodal_gen/runtime/models/dits/minimax_h3_vdn.py
+  s_2af2e12d6510ef::t_0a9cc84e862bc2 50-51
+python/sglang/multimodal_gen/runtime/models/dits/sana_video.py
+  s_2af2e12d6510ef::t_9095c538a75fc1 15,45-47,196-239,250
+python/sglang/multimodal_gen/runtime/models/dits/sana_wm.py
+  s_2af2e12d6510ef::t_1d58a60b15e199 16
+python/sglang/multimodal_gen/runtime/models/vaes/hunyuan3d_vae.py
+  s_2af2e12d6510ef::t_e00979a0d08fed 636-644
+python/sglang/multimodal_gen/runtime/models/vaes/minimax_h3_video_vae/conv.py
+  s_2af2e12d6510ef::t_9940ea8f4820ec 62-74,79,83-84
+python/sglang/multimodal_gen/runtime/models/vaes/minimax_h3_video_vae/norm.py
+  s_2af2e12d6510ef::t_6a11833adcbfc7 31,33,36-41
+python/sglang/multimodal_gen/runtime/models/vaes/minimax_h3_video_vae/vae_cnn.py
+  s_2af2e12d6510ef::t_ee856e98ec397e 3,8,22-40,151-152
+python/sglang/multimodal_gen/runtime/pipelines/diffusers_pipeline.py
+  s_2af2e12d6510ef::t_cff9bf83c959be 29-31
+python/sglang/multimodal_gen/runtime/pipelines/ltx_2_pipeline.py
+  s_2af2e12d6510ef::t_1f0d401196cfeb 25-27
+python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py
+  s_2af2e12d6510ef::t_c8bed04737adea 38-40
+python/sglang/multimodal_gen/runtime/pipelines_core/executors/pipeline_executor.py
+  s_2af2e12d6510ef::t_6784be62b0ca37 24-25
+python/sglang/multimodal_gen/runtime/pipelines_core/schedule_batch.py
+  s_2af2e12d6510ef::t_0d74d9692defc3 26-27
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py
+  s_2af2e12d6510ef::t_3b20366211c96a 41,51
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/encode_while_decoding.py
+  s_2af2e12d6510ef::t_0f5d9085be8eb3 12
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/input_validation.py
+  s_2af2e12d6510ef::t_768b9473d1e527 15
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/cosmos3.py
+  s_2af2e12d6510ef::t_bc1c2e0b60775d 29-30
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/flux3_image.py
+  s_2af2e12d6510ef::t_78be4062e5941d 63,257-279,642,925,945
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/joy_echo/denoising.py
+  s_2af2e12d6510ef::t_c846a1f8a88bc1 11-13
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/llada_image/conditioning.py
+  s_2af2e12d6510ef::t_289a1917b6f69a 235-236
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/llada_image/source.py
+  s_2af2e12d6510ef::t_fd9b83aac1cd01 8-9
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/nomas/stages.py
+  s_2af2e12d6510ef::t_ed7d1429c835e3 15,17-18
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/sana_wm/streaming.py
+  s_2af2e12d6510ef::t_401e7760be5def 29
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/sana_wm/streaming_refiner.py
+  s_2af2e12d6510ef::t_165bb9826c32a7 27-29
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/wan_animate_2/preprocess.py
+  s_2af2e12d6510ef::t_526fe5d1d09053 299
+python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/wan_ti2v.py
+  s_2af2e12d6510ef::t_dbd6e0f117480a 12
+python/sglang/multimodal_gen/runtime/post_training/tensor_update_checker.py
+  s_2af2e12d6510ef::t_54b657c3ca05da 29
+python/sglang/multimodal_gen/runtime/server_args/server_args.py
+  s_2af2e12d6510ef::t_7f75c077d3f828 3037
+python/sglang/multimodal_gen/runtime/warmup_request_builder.py
+  s_2af2e12d6510ef::t_39fba10a36af6f 32
+python/sglang/multimodal_gen/test/server/perf_baselines/h100.json
+  s_2af2e12d6510ef::t_d2ceb78e6e1e39 1562,1564
+python/sglang/multimodal_gen/test/server/testcase_configs.py
+  s_2af2e12d6510ef::t_87f3e9092578a5 32
+python/sglang/multimodal_gen/test/single_test_file/component_accuracy/engine.py
+  s_2af2e12d6510ef::t_814def93492ae6 29-31
+python/sglang/multimodal_gen/test/single_test_file/test_generate_i2i.py
+  s_2af2e12d6510ef::t_465e1165ffbe21 6
+python/sglang/multimodal_gen/test/single_test_file/test_generate_zimage_turbo_cli.py
+  s_2af2e12d6510ef::t_5aaf202f42056b 9
+python/sglang/multimodal_gen/test/unit/realtime/test_output_materialization.py
+  s_2af2e12d6510ef::t_463e5648b663c5 10
+python/sglang/multimodal_gen/test/unit/sana_wm/test_pipeline_config.py
+  s_2af2e12d6510ef::t_f68dd9a4a68016 17
+python/sglang/multimodal_gen/test/unit/sana_wm/test_streaming_cached.py
+  s_2af2e12d6510ef::t_34f05d78e0c109 17
+python/sglang/multimodal_gen/test/unit/sana_wm/test_streaming_forward_long.py
+  s_2af2e12d6510ef::t_264b4c02b598de 28-31,43
+python/sglang/multimodal_gen/test/unit/sana_wm/test_streaming_stage.py
+  s_2af2e12d6510ef::t_bbf38e1bc82f28 18-19
+python/sglang/multimodal_gen/test/unit/test_auto_residency.py
+  s_2af2e12d6510ef::t_becd14634d3506 10
+python/sglang/multimodal_gen/test/unit/test_cfg_parallel_warmup.py
+  s_2af2e12d6510ef::t_7b8517882d5485 47
+python/sglang/multimodal_gen/test/unit/test_cosmos3.py
+  s_2af2e12d6510ef::t_c618d6aad1e1e9 27-28
+python/sglang/multimodal_gen/test/unit/test_diffusion_generator_errors.py
+  s_2af2e12d6510ef::t_48ebd5c331c430 9
+python/sglang/multimodal_gen/test/unit/test_flux3_image_stages.py
+  s_2af2e12d6510ef::t_ff35783c8023d6 22,251-292
+python/sglang/multimodal_gen/test/unit/test_image_response_bytes.py
+  s_2af2e12d6510ef::t_db710aedb6ec61 21-22
+python/sglang/multimodal_gen/test/unit/test_input_validation.py
+  s_2af2e12d6510ef::t_54b443ecb0a685 17
+python/sglang/multimodal_gen/test/unit/test_longcat_image_edit_config.py
+  s_2af2e12d6510ef::t_4ce0ef59c074a7 17
+python/sglang/multimodal_gen/test/unit/test_ltx_vae_on_frames.py
+  s_2af2e12d6510ef::t_c01549d24ad356 20-21
+python/sglang/multimodal_gen/test/unit/test_minimax_h3_dit_contract.py
+  s_2af2e12d6510ef::t_034d27e5df77b3 422-427
+python/sglang/multimodal_gen/test/unit/test_minimax_h3_vdn.py
+  s_2af2e12d6510ef::t_b0b2d18c3c747f 19-20
+python/sglang/multimodal_gen/test/unit/test_multi_output_grouping.py
+  s_2af2e12d6510ef::t_67f05731925bea 7
+python/sglang/multimodal_gen/test/unit/test_multi_output_rollout_trajectory.py
+  s_2af2e12d6510ef::t_ee6de1629a5a0e 100-135
+python/sglang/multimodal_gen/test/unit/test_multiple_task_types.py
+  s_2af2e12d6510ef::t_0bbd3d5cc4b037 65-66
+python/sglang/multimodal_gen/test/unit/test_nomas.py
+  s_2af2e12d6510ef::t_e64522733c9e9d 585-586
+python/sglang/multimodal_gen/test/unit/test_output_saving.py
+  s_2af2e12d6510ef::t_db064bdc788e24 9
+python/sglang/multimodal_gen/test/unit/test_pi05_action_api.py
+  s_2af2e12d6510ef::t_c3249e7be05b07 11-12
+python/sglang/multimodal_gen/test/unit/test_qwen2_5vl_generation.py
+  s_2af2e12d6510ef::t_5c087618632dd4 31-33
+python/sglang/multimodal_gen/test/unit/test_qwen_image21.py
+  s_2af2e12d6510ef::t_aa220339c1ae02 32-33
+python/sglang/multimodal_gen/test/unit/test_qwen_image_layered.py
+  s_2af2e12d6510ef::t_55d0590bb4cd25 18-19
+python/sglang/multimodal_gen/test/unit/test_request_cancel.py
+  s_2af2e12d6510ef::t_2968250b367d84 36-38
+python/sglang/multimodal_gen/test/unit/test_sensenova_u1.py
+  s_2af2e12d6510ef::t_6b6421c488c1b0 24
+python/sglang/multimodal_gen/test/unit/test_server_args.py
+  s_2af2e12d6510ef::t_acb665f70b2063 19,66
+python/sglang/multimodal_gen/test/unit/test_video_encode_preset.py
+  s_2af2e12d6510ef::t_b6d808443451b4 19-20
+python/sglang/multimodal_gen/test/unit/test_wan_animate_2_config.py
+  s_2af2e12d6510ef::t_25d8eab409bce5 31,36,85,106
+python/sglang/multimodal_gen/test/unit/test_wan_streamed_encode.py
+  s_2af2e12d6510ef::t_1b3165e3ce6e60 26
+python/sglang/multimodal_gen/test/unit/test_webui.py
+  s_2af2e12d6510ef::t_0c2d2fb2e45b78 13
+python/sglang/multimodal_gen/test/unit/test_weight_utils.py
+  s_2af2e12d6510ef::t_5aacd99e06dd2c 28-30,492-501
+python/sglang/srt/arg_groups/attention_hook.py
+  s_2af2e12d6510ef::t_496cc3d085585e 10-17,592
+python/sglang/srt/arg_groups/boundary_reduction.py
+  s_2af2e12d6510ef::t_d25d5c5a980b7c 76
+python/sglang/srt/arg_groups/choices.py
+  s_2af2e12d6510ef::t_5d74bb41a391ed 181
+python/sglang/srt/arg_groups/cp_tp_group_sharing_hook.py
+  s_2af2e12d6510ef::t_baf8cf34eb650b 7-8
+python/sglang/srt/arg_groups/cuda_graph_hook.py
+  s_2af2e12d6510ef::t_d17ea8729b8bbe 9,15
+python/sglang/srt/arg_groups/deepseek_v4_hook.py
+  s_2af2e12d6510ef::t_d547d7d82b5469 18-20
+python/sglang/srt/arg_groups/dllm_hook.py
+  s_2af2e12d6510ef::t_97581b6754252b 9
+python/sglang/srt/arg_groups/expert_pack_hook.py
+  s_2af2e12d6510ef::t_b33ef19c8918c3 12-13
+python/sglang/srt/arg_groups/fields/exec_.py
+  s_2af2e12d6510ef::t_979f4a5569af1a 40-50,294,1035-1036,1043-1050
+python/sglang/srt/arg_groups/fields/observability.py
+  s_2af2e12d6510ef::t_e8426b52c147aa 167
+python/sglang/srt/arg_groups/fields/schedule.py
+  s_2af2e12d6510ef::t_659a49a3478912 59,65
+python/sglang/srt/arg_groups/glm5_next_hook.py
+  s_2af2e12d6510ef::t_7828bbfd83f5f1 6-7
+python/sglang/srt/arg_groups/hicache_hook.py
+  s_2af2e12d6510ef::t_19b60427bedcc7 9-10
+python/sglang/srt/arg_groups/hisparse_hook.py
+  s_2af2e12d6510ef::t_312d572d5df07f 6,104-109
+python/sglang/srt/arg_groups/kimi_k3_hook.py
+  s_2af2e12d6510ef::t_21e66933095caa 6-7
+python/sglang/srt/arg_groups/kv_cache_hook.py
+  s_2af2e12d6510ef::t_b2c4fe802febf9 9,16
+python/sglang/srt/arg_groups/kv_shard_hook.py
+  s_2af2e12d6510ef::t_1d1fbcf588ac07 9,16
+python/sglang/srt/arg_groups/layernorm_sp_hook.py
+  s_2af2e12d6510ef::t_0d7a4bb566eb96 9
+python/sglang/srt/arg_groups/lora_hook.py
+  s_2af2e12d6510ef::t_cf1fd327dfa9a7 9-10
+python/sglang/srt/arg_groups/mamba_hook.py
+  s_2af2e12d6510ef::t_2301253b8b9bb4 9-10
+python/sglang/srt/arg_groups/mega_moe_hook.py
+  s_2af2e12d6510ef::t_1c373a648d2da8 9-10
+python/sglang/srt/arg_groups/memory_hook.py
+  s_2af2e12d6510ef::t_ad75e548eab0c2 10,16-19
+python/sglang/srt/arg_groups/model_hook.py
+  s_2af2e12d6510ef::t_7b28e3a9ff3464 11-18,148,172-176,179-180
+python/sglang/srt/arg_groups/model_overrides/kimi_k3.py
+  s_2af2e12d6510ef::t_61d17ec5dee60c 84-90
+python/sglang/srt/arg_groups/model_path_hook.py
+  s_2af2e12d6510ef::t_275328545a3bde 12,19,48
+python/sglang/srt/arg_groups/moe_hook.py
+  s_2af2e12d6510ef::t_5d7db1c5cdf75d 10-14
+python/sglang/srt/arg_groups/muse_spark_hook.py
+  s_2af2e12d6510ef::t_4d67581fe2c176 8-9,13
+python/sglang/srt/arg_groups/overrides.py
+  s_2af2e12d6510ef::t_4d9d4783e7e23d 36,944,1096-1107,1109-1111,1113-1136,1138-1139,1563,1740,1985
+python/sglang/srt/arg_groups/parallel_hook.py
+  s_2af2e12d6510ef::t_54148634ab4a6f 13-17
+python/sglang/srt/arg_groups/pd_disaggregation_hook.py
+  s_2af2e12d6510ef::t_960a7de3c81bef 8,13,164-173
+python/sglang/srt/arg_groups/pipeline.py
+  s_2af2e12d6510ef::t_91f7567ed7c4ba 10
+python/sglang/srt/arg_groups/platform_hook.py
+  s_2af2e12d6510ef::t_3d8d4f1a1b94b7 10,17-22
+python/sglang/srt/arg_groups/serving_hook.py
+  s_2af2e12d6510ef::t_54d99cc864ccf4 13-14
+python/sglang/srt/arg_groups/validation_hook.py
+  s_2af2e12d6510ef::t_b046b07b9e4f81 12,324-336
+python/sglang/srt/batch_invariant_ops/batch_invariant_ops.py
+  s_2af2e12d6510ef::t_6ce360347d0b3b 1243-1251,1256-1266
+python/sglang/srt/batch_overlap/operations_strategy.py
+  s_2af2e12d6510ef::t_8c3ef940c739dc 9
+python/sglang/srt/batch_overlap/two_batch_overlap.py
+  s_2af2e12d6510ef::t_b617da76d54ac1 38,40,728
+python/sglang/srt/beam_search/coordinator.py
+  s_2af2e12d6510ef::t_456355ca807aeb 59,64
+python/sglang/srt/beam_search/output.py
+  s_2af2e12d6510ef::t_d2623541800823 43
+python/sglang/srt/compilation/npu_piecewise_backend.py
+  s_2af2e12d6510ef::t_d98d939a705e6d 10-11
+python/sglang/srt/compilation/pass_manager.py
+  s_2af2e12d6510ef::t_d6c7b85cb1e4d5 6
+python/sglang/srt/compilation/xpu_piecewise_backend.py
+  s_2af2e12d6510ef::t_dc0630f2a5f799 12-13
+python/sglang/srt/configs/all_configs.py
+  s_2af2e12d6510ef::t_b657733a18a5f3 1-186
+python/sglang/srt/configs/hybrid_arch.py
+  s_2af2e12d6510ef::t_74f78ee9781e09 5-23
+python/sglang/srt/configs/model_config.py
+  s_2af2e12d6510ef::t_55c94bbb6b47bd 29,41,48,2085-2087
+python/sglang/srt/constrained/grammar_manager.py
+  s_2af2e12d6510ef::t_131f8628d2b4ad 17-20,39,118-120,122,213,233-234,242,256,263,267,269,307,329,334-335,340
+python/sglang/srt/debug_utils/comparator/entrypoint.py
+  s_2af2e12d6510ef::t_8c7b2d53a0194a 203-205
+python/sglang/srt/disaggregation/ascend/conn.py
+  s_2af2e12d6510ef::t_3fa036b627b6b3 18,30,110-114,149,153,164-168,174,176-177,231,437,458-463,465-473,476-488,506-509
+python/sglang/srt/disaggregation/ascend/transfer_engine.py
+  s_2af2e12d6510ef::t_6d5a9ff56c1c39 7
+python/sglang/srt/disaggregation/base/conn.py
+  s_2af2e12d6510ef::t_eb0113342d55a2 14
+python/sglang/srt/disaggregation/common/conn.py
+  s_2af2e12d6510ef::t_483e9d324c0341 45
+python/sglang/srt/disaggregation/decode.py
+  s_2af2e12d6510ef::t_79a595521d52ec 32-40,66,92-93,98-106,174,495-502,515-517,934,1010,1025,1029,1070-1098,1109,1135,1194,1231,1238-1239,1242,1480,1485-1486,1489,1540,1544,1788,2245-2248,2266,2276,2304,2844-2848,2872-2894,2897,2900,3091-3092,3098,3104,3127,3152,3191,3209-3210,3362,3364-3365,3372,3400-3409,3447-3448,3468,3480-3482,3766-3767,3785-3787,3830,3948,3970
+python/sglang/srt/disaggregation/decode_hicache_mixin.py
+  s_2af2e12d6510ef::t_fa71b3e96a622e 172
+python/sglang/srt/disaggregation/decode_schedule_batch_mixin.py
+  s_2af2e12d6510ef::t_966f9c4e739b2a 12,130
+python/sglang/srt/disaggregation/encoder/grpc_server.py
+  s_2af2e12d6510ef::t_3df6fe3e9fc520 32
+python/sglang/srt/disaggregation/encoder/http_server.py
+  s_2af2e12d6510ef::t_bd3e707b937366 49
+python/sglang/srt/disaggregation/encoder/preprocessor.py
+  s_2af2e12d6510ef::t_224da15b57e1b1 29,57
+python/sglang/srt/disaggregation/encoder/receiver.py
+  s_2af2e12d6510ef::t_4e645ac81a9c0d 37,52,2044,2519-2520
+python/sglang/srt/disaggregation/encoder/runtime.py
+  s_2af2e12d6510ef::t_d539a2d0f3271f 47
+python/sglang/srt/disaggregation/encoder/server.py
+  s_2af2e12d6510ef::t_26edea0c5e7ff9 51,61
+python/sglang/srt/disaggregation/fake/conn.py
+  s_2af2e12d6510ef::t_b8e6b2ff0eface 16
+python/sglang/srt/disaggregation/mode.py
+  s_2af2e12d6510ef::t_5d00c7119c0f59 1-19
+python/sglang/srt/disaggregation/mooncake/conn.py
+  s_2af2e12d6510ef::t_cf6c3dbaa77489 49
+python/sglang/srt/disaggregation/mori/conn.py
+  s_2af2e12d6510ef::t_88cd7f55e4f7e5 50
+python/sglang/srt/disaggregation/nixl/conn.py
+  s_2af2e12d6510ef::t_f74a62ff39e7ef 42,45,681-682,684-691
+python/sglang/srt/disaggregation/prefill.py
+  s_2af2e12d6510ef::t_8709da7f370792 47,73-79,110-112,211,473,479-489,528-529,532,542,547,578,658,715,844,1034,1049,1097-1101,1145-1147,1158-1161,1212-1218,1234-1235,1237,1244,1296-1298,1362,1390,1410,1517-1518,1520-1524,1911-1912,1964,1975-1976
+python/sglang/srt/disaggregation/role_switch.py
+  s_2af2e12d6510ef::t_bd00ddc77dd6ee 14,250
+python/sglang/srt/disaggregation/utils.py
+  s_2af2e12d6510ef::t_b38deb3169bb86 28,185,1654,1698
+python/sglang/srt/dllm/algorithm/gemma4_renoise.py
+  s_2af2e12d6510ef::t_fd120a27c49ee0 11,13
+python/sglang/srt/dllm/attention.py
+  s_2af2e12d6510ef::t_b987cf59cbe030 22-23
+python/sglang/srt/dllm/config.py
+  s_2af2e12d6510ef::t_ec301d911d559f 3
+python/sglang/srt/dllm/mixin/scheduler.py
+  s_2af2e12d6510ef::t_0194b6fa880cbe 5,9-10,12-15,17,24-26,36-43,62,245,440-444,449-450,452,472,496,499-504
+python/sglang/srt/entrypoints/anthropic/protocol.py
+  s_2af2e12d6510ef::t_0d5d52de08bcea 262-264,269
+python/sglang/srt/entrypoints/anthropic/serving.py
+  s_2af2e12d6510ef::t_914c0b949d8c99 589,591-592,594,596-597
+python/sglang/srt/entrypoints/engine.py
+  s_2af2e12d6510ef::t_3501dbb3661dbd 54,108,110-113,286,369,1428,1463
+python/sglang/srt/entrypoints/grpc_bridge.py
+  s_2af2e12d6510ef::t_340daae08cc6fb 18
+python/sglang/srt/entrypoints/grpc_server.py
+  s_2af2e12d6510ef::t_340b8036c40cb6 20
+python/sglang/srt/entrypoints/http_server.py
+  s_2af2e12d6510ef::t_e0a583d4967718 50-51,75,129,173-178,228,276-277,314,1885-1888
+python/sglang/srt/entrypoints/http_server_engine.py
+  s_2af2e12d6510ef::t_770946d793f4cf 8
+python/sglang/srt/entrypoints/openai/protocol.py
+  s_2af2e12d6510ef::t_277100e3239dd8 233,968-970,1092,1094-1098,1105-1107
+python/sglang/srt/entrypoints/openai/serving_chat.py
+  s_2af2e12d6510ef::t_9123bf17fa082a 111,794-803,1198-1200,1883-1885,2067-2074,2076-2079,3176-3177
+python/sglang/srt/entrypoints/openai/utils.py
+  s_2af2e12d6510ef::t_63e7e74f46e967 255-256,258-260
+python/sglang/srt/entrypoints/warmup.py
+  s_2af2e12d6510ef::t_40d2f8470eb3f3 9
+python/sglang/srt/environ.py
+  s_2af2e12d6510ef::t_b60a7cec7d6c30 1013-1015,1195,1348-1354,1463-1464,1563,1732,1735-1737,2009-2014,2066-2068
+python/sglang/srt/eplb/expert_distribution.py
+  s_2af2e12d6510ef::t_c6f95b4740092e 43-44,415-418,1037,1040-1044
+python/sglang/srt/eplb/expert_location_updater.py
+  s_2af2e12d6510ef::t_0579573bd9daa6 30-37,155-166,201-231,271-284,468
+python/sglang/srt/function_call/kimik3_structural_tag.py
+  s_2af2e12d6510ef::t_4eb96c32134289 212-266,373-377
+python/sglang/srt/function_call/utils.py
+  s_2af2e12d6510ef::t_2d37a689e4ba08 113-133
+python/sglang/srt/hardware_backend/mlx/tp_worker.py
+  s_2af2e12d6510ef::t_c753eae861e6fe 35-36
+python/sglang/srt/hardware_backend/npu/attention/ascend_backend.py
+  s_2af2e12d6510ef::t_f57e245844c174 19-21,25-28,38-40,42-44,48-49,91-92,109-110,120,122,137-138,344-350,352-360,496-504,576-580,584,631,643-649,712-750,794-796,798-801,803-828,845-851,854,859-868,870-871,984-985,987-989,1026,1118-1126,1144,1158-1170,1223-1225,1227-1249,1260,1262-1263,1702,1770-1801,1816-1817,1878,2302,2392-2393,2624-2746,2758,2778-2782,2917,2934-2974,2977-2978,2983-2987,3014,3032-3044,3056-3063,3085-3099,3114-3118,3122,3129-3154,3229,3231-3232,3420-3422,3440-3452,3454-3479,3494,3514,3541,3577-3581,3592,3855-3856,3858,3860-3863,3865-3867,3870-3874
+python/sglang/srt/hardware_backend/npu/attention/ascend_dsv4_backend.py
+  s_2af2e12d6510ef::t_4718a9518f5903 19-22,26,28,30,41,51-52,81,160,162,168,175-204,246,249-251,497,527,600,639-640,649,851,896,993-994,1350-1355,1357-1366,1368-1376,1378-1381,1388-1408,1461,1473,1595-1605,1625-1627,1629-1630,1638,1640-1643,1648-1655,1693-1695,1707-1712,1756-1757,1778-1799,1836-1847,1849-1852,1856-1858,1968-2016,2056,2090-2096,2131-2141,2193-2195,2440,2446-2456,2464-2475,2477-2482,2503-2551
+python/sglang/srt/hardware_backend/npu/attention/ascend_gdn_backend.py
+  s_2af2e12d6510ef::t_712e0ce61ee4cf 17-18
+python/sglang/srt/hardware_backend/npu/attention/ascend_hybrid_linear_attn_backend.py
+  s_2af2e12d6510ef::t_caff13d139a9d3 18
+python/sglang/srt/hardware_backend/npu/attention/dcp.py
+  s_2af2e12d6510ef::t_a8deaca17798b2 1-64
+python/sglang/srt/hardware_backend/npu/attention/dcp_metadata.py
+  s_2af2e12d6510ef::t_5db45130e5a16e 1-16
+python/sglang/srt/hardware_backend/npu/attention/mla_cache.py
+  s_2af2e12d6510ef::t_aca9bb1783955f 1-3,8-29,36-37,40-42,44,46,48,51-78,80
+python/sglang/srt/hardware_backend/npu/attention/mla_preprocess.py
+  s_2af2e12d6510ef::t_6e4f91b63e0f75 85,96,659-665,690,716-724,734,736,740-741,743,746-747
+python/sglang/srt/hardware_backend/npu/dsv4/c128_sidecar_component.py
+  s_2af2e12d6510ef::t_ba67c92010376a 43
+python/sglang/srt/hardware_backend/npu/dsv4/dsv4_common_hooks.py
+  s_2af2e12d6510ef::t_f1d4c389a2c135 14,81,84,280-291
+python/sglang/srt/hardware_backend/npu/dsv4/dsv4_memory_pool.py
+  s_2af2e12d6510ef::t_aecc033920b5bb 12,49,70,85,369-370,432,434,496,586,595,605,612,696,711
+python/sglang/srt/hardware_backend/npu/eplb.py
+  s_2af2e12d6510ef::t_a99ee909ba4cc9 1,15,17-19,21-121,123-152,154-175,177-192,195-209,211-223
+python/sglang/srt/hardware_backend/npu/graph_runner/npu_cudagraph_backend.py
+  s_2af2e12d6510ef::t_5338c83eb2b469 32,112-117,145-149,155-160
+python/sglang/srt/hardware_backend/npu/memory_pool_npu.py
+  s_2af2e12d6510ef::t_8b0985ed2298e2 29,35,37,39,41,47,51,651,708-712,763,1036-1039,1074-1078,1081-1084
+python/sglang/srt/hardware_backend/npu/modules/deepseek_v2_attention_mla_npu.py
+  s_2af2e12d6510ef::t_cc90acfe4df3b0 12-15,27-29,42-56,58,70,132-136,152-155,200-201,216,218-223,309-318,328,342,348-355,358-360,534,548,559,593-597,600-601
+python/sglang/srt/hardware_backend/npu/moe/activation.py
+  s_2af2e12d6510ef::t_9b1d44b5194c2d 164
+python/sglang/srt/hardware_backend/npu/quantization/dtype_utils.py
+  s_2af2e12d6510ef::t_65155c8fa76f9a 22,43,68
+python/sglang/srt/hardware_backend/npu/quantization/fp4_moe_methods.py
+  s_2af2e12d6510ef::t_a0ab219b4cfb27 1,5,40
+python/sglang/srt/hardware_backend/npu/quantization/linear_method_npu.py
+  s_2af2e12d6510ef::t_53202d25cbe40f 269,272,369,509,616,777
+python/sglang/srt/hardware_backend/npu/quantization/linear_utils.py
+  s_2af2e12d6510ef::t_bf78f99a4525a9 89,112,122,160,181,215,228,242,247,253
+python/sglang/srt/hardware_backend/npu/quantization/moe_methods.py
+  s_2af2e12d6510ef::t_ff3d720e7dbd5c 38,58,229,240,1005,1081
+python/sglang/srt/hardware_backend/npu/quantization/moe_utils.py
+  s_2af2e12d6510ef::t_66fa03b4b5e29c 44
+python/sglang/srt/hardware_backend/npu/quantization/online_moe_methods.py
+  s_2af2e12d6510ef::t_9916823ecd416b 30
+python/sglang/srt/hardware_backend/npu/utils.py
+  s_2af2e12d6510ef::t_a2b1b762866449 9-10
+python/sglang/srt/hardware_backend/sail/attention/dsa_backend.py
+  s_2af2e12d6510ef::t_8a852757ad8523 22-23
+python/sglang/srt/hardware_backend/sail/attention/flashmla_backend.py
+  s_2af2e12d6510ef::t_35fce02f2a0a76 25
+python/sglang/srt/hardware_backend/sail/attention/hybrid_attn_backend.py
+  s_2af2e12d6510ef::t_7235e4849fe88f 5
+python/sglang/srt/hardware_backend/xpu/graph_runner/xpu_graph_runner.py
+  s_2af2e12d6510ef::t_5bd4712ff62168 18,30
+python/sglang/srt/hardware_backend/xpu/kernels/fla/chunk_delta_h.py
+  s_2af2e12d6510ef::t_446573ba56bfe0 144-147,158-163,167-172,177-186,192-196,213-215,228-233,237-242,268-272
+python/sglang/srt/hardware_backend/xpu/kernels/fla/chunk_fwd.py
+  s_2af2e12d6510ef::t_200005cbecd518 58-59,61,67,94-95,97-98,101-103,119-123,139-142,144-147,151-154,156-157,168-173,184-186,188-194,197-201,210-211,213-219,222-226,231-238,244-248,255,257-261
+python/sglang/srt/kernel_plugins/amd/binding.py
+  s_2af2e12d6510ef::t_5c5ff096520baf 32,37
+python/sglang/srt/layers/attention/aiter_backend.py
+  s_2af2e12d6510ef::t_d32b39032f4348 3,29,39-40,390-407,598-607,1313
+python/sglang/srt/layers/attention/attention_registry.py
+  s_2af2e12d6510ef::t_5e249870988ddd 7
+python/sglang/srt/layers/attention/base_attn_backend.py
+  s_2af2e12d6510ef::t_f381afa40ade0c 12
+python/sglang/srt/layers/attention/deepseek_v4_backend.py
+  s_2af2e12d6510ef::t_ff3e89148f5455 38-40,92,125,157-158,1084-1088,3998-4005,4066-4067,4071-4077,4122-4140,4191
+python/sglang/srt/layers/attention/deepseek_v4_backend_hip_radix.py
+  s_2af2e12d6510ef::t_92dab75c6d8e26 108-109,119-120
+python/sglang/srt/layers/attention/dots_hybrid_backend.py
+  s_2af2e12d6510ef::t_1351c90847b871 21-22
+python/sglang/srt/layers/attention/dsa/dsa_backend_kpool.py
+  s_2af2e12d6510ef::t_987b7468772ca9 24-25
+python/sglang/srt/layers/attention/dsa/dsa_backend_mtp_precompute.py
+  s_2af2e12d6510ef::t_84179ce9edbb1d 19
+python/sglang/srt/layers/attention/dsa/dsa_indexer_kpool.py
+  s_2af2e12d6510ef::t_4b4b510d90ddd5 16
+python/sglang/srt/layers/attention/dsa/dsa_metadata_manager.py
+  s_2af2e12d6510ef::t_a78b3b71ca1453 25
+python/sglang/srt/layers/attention/dsa/kpool_plan.py
+  s_2af2e12d6510ef::t_636330b4611355 27-28
+python/sglang/srt/layers/attention/dsa_backend.py
+  s_2af2e12d6510ef::t_0580aeed2d0fcc 104-105
+python/sglang/srt/layers/attention/dsv4/compressor.py
+  s_2af2e12d6510ef::t_ba5f8f8fc52975 20
+python/sglang/srt/layers/attention/dsv4/compressor_v2.py
+  s_2af2e12d6510ef::t_bc2793b07e81d8 278
+python/sglang/srt/layers/attention/dsv4/indexer.py
+  s_2af2e12d6510ef::t_0f35bb13939358 48
+python/sglang/srt/layers/attention/dsv4/metadata.py
+  s_2af2e12d6510ef::t_ab6acd83c62ba2 409-418
+python/sglang/srt/layers/attention/dsv4/v41_indexer/__init__.py
+  s_2af2e12d6510ef::t_dbaed3bd0c2e05 22,36
+python/sglang/srt/layers/attention/dsv4/v41_indexer/full_topk.py
+  s_2af2e12d6510ef::t_a4712b91ab5e44 26,75-79
+python/sglang/srt/layers/attention/dsv4/v41_indexer/scoring.py
+  s_2af2e12d6510ef::t_498a5d712554f6 8,28,78-98,291-295,339-341,343,345,350-364
+python/sglang/srt/layers/attention/dsv4/v41_indexer/sparse_table.py
+  s_2af2e12d6510ef::t_6fdc566bb69eb5 53,161,504,508,510-516,519,534-576,578-579
+python/sglang/srt/layers/attention/dsv4/v41_indexer/types.py
+  s_2af2e12d6510ef::t_e291cf640a81f5 10,13,36-67,106-109
+python/sglang/srt/layers/attention/flashattention_backend.py
+  s_2af2e12d6510ef::t_5d4a34fcaf9bf0 49-50
+python/sglang/srt/layers/attention/flashinfer_backend.py
+  s_2af2e12d6510ef::t_5830c938107959 31,55-56
+python/sglang/srt/layers/attention/flashinfer_mla_backend.py
+  s_2af2e12d6510ef::t_e26a0a79367189 28,40-41
+python/sglang/srt/layers/attention/flashmla_backend.py
+  s_2af2e12d6510ef::t_da6fa46619da85 23-24,675-676
+python/sglang/srt/layers/attention/graph_variants.py
+  s_2af2e12d6510ef::t_6599df4e835fb2 143
+python/sglang/srt/layers/attention/hybrid_attn_backend.py
+  s_2af2e12d6510ef::t_5f76b1222e764b 13-14
+python/sglang/srt/layers/attention/hybrid_linear_attn_backend.py
+  s_2af2e12d6510ef::t_e271aa5170a61a 45-46
+python/sglang/srt/layers/attention/linear/gdn_backend.py
+  s_2af2e12d6510ef::t_f02f55f53ed924 43-44
+python/sglang/srt/layers/attention/linear/kernels/kda_flashinfer.py
+  s_2af2e12d6510ef::t_58353957e5b77b 3-4,44
+python/sglang/srt/layers/attention/mamba/mamba.py
+  s_2af2e12d6510ef::t_a7e61a59be6ac9 38,44-45
+python/sglang/srt/layers/attention/minimax_sparse_backend.py
+  s_2af2e12d6510ef::t_1257edac801d0f 11,25-26
+python/sglang/srt/layers/attention/qwen_sparse_attn_backend.py
+  s_2af2e12d6510ef::t_7d39502dc1f4ae 55
+python/sglang/srt/layers/attention/tbo_backend.py
+  s_2af2e12d6510ef::t_24d0ba28b3dcaf 14-15
+python/sglang/srt/layers/attention/triton_backend.py
+  s_2af2e12d6510ef::t_6a6429c5566d23 13,43-44
+python/sglang/srt/layers/attention/trtllm_mha_backend.py
+  s_2af2e12d6510ef::t_f4a6795827e908 15,53-54,66,111-144,450-455,469-509,1608,1610-1630
+python/sglang/srt/layers/attention/trtllm_mla_backend.py
+  s_2af2e12d6510ef::t_b22e855ad577a6 65-66
+python/sglang/srt/layers/attention/verify_mask.py
+  s_2af2e12d6510ef::t_c358524baf3855 8-9
+python/sglang/srt/layers/attention/wave_backend.py
+  s_2af2e12d6510ef::t_a00dacaaac5b6a 15-16
+python/sglang/srt/layers/attention/xpu_backend.py
+  s_2af2e12d6510ef::t_80d6bce50f0048 8-11,27-28,123,125-128,132,275-276,388,927
+python/sglang/srt/layers/cp/bcg/__init__.py
+  s_2af2e12d6510ef::t_0e8959bf011d5d 7
+python/sglang/srt/layers/cp/bcg/bcg.py
+  s_2af2e12d6510ef::t_80e717eeeecdc1 24
+python/sglang/srt/layers/cp/bcg/interleave_bcg.py
+  s_2af2e12d6510ef::t_7ba7fe6ec0e5b3 9
+python/sglang/srt/layers/dcp/comm.py
+  s_2af2e12d6510ef::t_30a0cdc61f2634 342-343,358-390,411-417,430
+python/sglang/srt/layers/deep_gemm_wrapper/compile_utils.py
+  s_2af2e12d6510ef::t_21961dc334da5a 25
+python/sglang/srt/layers/engram.py
+  s_2af2e12d6510ef::t_33c36035af4229 31,50,69,829-830,833,843-844,847,849,866,924-925,961,1035-1072,1074-1076,1091-1092,1096-1097,1112-1114,1122,1139,1147,1179-1188,1223,1267,1304-1307,1320,1521
+python/sglang/srt/layers/engram_staging.py
+  s_2af2e12d6510ef::t_48a6e7d8c5c492 29-30
+python/sglang/srt/layers/layer_boundary/__init__.py
+  s_2af2e12d6510ef::t_cb2dfb3463c5d4 26
+python/sglang/srt/layers/layer_boundary/factories.py
+  s_2af2e12d6510ef::t_c6ff886a073388 21,23
+python/sglang/srt/layers/layer_boundary/fusions/cutedsl.py
+  s_2af2e12d6510ef::t_bf559865b63eda 28-29
+python/sglang/srt/layers/layer_boundary/residual/add_norm.py
+  s_2af2e12d6510ef::t_10a2d19d1b050a 40-41
+python/sglang/srt/layers/layernorm_sp.py
+  s_2af2e12d6510ef::t_fe24dd58cd537d 83
+python/sglang/srt/layers/linear.py
+  s_2af2e12d6510ef::t_a4aac8f8ea4e9f 688,708,1598,1627
+python/sglang/srt/layers/logits_processor.py
+  s_2af2e12d6510ef::t_5a7dc699b245e7 60-61
+python/sglang/srt/layers/moe/fused_moe_triton/layer.py
+  s_2af2e12d6510ef::t_a4ec5521bfa53c 414,434
+python/sglang/srt/layers/moe/kt_ep_wrapper.py
+  s_2af2e12d6510ef::t_82aaebbe6853b3 15,249
+python/sglang/srt/layers/moe/mega_moe.py
+  s_2af2e12d6510ef::t_8e757ed7f51878 63-67,114,200-208,525-527,674-685,704,706,708-710,712-713,738-739,742-753,756,762-763,776-778,787-790,794-806
+python/sglang/srt/layers/moe/moe_runner/flashinfer_cutedsl.py
+  s_2af2e12d6510ef::t_537ad1dee816a1 231-232,237-238,353-359,377,459,462,553,556
+python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py
+  s_2af2e12d6510ef::t_d041b1dde2a9eb 18-20,716-733,735-742,785-796
+python/sglang/srt/layers/moe/paged_experts/method.py
+  s_2af2e12d6510ef::t_d6912f04552866 6,42,64,71-74,96,153-154,178-232,317-343,348-353,360,364-370,372-378,382,424,426,430-440
+python/sglang/srt/layers/moe/paged_experts/sizing.py
+  s_2af2e12d6510ef::t_f84438092d3e4b 1-308
+python/sglang/srt/layers/moe/token_dispatcher/standard.py
+  s_2af2e12d6510ef::t_b3e78890a2d1af 54
+python/sglang/srt/layers/moe/topk.py
+  s_2af2e12d6510ef::t_815016a9f78e84 1363-1366,1369,1371-1374,1376,1997-2007,2018-2020,2030,2040-2042,2047,2116-2145,2207-2231,2948
+python/sglang/srt/layers/multi_gate.py
+  s_2af2e12d6510ef::t_4f40210b7de89a 7
+python/sglang/srt/layers/quantization/awq/schemes/awq_moe.py
+  s_2af2e12d6510ef::t_073546fca186fb 10
+python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w4a4_nvfp4.py
+  s_2af2e12d6510ef::t_0d4b3d27203249 19-22
+python/sglang/srt/layers/quantization/fp4_kv_cache_quant_method.py
+  s_2af2e12d6510ef::t_c0938421b1e028 152
+python/sglang/srt/layers/quantization/fp8.py
+  s_2af2e12d6510ef::t_7980c1adaf95d3 97,1156-1174,1178-1199,1453-1458,1632-1669,1684,1712-1715,1853-1860,1864,1985,2260-2269,2579-2592,2631-2634,2689-2694
+python/sglang/srt/layers/quantization/fp8_utils.py
+  s_2af2e12d6510ef::t_e31a8159fc2770 16-20,450,479-481,491,514-516,891-902,1043-1048,1197-1209,1493-1596,1640-1679
+python/sglang/srt/layers/quantization/gptq/schemes/gptq_cpu.py
+  s_2af2e12d6510ef::t_4a048391660646 20
+python/sglang/srt/layers/quantization/gptq/schemes/gptq_moe.py
+  s_2af2e12d6510ef::t_6eae787923d7db 13
+python/sglang/srt/layers/quantization/halops_mxfp8.py
+  s_2af2e12d6510ef::t_8a3b9f1906e49c 1-97
+python/sglang/srt/layers/quantization/halops_mxfp8_linear.py
+  s_2af2e12d6510ef::t_5de28e79fe4a9a 3,5-7,11-54,56-58,60-109,112-123,125,127-129,131-138,140-149,151-152
+python/sglang/srt/layers/quantization/humming.py
+  s_2af2e12d6510ef::t_eae0406cf52273 12,39
+python/sglang/srt/layers/quantization/modelopt_quant.py
+  s_2af2e12d6510ef::t_c2dd95a0d01d34 3210
+python/sglang/srt/layers/quantization/modelslim/modelslim.py
+  s_2af2e12d6510ef::t_b6e1a7db817454 4,18,25,158,222-295,591-607
+python/sglang/srt/layers/quantization/modelslim/schemes/__init__.py
+  s_2af2e12d6510ef::t_bd7cd19ed870bc 8-11,18,30-32
+python/sglang/srt/layers/quantization/modelslim/schemes/modelslim_kv_cache.py
+  s_2af2e12d6510ef::t_40c63aae0edc88 2-8,11-13,15-21,23-28,31-83
+python/sglang/srt/layers/quantization/modelslim/schemes/modelslim_mxfp4_w4a8.py
+  s_2af2e12d6510ef::t_0763073d71db68 18
+python/sglang/srt/layers/quantization/modelslim/schemes/modelslim_q_fp8_dynamic_kv_fp8.py
+  s_2af2e12d6510ef::t_280ab674227b61 2-4,8,10-28,30-57,59,61-88,90-92,94-103
+python/sglang/srt/layers/quantization/npu_mxfp4.py
+  s_2af2e12d6510ef::t_b99f31bcac2d5d 11
+python/sglang/srt/layers/quantization/npu_mxfp4_w4a4.py
+  s_2af2e12d6510ef::t_c13e1fb2791a66 15,118
+python/sglang/srt/layers/quantization/unquant.py
+  s_2af2e12d6510ef::t_29c9ac0eeb8557 3,47,74,138-139,365,373-381,435-450,499-502,576-670,737-738
+python/sglang/srt/layers/sampler.py
+  s_2af2e12d6510ef::t_c1a7c8f3a920a4 408-409,411,756
+python/sglang/srt/layers/sparse_pooler.py
+  s_2af2e12d6510ef::t_d28e116f090881 8
+python/sglang/srt/lora/lora.py
+  s_2af2e12d6510ef::t_a31c2b457953b9 33
+python/sglang/srt/lora/lora_manager.py
+  s_2af2e12d6510ef::t_0c87e30aa760a5 61
+python/sglang/srt/lora/lora_moe_runner_marlin.py
+  s_2af2e12d6510ef::t_c92bf56397322c 35
+python/sglang/srt/lora/marlin_lora_temp/policy.py
+  s_2af2e12d6510ef::t_258ea7b68ec0d7 12
+python/sglang/srt/lora/mem_pool.py
+  s_2af2e12d6510ef::t_fe1a32c1aca942 43
+python/sglang/srt/lora/moe/base_gemm_provider/cutedsl_bf16.py
+  s_2af2e12d6510ef::t_ce0498684199cc 14
+python/sglang/srt/lora/trtllm_lora_temp/sgl_fp8_moe.py
+  s_2af2e12d6510ef::t_87b7f85d0ea731 31,34-35,38-41,52
+python/sglang/srt/lora/utils.py
+  s_2af2e12d6510ef::t_c9f4b1c2e4b335 9
+python/sglang/srt/managers/cache_controller.py
+  s_2af2e12d6510ef::t_834fc65b7b76ce 1430-1437,1447
+python/sglang/srt/managers/detokenizer_manager.py
+  s_2af2e12d6510ef::t_aa1743cf9ae3e7 66,100
+python/sglang/srt/managers/disagg_service.py
+  s_2af2e12d6510ef::t_0e403a800cfc2d 6-7
+python/sglang/srt/managers/hisparse_coordinator.py
+  s_2af2e12d6510ef::t_e6031ac10e5e3e 5-13,50-54,681-683,891,1075-1076,1083,1085,1098-1099,1385
+python/sglang/srt/managers/io_struct.py
+  s_2af2e12d6510ef::t_7637fe92bad98c 61,68,2028,2369-2372
+python/sglang/srt/managers/load_snapshot.py
+  s_2af2e12d6510ef::t_4678498fc0fe91 99
+python/sglang/srt/managers/mm_schedule.py
+  s_2af2e12d6510ef::t_e1bddc894ff165 9
+python/sglang/srt/managers/mm_utils.py
+  s_2af2e12d6510ef::t_25d2e7399a7ab5 35,37,42
+python/sglang/srt/managers/multi_tokenizer_mixin.py
+  s_2af2e12d6510ef::t_6754b284d419e4 33,70,248,259,264-293,438,467
+python/sglang/srt/managers/overlap_utils.py
+  s_2af2e12d6510ef::t_541ca245006789 455
+python/sglang/srt/managers/req_types.py
+  s_2af2e12d6510ef::t_bc7a202baa5c51 1-4,9-22,24,27-34,36-65,68-76,79-87,90-92,95,97-98,100-102,104-124,127-130,132-134,136-138,140-141,144-150,152-153,155-156,158-162,164-165,167-178,180-205,208-209,211-212,214-215,217-218,220-221,223-246,248,250-254,256-264,266-286,288-294,298-302,304-324,326-332,334,337-340,342-346,348-350,352-357,359-360,362-365,367-369,371-374,376-377,379-381,384-411,413-419,422-433,435-437,439-447,449-450,452-459,461-504,506-643,646-698,700-701,703-762,764-769
+python/sglang/srt/managers/schedule_batch.py
+  s_2af2e12d6510ef::t_6ec5b091d04f44 94,99-113,140-141,161,3437
+python/sglang/srt/managers/schedule_policy.py
+  s_2af2e12d6510ef::t_69889706830975 47,207,210-213,276,282,304
+python/sglang/srt/managers/scheduler_components/batch_result_processor.py
+  s_2af2e12d6510ef::t_3772dd4ade601d 19,28,43,157-158,195-196,372,374,406,408-409,412,465,541-542,554,696,699,707,712,716-717,723,725-726,1008
+python/sglang/srt/managers/scheduler_components/deferred_responses.py
+  s_2af2e12d6510ef::t_ee5a83596a0935 4,6-12,39-42,44-45,52,54,62,65,70,91-94,98
+python/sglang/srt/managers/scheduler_components/dp_attn.py
+  s_2af2e12d6510ef::t_80d75594671c70 36
+python/sglang/srt/managers/scheduler_components/internal_state.py
+  s_2af2e12d6510ef::t_050580a0856c03 255-260
+python/sglang/srt/managers/scheduler_components/invariant_checker.py
+  s_2af2e12d6510ef::t_ccf12df8ed8f21 10-11,14,20,29,58-62,74-77,79-80,277,483-485,488-529
+python/sglang/srt/managers/scheduler_components/load_inquirer.py
+  s_2af2e12d6510ef::t_bf7ed5d3981ac2 8,17,50,113,118,122-124,189-190,193-195,198
+python/sglang/srt/managers/scheduler_components/metrics_reporter.py
+  s_2af2e12d6510ef::t_50e3406e651675 14,18,859,1067,1418-1431,1444,1504,1511
+python/sglang/srt/managers/scheduler_components/output_streamer.py
+  s_2af2e12d6510ef::t_416dc319fa87ec 25,36-37
+python/sglang/srt/managers/scheduler_components/profiler_manager.py
+  s_2af2e12d6510ef::t_9eb68812725edb 22
+python/sglang/srt/managers/scheduler_components/recv_skipper.py
+  s_2af2e12d6510ef::t_3cc3217e71cf45 6
+python/sglang/srt/managers/scheduler_components/request_list.py
+  s_2af2e12d6510ef::t_cc88c48ae03ebf 3-14,17-18,21-22,24-41,43-81,85-87,90-92,95-98,110-115,117-120,122-176
+python/sglang/srt/managers/scheduler_components/request_retirer.py
+  s_2af2e12d6510ef::t_8ad435f7894886 1-77
+python/sglang/srt/managers/scheduler_components/weight_updater.py
+  s_2af2e12d6510ef::t_54bef8dfd046ec 19
+python/sglang/srt/managers/scheduler_pp_mixin.py
+  s_2af2e12d6510ef::t_4ff5da6de8723d 20-21,28-29,617,1303,1751,1761,1774-1776,1808,1831,1874
+python/sglang/srt/managers/tokenizer_control_mixin.py
+  s_2af2e12d6510ef::t_0c34783ffb8edd 13-14
+python/sglang/srt/managers/tokenizer_manager.py
+  s_2af2e12d6510ef::t_1cb911a387b0e4 46,66,104,113,128,212,610-613,631-632,821-822,919-925,942,2439-2447,2453-2463,2466-2469,2475-2501,4267-4279
+python/sglang/srt/managers/tp_worker.py
+  s_2af2e12d6510ef::t_eb4ac969a6619c 41,45-46,63
+python/sglang/srt/managers/utils.py
+  s_2af2e12d6510ef::t_ef6657886d5209 21,24-28,33,41,524-538
+python/sglang/srt/mem_cache/common.py
+  s_2af2e12d6510ef::t_19a19eaf2ac9dd 433-435,437-439
+python/sglang/srt/mem_cache/dsa_cache_layer_split.py
+  s_2af2e12d6510ef::t_474a1d0d25f047 39,41,49
+python/sglang/srt/mem_cache/embedding_cache_controller.py
+  s_2af2e12d6510ef::t_11126407fe62c1 20
+python/sglang/srt/mem_cache/hybrid_cache/host_pool_config.py
+  s_2af2e12d6510ef::t_34a6f4f6a9016b 9,13-17,60-62,64-68,154-158,186-190
+python/sglang/srt/mem_cache/hybrid_cache/hybrid_cache_controller.py
+  s_2af2e12d6510ef::t_585bb7c1cbaec5 32,48-54,68-100,155,159-164,171-174,257-308,312-332,411-420,1584-1585,1588,1661-1664,1671,1762-1791,1834-1835,1881-1903,1912-1921,1926-1927,1930-1934,1943,1965-1967,1997
+python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py
+  s_2af2e12d6510ef::t_9d56af7482cac9 8-13,55,117-123,128,147-148,150-152,154-156,158,162-166,181,221,264,266-294,427-428,454-462,518-519,522-525,542,544,731,783,998-1001,1038,1045-1090,1111-1115,1126,1132-1133,1143-1146,1148-1149,1155-1158,1189-1190,1206,1216,1222-1225,1227-1228,1233-1236,1394,1454-1457,1490-1494,1511-1547,1599,1603,1615-1617,1620,1635,1650-1658,1660,1691-1694,1699-1702,1870-1873,1914,1917-1920,1950-1951,1962-1967,2067,2087,2091,2228,2231-2241,2288-2289,2291,2296,2302,2305,2331-2335,2355,2362,2385-2386,2388-2390,2392-2396,2489-2538,2551-2556,2568,2570-2571,2573,2576,2578-2582,2584,2591,2597,2604-2605,2607,2609,2618,2627-2628,2635-2638
+python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py
+  s_2af2e12d6510ef::t_f904e41ab18157 377-391,574-581,596-651
+python/sglang/srt/mem_cache/kv/alloc/chain.py
+  s_2af2e12d6510ef::t_8cd63302c664ca 20
+python/sglang/srt/mem_cache/kv/layout/mla.py
+  s_2af2e12d6510ef::t_08869c80492297 10-13
+python/sglang/srt/mem_cache/kv_cache_configurator.py
+  s_2af2e12d6510ef::t_9f6e50ded167a8 7,14,419,448-457,2188,2610-2615
+python/sglang/srt/mem_cache/minimax_m3_nvfp4_pool.py
+  s_2af2e12d6510ef::t_1208e3f88bab8d 11,13-15,24,114,171-173,395-397
+python/sglang/srt/mem_cache/page_interleave_pool.py
+  s_2af2e12d6510ef::t_437b89b6b527e9 71-72,83
+python/sglang/srt/mem_cache/rust_tree_core/adapter.py
+  s_2af2e12d6510ef::t_bd65fe7009bd92 718-722
+python/sglang/srt/mem_cache/static_kv_storage.py
+  s_2af2e12d6510ef::t_fdec3d12dd257c 917
+python/sglang/srt/mem_cache/storage/lmcache/lmcache_unified_radix_cache.py
+  s_2af2e12d6510ef::t_ba5ce4fe4a7851 32-33
+python/sglang/srt/mem_cache/storage/mooncake_store/README.md
+  s_2af2e12d6510ef::t_4bc7a71b190eaa 97,102-103
+python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py
+  s_2af2e12d6510ef::t_bd1996fa5123bc 1,10,363-454,1119-1147,1182-1185,1388-1389,1396-1403,1529-1532,1553-1559,1561-1562,1564-1584,1586-1593,1595-1601,1603-1604,1606,1754-1755
+python/sglang/srt/mem_cache/storage/npu_memcache/npu_memcache_store.py
+  s_2af2e12d6510ef::t_4e7640986e8e0b 33
+python/sglang/srt/mem_cache/storage/umbp/umbp_store.py
+  s_2af2e12d6510ef::t_699f99eca4d25a 26
+python/sglang/srt/mem_cache/unified_cache/components/__init__.py
+  s_2af2e12d6510ef::t_50defb79afa847 1-4
+python/sglang/srt/mem_cache/unified_cache/components/base.py
+  s_2af2e12d6510ef::t_5255f28c7eae90 25,41-42,45-46
+python/sglang/srt/mem_cache/unified_cache/components/full.py
+  s_2af2e12d6510ef::t_1d17a247d67b82 25,42-43,229,238,453-460,462
+python/sglang/srt/mem_cache/unified_cache/components/mamba.py
+  s_2af2e12d6510ef::t_4bcbffa6689ca7 29,31-33,59-61
+python/sglang/srt/mem_cache/unified_cache/components/swa.py
+  s_2af2e12d6510ef::t_7dc04f4c3b5d38 32,35-37,56-58,131-136
+python/sglang/srt/mem_cache/unified_cache/session_ref_tracker.py
+  s_2af2e12d6510ef::t_c6dd176f3b6519 13
+python/sglang/srt/mem_cache/unified_cache/unified_tree_core.py
+  s_2af2e12d6510ef::t_89aeefb35568d4 150-151,565,1756,1760-1766,2000-2002,2006-2022,2031-2040,2237-2238,2241,2260,2344-2350,2467-2469,2629-2661,3061-3068,3147-3149,3154-3160
+python/sglang/srt/mem_cache/unified_cache/unified_tree_core_interface.py
+  s_2af2e12d6510ef::t_59ee6c14a08444 448-458
+python/sglang/srt/mem_cache/unified_radix_cache.py
+  s_2af2e12d6510ef::t_c95ee559d41455 111,1098-1174,1176-1218,1222-1232,1593,3308-3310,4003
+python/sglang/srt/model_executor/cpu_graph_runner.py
+  s_2af2e12d6510ef::t_d0dc9b0e459ae0 39
+python/sglang/srt/model_executor/encoder_swa_replay.py
+  s_2af2e12d6510ef::t_2dd1cc6307fdd3 102-103
+python/sglang/srt/model_executor/forward_batch_info.py
+  s_2af2e12d6510ef::t_d0945049da5157 33,57,82-83,553-556,956,959-961,963-966,1030
+python/sglang/srt/model_executor/forward_mode.py
+  s_2af2e12d6510ef::t_430054f2515202 14,16-132
+python/sglang/srt/model_executor/model_runner.py
+  s_2af2e12d6510ef::t_602dfac2fc3929 223,1021-1030,1034-1035
+python/sglang/srt/model_executor/model_runner_components/cuda_graph_setup.py
+  s_2af2e12d6510ef::t_1d772058961727 30
+python/sglang/srt/model_executor/model_runner_components/load_model_utils.py
+  s_2af2e12d6510ef::t_71686fd7c683f5 123-128
+python/sglang/srt/model_executor/model_runner_components/misc_utils.py
+  s_2af2e12d6510ef::t_3508d478f75d78 6-8
+python/sglang/srt/model_executor/model_runner_components/ngram_embedding_manager.py
+  s_2af2e12d6510ef::t_d05bc185cb7faf 13
+python/sglang/srt/model_executor/pool_configurator.py
+  s_2af2e12d6510ef::t_18b217b95b0d90 18,313-320,322,324,350-360,376-377,401-409,411,520
+python/sglang/srt/model_executor/runner/base_runner.py
+  s_2af2e12d6510ef::t_4e0222c0dd2c57 44
+python/sglang/srt/model_executor/runner/decode_cuda_graph_runner.py
+  s_2af2e12d6510ef::t_338f1350160039 76
+python/sglang/srt/model_executor/runner/eager_runner.py
+  s_2af2e12d6510ef::t_60315e9e696e45 24-26,40,47
+python/sglang/srt/model_executor/runner/flashinfer_autotune.py
+  s_2af2e12d6510ef::t_922c757fdb2b8b 29
+python/sglang/srt/model_executor/runner/prefill_cuda_graph_runner.py
+  s_2af2e12d6510ef::t_074d8602871dd8 97
+python/sglang/srt/model_executor/step_span_utils.py
+  s_2af2e12d6510ef::t_9ec5c85bf8ea63 27
+python/sglang/srt/model_loader/expert_pack_runtime.py
+  s_2af2e12d6510ef::t_197b68d732d68d 18-19
+python/sglang/srt/model_loader/loader.py
+  s_2af2e12d6510ef::t_39d6617e2ad97a 58,99,223-230,946,1100
+python/sglang/srt/model_loader/weight_utils.py
+  s_2af2e12d6510ef::t_23a2aa6ca09438 1801-1807
+python/sglang/srt/models/baichuan.py
+  s_2af2e12d6510ef::t_5781909f447f6c 52
+python/sglang/srt/models/bailing_mm.py
+  s_2af2e12d6510ef::t_681409a6947e2a 31
+python/sglang/srt/models/bailing_mm_v3.py
+  s_2af2e12d6510ef::t_09b7a259d70ef2 32
+python/sglang/srt/models/bailing_moe.py
+  s_2af2e12d6510ef::t_afbb37866e7364 175
+python/sglang/srt/models/bailing_moe_linear.py
+  s_2af2e12d6510ef::t_0bf61551c7d0c8 217
+python/sglang/srt/models/bailing_moe_v3.py
+  s_2af2e12d6510ef::t_c87045839f8449 21
+python/sglang/srt/models/chatglm.py
+  s_2af2e12d6510ef::t_8f338ffe463798 25
+python/sglang/srt/models/clip.py
+  s_2af2e12d6510ef::t_89d493af020b9c 23-24
+python/sglang/srt/models/cohere2_vision.py
+  s_2af2e12d6510ef::t_3cb81f53a5e815 28,32
+python/sglang/srt/models/cosmos3_edge.py
+  s_2af2e12d6510ef::t_199fdeefb5d326 41,47
+python/sglang/srt/models/dbrx.py
+  s_2af2e12d6510ef::t_8a93b2858d3301 26
+python/sglang/srt/models/deepseek.py
+  s_2af2e12d6510ef::t_5b6080bde647ef 52
+python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py
+  s_2af2e12d6510ef::t_955bca2156d2ae 52,388-397
+python/sglang/srt/models/deepseek_common/utils.py
+  s_2af2e12d6510ef::t_00f8b3f1498a7f 22
+python/sglang/srt/models/deepseek_janus_pro.py
+  s_2af2e12d6510ef::t_be6398f73deaf3 23,29,32,49,57
+python/sglang/srt/models/deepseek_ocr.py
+  s_2af2e12d6510ef::t_e8dd8d59c5ce02 49
+python/sglang/srt/models/deepseek_v2.py
+  s_2af2e12d6510ef::t_0d461fd17de8ff 270,1063-1064,1116-1118,2293-2294
+python/sglang/srt/models/deepseek_v4.py
+  s_2af2e12d6510ef::t_67c4b57ce277e6 46,95-99,114,117-120,125,131,136,174-176,215,1069,1139,1541-1549,2006-2009,2175-2180,2185,2322-2327,2332,2962-2969,2981,3035-3042,4808-4809,5366,5369
+python/sglang/srt/models/deepseek_v4_boundary.py
+  s_2af2e12d6510ef::t_d2594ad0ae4e51 415,418
+python/sglang/srt/models/deepseek_v4_dspark.py
+  s_2af2e12d6510ef::t_df9683a8dd2579 28,47,923-926,952-953
+python/sglang/srt/models/deepseek_v4_mhc.py
+  s_2af2e12d6510ef::t_b9e9cbf910025a 556-557
+python/sglang/srt/models/deepseek_v4_nextn.py
+  s_2af2e12d6510ef::t_f431359752c8c6 43
+python/sglang/srt/models/deepseek_v4_replay_tail.py
+  s_2af2e12d6510ef::t_108753dbd965ac 40
+python/sglang/srt/models/deepseek_vl2.py
+  s_2af2e12d6510ef::t_203ae86b66b910 19
+python/sglang/srt/models/dflash.py
+  s_2af2e12d6510ef::t_e2155f756ed3eb 60
+python/sglang/srt/models/dots3_common/modeling.py
+  s_2af2e12d6510ef::t_47742b6fa0b0dd 100,114
+python/sglang/srt/models/dots_ocr.py
+  s_2af2e12d6510ef::t_8182bc3cd702c5 11,19
+python/sglang/srt/models/dots_vlm.py
+  s_2af2e12d6510ef::t_e57b68c576ce33 32
+python/sglang/srt/models/embedding_gemma2.py
+  s_2af2e12d6510ef::t_4897c2964d0462 48,58,60
+python/sglang/srt/models/ernie4.py
+  s_2af2e12d6510ef::t_f5f481e8d4ba26 46,63
+python/sglang/srt/models/ernie45_vl.py
+  s_2af2e12d6510ef::t_a7ea20afb7e3dd 44,49
+python/sglang/srt/models/exaone.py
+  s_2af2e12d6510ef::t_4856be9d742560 43
+python/sglang/srt/models/gemma3_mm.py
+  s_2af2e12d6510ef::t_6407cb00cde056 38-39,41,48-49
+python/sglang/srt/models/gemma3n_mm.py
+  s_2af2e12d6510ef::t_555e59aad3ce81 26,34-36
+python/sglang/srt/models/gemma4_diffusion.py
+  s_2af2e12d6510ef::t_4cf0f47ba3860f 47,60,62-67,533,535
+python/sglang/srt/models/gemma4_mm.py
+  s_2af2e12d6510ef::t_64ae28be0ddef9 45-46,48,60,62-69,329,336-337,339-343,347-351,392-407
+python/sglang/srt/models/gemma4_unified.py
+  s_2af2e12d6510ef::t_679f5aa2565461 48,53
+python/sglang/srt/models/gigachat35_mtp.py
+  s_2af2e12d6510ef::t_55f2abf523724e 21
+python/sglang/srt/models/glm4.py
+  s_2af2e12d6510ef::t_2bb91eaa9bd2cf 60
+python/sglang/srt/models/glm4_moe.py
+  s_2af2e12d6510ef::t_d109cdae11f4ed 101
+python/sglang/srt/models/glm4_moe_lite.py
+  s_2af2e12d6510ef::t_371e238ca4bde5 92
+python/sglang/srt/models/glm4v.py
+  s_2af2e12d6510ef::t_d58e9893d22064 56,63
+python/sglang/srt/models/glm4v_moe.py
+  s_2af2e12d6510ef::t_2bc9118879d254 23
+python/sglang/srt/models/glm5_next.py
+  s_2af2e12d6510ef::t_6a1afbd4790df4 74
+python/sglang/srt/models/glm_image_vl.py
+  s_2af2e12d6510ef::t_eb1205bfedc1b0 63
+python/sglang/srt/models/glm_ocr.py
+  s_2af2e12d6510ef::t_c249a8e8f5ea71 58
+python/sglang/srt/models/glm_ocr_nextn.py
+  s_2af2e12d6510ef::t_b09940daa87f0a 41
+python/sglang/srt/models/glmasr.py
+  s_2af2e12d6510ef::t_63f8f213cf4f17 37,41
+python/sglang/srt/models/hunyuan.py
+  s_2af2e12d6510ef::t_c64357f6e57ff4 56
+python/sglang/srt/models/hunyuan_v3.py
+  s_2af2e12d6510ef::t_b0d02396566ea3 46
+python/sglang/srt/models/inkling.py
+  s_2af2e12d6510ef::t_324f27fca2af8e 58,99
+python/sglang/srt/models/interns1.py
+  s_2af2e12d6510ef::t_a4afa3d657335a 15,22
+python/sglang/srt/models/interns2_mobius.py
+  s_2af2e12d6510ef::t_e9a0012bb7e454 57
+python/sglang/srt/models/internvl.py
+  s_2af2e12d6510ef::t_c8c26e110757fd 33,46
+python/sglang/srt/models/iquest_loopcoder.py
+  s_2af2e12d6510ef::t_d9e134ef98757c 42
+python/sglang/srt/models/jet_nemotron.py
+  s_2af2e12d6510ef::t_fda9bee97a170e 35
+python/sglang/srt/models/jet_vlm.py
+  s_2af2e12d6510ef::t_04e8153b2028ba 20,23
+python/sglang/srt/models/kimi_k25.py
+  s_2af2e12d6510ef::t_03a89dca642157 34,45
+python/sglang/srt/models/kimi_k3.py
+  s_2af2e12d6510ef::t_9ddfe80c5ed955 106,135,2014-2017,2019-2020,2025,2032-2034,2054,3162-3163
+python/sglang/srt/models/kimi_linear.py
+  s_2af2e12d6510ef::t_a604a277d2b3d8 12-14,42-46,121-123,473-530,535-543,549-550,614-623
+python/sglang/srt/models/kimi_vl.py
+  s_2af2e12d6510ef::t_17d821d76175b4 65,74
+python/sglang/srt/models/kimi_vl_moonvit.py
+  s_2af2e12d6510ef::t_20b301630844aa 55
+python/sglang/srt/models/lfm2_vl.py
+  s_2af2e12d6510ef::t_83161a3a50d542 38
+python/sglang/srt/models/lightonocr.py
+  s_2af2e12d6510ef::t_0bfd01230b4309 46
+python/sglang/srt/models/llada2.py
+  s_2af2e12d6510ef::t_29caf1c20556db 94
+python/sglang/srt/models/llama4.py
+  s_2af2e12d6510ef::t_1d0656e77406fa 51-52
+python/sglang/srt/models/llama_embedding.py
+  s_2af2e12d6510ef::t_4bd3d6ada07bfa 8
+python/sglang/srt/models/llava.py
+  s_2af2e12d6510ef::t_ff0d8c5d4a7b31 42,52
+python/sglang/srt/models/llavavid.py
+  s_2af2e12d6510ef::t_278824fe5ce00c 28,32
+python/sglang/srt/models/locate_anything.py
+  s_2af2e12d6510ef::t_2db8767cdfbda6 35,40
+python/sglang/srt/models/longcat_flash.py
+  s_2af2e12d6510ef::t_2741bf2652beb2 46
+python/sglang/srt/models/longcat_flash_nextn.py
+  s_2af2e12d6510ef::t_896868b4a70e2c 41
+python/sglang/srt/models/mellum.py
+  s_2af2e12d6510ef::t_f68857e2df91f8 44
+python/sglang/srt/models/midashenglm.py
+  s_2af2e12d6510ef::t_48e01328bc4a26 21,25
+python/sglang/srt/models/mimo_v2.py
+  s_2af2e12d6510ef::t_22bcff2ce0b49b 51,62,92,100,382
+python/sglang/srt/models/mimo_v2_asr.py
+  s_2af2e12d6510ef::t_e28758b7370086 19
+python/sglang/srt/models/minicpm.py
+  s_2af2e12d6510ef::t_c23f0b08f9aad0 47
+python/sglang/srt/models/minicpm3.py
+  s_2af2e12d6510ef::t_592ea4e13e79b7 43
+python/sglang/srt/models/minicpmo.py
+  s_2af2e12d6510ef::t_5c48184863eb71 46,53-54
+python/sglang/srt/models/minicpmv.py
+  s_2af2e12d6510ef::t_2e4a936c365c54 47,58,63,72
+python/sglang/srt/models/minimax_m2.py
+  s_2af2e12d6510ef::t_e7f2bd5ef90cf4 89,102
+python/sglang/srt/models/minimax_m3.py
+  s_2af2e12d6510ef::t_10f7bd4ea0febe 130
+python/sglang/srt/models/minimax_m3_vl.py
+  s_2af2e12d6510ef::t_3070724c047815 23,55
+python/sglang/srt/models/minimax_vl_common.py
+  s_2af2e12d6510ef::t_5f05a52fdc8463 30
+python/sglang/srt/models/mistral.py
+  s_2af2e12d6510ef::t_f94c5c8334f203 26
+python/sglang/srt/models/mllama.py
+  s_2af2e12d6510ef::t_bf74a37b4cd9c7 42
+python/sglang/srt/models/mllama4.py
+  s_2af2e12d6510ef::t_cf0d0f7e0d2920 30,32
+python/sglang/srt/models/moss_vl.py
+  s_2af2e12d6510ef::t_471d8d53927747 50
+python/sglang/srt/models/muse_glimmer.py
+  s_2af2e12d6510ef::t_9c0a2ba156cf80 54
+python/sglang/srt/models/muse_spark_omni.py
+  s_2af2e12d6510ef::t_c72d5d6cb2506f 27,36
+python/sglang/srt/models/nanbeige.py
+  s_2af2e12d6510ef::t_74e0e0366a2c45 8
+python/sglang/srt/models/nano_nemotron_vl.py
+  s_2af2e12d6510ef::t_fcf854b3e84138 35,43
+python/sglang/srt/models/nemotron_h.py
+  s_2af2e12d6510ef::t_25109fa5e13a7b 27,67,69
+python/sglang/srt/models/nemotron_h_mtp.py
+  s_2af2e12d6510ef::t_8a4069c6ba1610 20
+python/sglang/srt/models/nvila.py
+  s_2af2e12d6510ef::t_ceaf60adc63e1c 23,26
+python/sglang/srt/models/nvila_lite.py
+  s_2af2e12d6510ef::t_4677f9526a8cfc 22,25
+python/sglang/srt/models/orion.py
+  s_2af2e12d6510ef::t_3b3c1082a15bb0 37
+python/sglang/srt/models/paddleocr_vl.py
+  s_2af2e12d6510ef::t_75713f6613eebc 49
+python/sglang/srt/models/phi4mm.py
+  s_2af2e12d6510ef::t_fcb4a2e1f308d2 37,43
+python/sglang/srt/models/pixtral.py
+  s_2af2e12d6510ef::t_2bab0ba45bd36e 44
+python/sglang/srt/models/points_v15_chat.py
+  s_2af2e12d6510ef::t_7c898d3da5251b 15,20
+python/sglang/srt/models/qwen.py
+  s_2af2e12d6510ef::t_0ce333c7d20d7f 45
+python/sglang/srt/models/qwen2.py
+  s_2af2e12d6510ef::t_4e0b9634fa556e 66
+python/sglang/srt/models/qwen2_5_vl.py
+  s_2af2e12d6510ef::t_41f3812b9bffab 67,73
+python/sglang/srt/models/qwen2_audio.py
+  s_2af2e12d6510ef::t_f384b2642814f2 44,48
+python/sglang/srt/models/qwen2_moe.py
+  s_2af2e12d6510ef::t_329752f5150da6 111
+python/sglang/srt/models/qwen2_vl.py
+  s_2af2e12d6510ef::t_d6104ef980c419 53,59
+python/sglang/srt/models/qwen3.py
+  s_2af2e12d6510ef::t_ecf94cd6ce87cb 265-273,276-278,323,325-328,340
+python/sglang/srt/models/qwen3_5.py
+  s_2af2e12d6510ef::t_7572010bbdf585 157
+python/sglang/srt/models/qwen3_asr.py
+  s_2af2e12d6510ef::t_69ee4fde8ff4ad 17,22
+python/sglang/srt/models/qwen3_moe.py
+  s_2af2e12d6510ef::t_b935a00f2b99cd 80
+python/sglang/srt/models/qwen3_omni_moe.py
+  s_2af2e12d6510ef::t_d1024e5d13cb22 42
+python/sglang/srt/models/qwen3_vl.py
+  s_2af2e12d6510ef::t_ed55bd666a74ff 66,79,95
+python/sglang/srt/models/qwen3_vl_moe.py
+  s_2af2e12d6510ef::t_24fbd6f04dd61a 37
+python/sglang/srt/models/qwen4_exp.py
+  s_2af2e12d6510ef::t_a357439c4dc0ce 69,75
+python/sglang/srt/models/roberta.py
+  s_2af2e12d6510ef::t_d6acfb6dcf8e4a 16
+python/sglang/srt/models/sarashina2_vision.py
+  s_2af2e12d6510ef::t_6b418169cf32a6 31
+python/sglang/srt/models/solar.py
+  s_2af2e12d6510ef::t_2b2332501da001 59
+python/sglang/srt/models/step3_vl.py
+  s_2af2e12d6510ef::t_a8c657ff33a0ea 56,59,62
+python/sglang/srt/models/step3_vl_10b.py
+  s_2af2e12d6510ef::t_9ca6e625060ca2 24,28
+python/sglang/srt/models/step3p7.py
+  s_2af2e12d6510ef::t_14bb7ac297f8b8 15,21
+python/sglang/srt/models/transformers.py
+  s_2af2e12d6510ef::t_2bb14280b88843 61,68
+python/sglang/srt/models/unlimited_ocr.py
+  s_2af2e12d6510ef::t_cb495bf73053cd 16
+python/sglang/srt/models/unlimited_ocr_v2.py
+  s_2af2e12d6510ef::t_6661671fcabaf5 30
+python/sglang/srt/models/unlimited_ocr_v2_support/async_shm.py
+  s_2af2e12d6510ef::t_7d800311bf4cd4 20
+python/sglang/srt/models/unlimited_ocr_v2_support/crop_transfer.py
+  s_2af2e12d6510ef::t_96623ab581d734 120
+python/sglang/srt/models/unlimited_ocr_v2_support/document_prefetch.py
+  s_2af2e12d6510ef::t_910eafbbfa5429 25-30,38-40,189,191,198-201,205-207,223,236,249-250,254-256,260-270,272,290,292
+python/sglang/srt/models/unlimited_ocr_v2_support/document_reuse.py
+  s_2af2e12d6510ef::t_2ec7b606e4863b 1076
+python/sglang/srt/models/unlimited_ocr_v2_support/scheduler_runtime.py
+  s_2af2e12d6510ef::t_9398712a070f8b 6,9-13,82,91,112-114,231,240,242
+python/sglang/srt/models/utils.py
+  s_2af2e12d6510ef::t_e362a36c0b2225 44,299-301
+python/sglang/srt/models/voxtral.py
+  s_2af2e12d6510ef::t_37cb6db370eac6 30,34
+python/sglang/srt/models/whisper.py
+  s_2af2e12d6510ef::t_60c144e2b485ff 19
+python/sglang/srt/models/xverse.py
+  s_2af2e12d6510ef::t_94e2cc49ad571c 42,46
+python/sglang/srt/models/xverse_moe.py
+  s_2af2e12d6510ef::t_c3228e72fdb44e 51
+python/sglang/srt/multimodal/encoder_preprocessing.py
+  s_2af2e12d6510ef::t_0eb5b53e87544b 10
+python/sglang/srt/multimodal/evs/evs_module.py
+  s_2af2e12d6510ef::t_01af55276093c7 23
+python/sglang/srt/multimodal/evs/evs_processor.py
+  s_2af2e12d6510ef::t_4675e17a7476ab 19-20
+python/sglang/srt/multimodal/kimi_k3_image_processing.py
+  s_2af2e12d6510ef::t_daf4abab50b8f7 39,44
+python/sglang/srt/multimodal/media_artifacts/base.py
+  s_2af2e12d6510ef::t_868b9255d177fc 44
+python/sglang/srt/multimodal/processors/bailing_mm.py
+  s_2af2e12d6510ef::t_ae1384773c91a0 22
+python/sglang/srt/multimodal/processors/base_processor.py
+  s_2af2e12d6510ef::t_830517af1828b5 28,34
+python/sglang/srt/multimodal/processors/clip.py
+  s_2af2e12d6510ef::t_97537e6b0004e6 3
+python/sglang/srt/multimodal/processors/cohere2_vision.py
+  s_2af2e12d6510ef::t_514520d1a668ea 7-9,12-14
+python/sglang/srt/multimodal/processors/cosmos3_edge.py
+  s_2af2e12d6510ef::t_94ec6ab11d8a75 29,31
+python/sglang/srt/multimodal/processors/deepseek_ocr.py
+  s_2af2e12d6510ef::t_bf0476b828d15b 4
+python/sglang/srt/multimodal/processors/deepseek_v41.py
+  s_2af2e12d6510ef::t_15895349bf9f2d 10,19
+python/sglang/srt/multimodal/processors/deepseek_vl_v2.py
+  s_2af2e12d6510ef::t_ce320103269b66 21
+python/sglang/srt/multimodal/processors/diffusion_gemma.py
+  s_2af2e12d6510ef::t_7ec22ba3d6fc95 18-21,24-26
+python/sglang/srt/multimodal/processors/dots_note_omni.py
+  s_2af2e12d6510ef::t_2fa885743e89c5 15,17,23
+python/sglang/srt/multimodal/processors/dots_vlm.py
+  s_2af2e12d6510ef::t_25c08d9ff27d42 4
+python/sglang/srt/multimodal/processors/embedding_gemma2.py
+  s_2af2e12d6510ef::t_ce1492d44604ef 26-27
+python/sglang/srt/multimodal/processors/ernie45_vl.py
+  s_2af2e12d6510ef::t_98fb3869e1f821 14
+python/sglang/srt/multimodal/processors/gemma3.py
+  s_2af2e12d6510ef::t_518b9fdf83e481 4-6,9-11
+python/sglang/srt/multimodal/processors/gemma3n.py
+  s_2af2e12d6510ef::t_f966b84b701f10 17-19,22-24
+python/sglang/srt/multimodal/processors/gemma4.py
+  s_2af2e12d6510ef::t_0297af653e07f9 21,24-30
+python/sglang/srt/multimodal/processors/glm4v.py
+  s_2af2e12d6510ef::t_75add455d885e7 10,13
+python/sglang/srt/multimodal/processors/glm_image.py
+  s_2af2e12d6510ef::t_636008143d5a04 6,209
+python/sglang/srt/multimodal/processors/glmasr.py
+  s_2af2e12d6510ef::t_13ce318361a72b 3
+python/sglang/srt/multimodal/processors/hash_executor.py
+  s_2af2e12d6510ef::t_349ab6b2deaa1e 10
+python/sglang/srt/multimodal/processors/inkling.py
+  s_2af2e12d6510ef::t_0e7c993646414b 33,40
+python/sglang/srt/multimodal/processors/interns1pro.py
+  s_2af2e12d6510ef::t_d962bc5bd886dd 4,6
+python/sglang/srt/multimodal/processors/internvl.py
+  s_2af2e12d6510ef::t_caaa10fe679d11 11,14
+python/sglang/srt/multimodal/processors/janus_pro.py
+  s_2af2e12d6510ef::t_0cb53af552207d 3
+python/sglang/srt/multimodal/processors/kimi_common.py
+  s_2af2e12d6510ef::t_34a75a3d996257 16,24
+python/sglang/srt/multimodal/processors/kimi_k25.py
+  s_2af2e12d6510ef::t_2e31080dd3066b 13
+python/sglang/srt/multimodal/processors/kimi_k3.py
+  s_2af2e12d6510ef::t_12786945f419aa 21,43
+python/sglang/srt/multimodal/processors/kimi_vl.py
+  s_2af2e12d6510ef::t_a1cf1ce1b8673a 4
+python/sglang/srt/multimodal/processors/lfm2_vl.py
+  s_2af2e12d6510ef::t_e11de996bd975d 17,19
+python/sglang/srt/multimodal/processors/llava.py
+  s_2af2e12d6510ef::t_b141ad0b9192e7 13,27
+python/sglang/srt/multimodal/processors/locate_anything.py
+  s_2af2e12d6510ef::t_ade30d8ba43941 5
+python/sglang/srt/multimodal/processors/midashenglm.py
+  s_2af2e12d6510ef::t_083dfd38bb7da6 6,8
+python/sglang/srt/multimodal/processors/mimo_v2.py
+  s_2af2e12d6510ef::t_68eb77057657f3 24,26,524
+python/sglang/srt/multimodal/processors/mimo_v2_asr.py
+  s_2af2e12d6510ef::t_137131bf159c97 15,17
+python/sglang/srt/multimodal/processors/minicpm.py
+  s_2af2e12d6510ef::t_eddd09cdb279ca 5,8
+python/sglang/srt/multimodal/processors/minicpmv4_6.py
+  s_2af2e12d6510ef::t_0ba3c80193cbd4 29,35
+python/sglang/srt/multimodal/processors/minimax_m3_vl.py
+  s_2af2e12d6510ef::t_624fcacc210051 17,19
+python/sglang/srt/multimodal/processors/mlama.py
+  s_2af2e12d6510ef::t_06d41c20c5164c 3
+python/sglang/srt/multimodal/processors/mllama4.py
+  s_2af2e12d6510ef::t_8217502cccb88b 3
+python/sglang/srt/multimodal/processors/moss_vl.py
+  s_2af2e12d6510ef::t_1bca899e384081 11,13
+python/sglang/srt/multimodal/processors/muse_glimmer.py
+  s_2af2e12d6510ef::t_847ae7890df858 18
+python/sglang/srt/multimodal/processors/muse_spark_omni.py
+  s_2af2e12d6510ef::t_36ed9ac6f2fddd 22,30,36
+python/sglang/srt/multimodal/processors/nano_nemotron_vl.py
+  s_2af2e12d6510ef::t_2e47399e920bbd 28,44
+python/sglang/srt/multimodal/processors/nvila.py
+  s_2af2e12d6510ef::t_9efe385fdaf1d3 9
+python/sglang/srt/multimodal/processors/phi4mm.py
+  s_2af2e12d6510ef::t_1fa8a383b66814 6
+python/sglang/srt/multimodal/processors/pixtral.py
+  s_2af2e12d6510ef::t_45f6099bd8c885 10,15
+python/sglang/srt/multimodal/processors/points_v15_chat.py
+  s_2af2e12d6510ef::t_07a68220d1fbc6 5
+python/sglang/srt/multimodal/processors/qwen3_asr.py
+  s_2af2e12d6510ef::t_898a42704a94d3 6,8
+python/sglang/srt/multimodal/processors/qwen_audio.py
+  s_2af2e12d6510ef::t_d6d64e8c5ae8ec 6,8
+python/sglang/srt/multimodal/processors/qwen_vl.py
+  s_2af2e12d6510ef::t_11cd2a52b51693 19,41
+python/sglang/srt/multimodal/processors/sarashina2_vision.py
+  s_2af2e12d6510ef::t_3858b418e098ca 4
+python/sglang/srt/multimodal/processors/step3_vl.py
+  s_2af2e12d6510ef::t_1fe9dce0b2dac8 14
+python/sglang/srt/multimodal/processors/transformers_auto.py
+  s_2af2e12d6510ef::t_08c7b9a9ef2bac 5-6
+python/sglang/srt/multimodal/processors/unlimited_ocr.py
+  s_2af2e12d6510ef::t_21a8c79b0fb1c2 11
+python/sglang/srt/multimodal/processors/unlimited_ocr_v2.py
+  s_2af2e12d6510ef::t_5a15f686b18f0b 9
+python/sglang/srt/multimodal/processors/voxtral.py
+  s_2af2e12d6510ef::t_fd3b7fb4687f77 9,11
+python/sglang/srt/multimodal/processors/whisper.py
+  s_2af2e12d6510ef::t_668a8801cd140d 7,9
+python/sglang/srt/observability/metrics_collector.py
+  s_2af2e12d6510ef::t_02476e7e967f8a 28-29
+python/sglang/srt/observability/req_time_stats.py
+  s_2af2e12d6510ef::t_ea2bea1388612a 28-29
+python/sglang/srt/observability/trace.py
+  s_2af2e12d6510ef::t_f75754cb2dcf26 25,298-303,323,327-351,842
+python/sglang/srt/observability/trace_async.py
+  s_2af2e12d6510ef::t_50ab1429891489 886
+python/sglang/srt/parser/deepseek_recipe_renderer.py
+  s_2af2e12d6510ef::t_59c638e527a84a 149-164,174-181
+python/sglang/srt/parser/template_detection.py
+  s_2af2e12d6510ef::t_6710063237c951 32,34,830,849,978
+python/sglang/srt/ray/http_server.py
+  s_2af2e12d6510ef::t_6f115fbefc71f2 18-20
+python/sglang/srt/runtime_context.py
+  s_2af2e12d6510ef::t_53e635543741b1 506-517,931,2019,2034,2041,2160-2161
+python/sglang/srt/rust_server/config.py
+  s_2af2e12d6510ef::t_81a4003ba156e1 12
+python/sglang/srt/rust_server/multimodal.py
+  s_2af2e12d6510ef::t_69a35b5be403ce 120,354,397
+python/sglang/srt/rust_server/server.py
+  s_2af2e12d6510ef::t_5385b67ec495b5 62-63,256-266,279
+python/sglang/srt/server_args.py
+  s_2af2e12d6510ef::t_8ecbbd126a6c1b 40-42,44-46,441,443,738
+python/sglang/srt/session/session_controller.py
+  s_2af2e12d6510ef::t_af9f18027fd983 22,29-30
+python/sglang/srt/session/streaming_session.py
+  s_2af2e12d6510ef::t_e79975c2cbbddc 178
+python/sglang/srt/speculative/adaptive_spec_params.py
+  s_2af2e12d6510ef::t_f35e9d50316d03 15
+python/sglang/srt/speculative/dflash_info.py
+  s_2af2e12d6510ef::t_10d53fdba6211f 12-13
+python/sglang/srt/speculative/dflash_utils.py
+  s_2af2e12d6510ef::t_c1b08b130b51e6 195,948,959,1123-1141,1152-1153,1178,1193-1204,1217-1221
+python/sglang/srt/speculative/dflash_worker_v2.py
+  s_2af2e12d6510ef::t_b8b918b042a211 32-33,42,110,419-425,1333,2308
+python/sglang/srt/speculative/draft_worker_common.py
+  s_2af2e12d6510ef::t_60103c9a6075d5 9,13,15
+python/sglang/srt/speculative/dspark_components/dspark_config.py
+  s_2af2e12d6510ef::t_b1d5569c1105ec 9,36,147
+python/sglang/srt/speculative/dspark_components/dspark_draft.py
+  s_2af2e12d6510ef::t_6c1daf71d47123 23
+python/sglang/srt/speculative/dspark_components/dspark_verify.py
+  s_2af2e12d6510ef::t_ff355b6a526492 46,69,168-175,236,240-241,244,246,249-251,717-718,972,1116,1121-1122,1128,1136,1195,1210,1212-1214
+python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py
+  s_2af2e12d6510ef::t_f4cafdad414ab5 16,18-19,418
+python/sglang/srt/speculative/eagle_disaggregation.py
+  s_2af2e12d6510ef::t_8a8494e59586c6 12
+python/sglang/srt/speculative/eagle_draft_cuda_graph_runner.py
+  s_2af2e12d6510ef::t_49bc4c7e6df499 18,20
+python/sglang/srt/speculative/eagle_draft_extend_cuda_graph_runner.py
+  s_2af2e12d6510ef::t_07cb6b0ad6a23a 19,21
+python/sglang/srt/speculative/eagle_info.py
+  s_2af2e12d6510ef::t_2523243033a0b5 10
+python/sglang/srt/speculative/eagle_utils.py
+  s_2af2e12d6510ef::t_c074a101999845 39,355-356,558-580,630,814-820
+python/sglang/srt/speculative/eagle_worker_common.py
+  s_2af2e12d6510ef::t_15b571d7b17b14 17,21-22
+python/sglang/srt/speculative/eagle_worker_v2.py
+  s_2af2e12d6510ef::t_f5e80aec783581 35,42,44,87,113
+python/sglang/srt/speculative/frozen_kv_mtp_cuda_graph_runner.py
+  s_2af2e12d6510ef::t_6e1c0a1630e698 15,17
+python/sglang/srt/speculative/frozen_kv_mtp_worker_v2.py
+  s_2af2e12d6510ef::t_3ab2b3f2a4214b 39,41,85
+python/sglang/srt/speculative/multi_layer_eagle_draft_extend_cuda_graph_runner.py
+  s_2af2e12d6510ef::t_d09a5eb2cc6ed4 38,43,75,84
+python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py
+  s_2af2e12d6510ef::t_88e04e04cddc0d 33,41-42
+python/sglang/srt/speculative/ngram_worker.py
+  s_2af2e12d6510ef::t_c1824a8f553766 16-17
+python/sglang/srt/speculative/spec_info.py
+  s_2af2e12d6510ef::t_3dc523560525de 9,296,515
+python/sglang/srt/speculative/spec_registry.py
+  s_2af2e12d6510ef::t_99dca39b4a6389 12,133
+python/sglang/srt/speculative/spec_tp_sync.py
+  s_2af2e12d6510ef::t_b0190451905315 128-134
+python/sglang/srt/speculative/spec_utils.py
+  s_2af2e12d6510ef::t_eeea47c23c7289 16-17,20,22,53,272-282
+python/sglang/srt/speculative/uno_cuda_graph_runner.py
+  s_2af2e12d6510ef::t_53ca66da372391 3
+python/sglang/srt/speculative/uno_info.py
+  s_2af2e12d6510ef::t_dfeabc63dddd46 12
+python/sglang/srt/speculative/uno_utils.py
+  s_2af2e12d6510ef::t_bebb4fa901e2d6 13,24,27,29,33-38,138,162-166,174,194-198
+python/sglang/srt/speculative/uno_worker_v2.py
+  s_2af2e12d6510ef::t_6bbef382800954 14,19
+python/sglang/srt/state_capturer/base.py
+  s_2af2e12d6510ef::t_5eafe81365a0f1 131,136-137,142-145,155-158,163-164,190-194,216-217
+python/sglang/srt/state_capturer/routed_experts.py
+  s_2af2e12d6510ef::t_8c86c2801660a3 21,40-41,96
+python/sglang/srt/utils/common.py
+  s_2af2e12d6510ef::t_6f30745300c2d5 142,1244,1256,1263-1274,1280,3618
+python/sglang/srt/utils/cuda_vmm_transport_utils.py
+  s_2af2e12d6510ef::t_96f5f2e1dc0892 15-16
+python/sglang/srt/utils/hf_transformers/__init__.py
+  s_2af2e12d6510ef::t_8f5d94b2df8d31 19-21,24-30
+python/sglang/srt/utils/hf_transformers/common.py
+  s_2af2e12d6510ef::t_ba8a3fde87d336 24
+python/sglang/srt/utils/hf_transformers/config.py
+  s_2af2e12d6510ef::t_28d6e2eae276e9 23
+python/sglang/srt/utils/hf_transformers_patches.py
+  s_2af2e12d6510ef::t_8ca7b1d6ff8ddd 21-22,25-26,29,31-32,39,43-44,213-214,218-266,346
+python/sglang/srt/utils/profile_utils.py
+  s_2af2e12d6510ef::t_be9c41ec636a15 13-14
+python/sglang/srt/utils/runai_utils.py
+  s_2af2e12d6510ef::t_309726495ff159 22
+python/sglang/srt/weight_cache/daemon.py
+  s_2af2e12d6510ef::t_9bf8e8408469f4 51
+python/sglang/test/ascend/e2e/gen_dataset_fixed_len.py
+  s_2af2e12d6510ef::t_80069364274211 335-401
+python/sglang/test/ascend/e2e/run_aisbench.sh
+  s_2af2e12d6510ef::t_e119e5b6344bc2 1-729
+python/sglang/test/ascend/e2e/test_npu_performance_utils.py
+  s_2af2e12d6510ef::t_1110f37b95d077 19,187-190,395-397,400-410,425,437,439,470-475,480,616-632,664-666,705-724,772-777,808-813,971-978,986,989,997,1000,1008,1011,1019,1046-1047,1050,1055,1057,1060,1062,1065,1067,1070,1091-1149,1366-1368,1502-1504,1674-1676
+python/sglang/test/ci/fork_test_worker.py
+  s_2af2e12d6510ef::t_ce1f3f01e002c7 4,15-22,25-37
+python/sglang/test/hicache_write_back_fixtures.py
+  s_2af2e12d6510ef::t_890134b5839718 1-357
+python/sglang/test/kits/attention_unittest/attention_methods/dense_attention.py
+  s_2af2e12d6510ef::t_358b770a30872c 18,20
+python/sglang/test/kits/attention_unittest/attention_methods/dsa_attention.py
+  s_2af2e12d6510ef::t_fc0ee8e35bdd29 17,19
+python/sglang/test/kits/attention_unittest/attention_methods/dsv4_attention.py
+  s_2af2e12d6510ef::t_69b287e5397f88 33,35
+python/sglang/test/kits/attention_unittest/attention_methods/gdn_attention.py
+  s_2af2e12d6510ef::t_ef5371e9f2cc4a 29,31
+python/sglang/test/kits/attention_unittest/attention_methods/kda_attention.py
+  s_2af2e12d6510ef::t_530ae28f1a5aa4 29,31
+python/sglang/test/kits/attention_unittest/attention_methods/lightning_attention.py
+  s_2af2e12d6510ef::t_c1a5d4e9b19b93 28,30
+python/sglang/test/kits/attention_unittest/attention_methods/mamba2_attention.py
+  s_2af2e12d6510ef::t_b30a101e25046c 43,48
+python/sglang/test/kits/attention_unittest/attention_methods/mla_attention.py
+  s_2af2e12d6510ef::t_819b4a0490144c 18,24
+python/sglang/test/kits/attention_unittest/runner_modes/cuda_graph_decode_runner.py
+  s_2af2e12d6510ef::t_9993998d23c21f 7-9
+python/sglang/test/kits/attention_unittest/runner_modes/speculative_draft_extend_runner.py
+  s_2af2e12d6510ef::t_b1a84c745413cc 13,15
+python/sglang/test/kits/attention_unittest/runner_modes/speculative_draft_runner.py
+  s_2af2e12d6510ef::t_6df4c800dbb185 13-14,33-35
+python/sglang/test/kits/attention_unittest/runner_modes/speculative_target_verify_runner.py
+  s_2af2e12d6510ef::t_ae0813f70d0c93 6
+python/sglang/test/kits/dsa_metadata_kit.py
+  s_2af2e12d6510ef::t_48def6f9cbac49 12
+python/sglang/test/kits/inkling_sink_lora_kit.py
+  s_2af2e12d6510ef::t_399113b2e6d794 11
+python/sglang/test/kits/moe_lora_down_b_kit.py
+  s_2af2e12d6510ef::t_4629bed3be42a3 11
+python/sglang/test/kits/reasoning_kit.py
+  s_2af2e12d6510ef::t_e8324c3fbe150d 7
+python/sglang/test/kits/unified_radix_cache/config.py
+  s_2af2e12d6510ef::t_28fcdb631eb925 8
+python/sglang/test/kits/unified_radix_cache/core.py
+  s_2af2e12d6510ef::t_c76d6d4859ced4 17-18,20,24
+python/sglang/test/kits/unified_radix_cache/fixtures.py
+  s_2af2e12d6510ef::t_abf6ae170ef893 29-30
+python/sglang/test/kits/unified_radix_cache/insert_walk.py
+  s_2af2e12d6510ef::t_86d0ae73c571dd 4-5,14
+python/sglang/test/kits/unified_radix_cache/load_back.py
+  s_2af2e12d6510ef::t_6ddc8de31f9922 9-11
+python/sglang/test/kits/unified_radix_cache/mixins.py
+  s_2af2e12d6510ef::t_64598de6e9bc7b 20-21
+python/sglang/test/kits/unified_radix_cache/storage.py
+  s_2af2e12d6510ef::t_166dbb1aa32210 26,30
+python/sglang/test/kl_test_utils.py
+  s_2af2e12d6510ef::t_22c9cf9683dbf4 10
+python/sglang/test/kv_canary/fixtures.py
+  s_2af2e12d6510ef::t_98a703c0eefdf3 22-27
+python/sglang/test/mem_cache_utils.py
+  s_2af2e12d6510ef::t_6d9002e2327b38 3
+python/sglang/test/mooncake_utils.py
+  s_2af2e12d6510ef::t_82eddf96eda5f4 61-62
+python/sglang/test/nightly_utils.py
+  s_2af2e12d6510ef::t_ec5cc7ba81f369 108
+python/sglang/test/runners.py
+  s_2af2e12d6510ef::t_c93852edff9f29 37,113
+python/sglang/test/scheduler_test_utils.py
+  s_2af2e12d6510ef::t_657e279cef7d8f 1-63
+python/sglang/test/scripted_runtime/context/radix.py
+  s_2af2e12d6510ef::t_bc13a20f7ab2c7 6
+python/sglang/test/scripted_runtime/scheduler_hook.py
+  s_2af2e12d6510ef::t_c08b832ceeb0ed 13
+python/sglang/test/server_fixtures/disaggregation_fixture.py
+  s_2af2e12d6510ef::t_c715bb8f16ae5f 19,59-61,104-110,392
+python/sglang/test/server_fixtures/spec_eagle_fixture.py
+  s_2af2e12d6510ef::t_a63f16e73023af 20
+python/sglang/test/server_fixtures/streaming_session_fixture.py
+  s_2af2e12d6510ef::t_8e79eb8cde9ab0 24
+python/sglang/test/test_programs.py
+  s_2af2e12d6510ef::t_16b1a60cb3c2d8 508
+python/sglang/test/test_utils.py
+  s_2af2e12d6510ef::t_6718c9299f7031 50,55-57,1287,1619
+rust/sglang-processor/README.md
+  s_2af2e12d6510ef::t_ca1de0458a850f 80,115,119,125-132,139-140
+rust/sglang-processor/src/py.rs
+  s_2af2e12d6510ef::t_ea8d80eb97cc44 86-97
+rust/sglang-processor/src/render/content_format.rs
+  s_2af2e12d6510ef::t_e95323bad8c9b0 1-60
+rust/sglang-processor/src/render/loader.rs
+  s_2af2e12d6510ef::t_71f8f25eae3140 12-15,54,75,85,88,122-124,126-139,141-144,147-153,168-178,350-417
+rust/sglang-processor/src/render/mod.rs
+  s_2af2e12d6510ef::t_e660654e032f89 13,27-29,70-79,106,167-168,187-200,264,329-330
+rust/sglang-processor/src/render/models/minimax_m3.rs
+  s_2af2e12d6510ef::t_802ebee3f5b87c 1-645
+rust/sglang-processor/src/render/models/mod.rs
+  s_2af2e12d6510ef::t_49ba428d771881 7,23-26
+rust/sglang-processor/src/render/models/qwen38.rs
+  s_2af2e12d6510ef::t_4f32991ca3854c 157,283
+rust/sglang-processor/src/render/template.rs
+  s_2af2e12d6510ef::t_ad3c3894d00f27 77
+rust/sglang-processor/src/tool_call/models/qwen3_coder.rs
+  s_2af2e12d6510ef::t_7912d16704a62a 17-18
+rust/sglang-processor/tests/fixtures/parity/minimax-m3.1-flash.json
+  s_2af2e12d6510ef::t_6e4b30001d059c 1-242
+rust/sglang-processor/tests/fixtures/parity/minimax-m3.json
+  s_2af2e12d6510ef::t_076e4dd8219e87 1-242
+rust/sglang-processor/tests/parity.rs
+  s_2af2e12d6510ef::t_4608e10104f9cd 38,51-55,57
+rust/sglang-processor/tests/scripts/generate_openai_parity.py
+  s_2af2e12d6510ef::t_239e8ee74bca9f 46
+rust/sglang-processor/tests/scripts/generate_parity.py
+  s_2af2e12d6510ef::t_26a3acfbf5ad71 10-11,37,88-89,135-141,145-156
+rust/sglang-radix-tree/src/components/full.rs
+  s_2af2e12d6510ef::t_3e2d0ee3e32d8f 174,190,224-228,232,520-540,542
+rust/sglang-radix-tree/src/components/swa.rs
+  s_2af2e12d6510ef::t_f65460448150b1 172-177
+rust/sglang-radix-tree/src/node.rs
+  s_2af2e12d6510ef::t_affbad871545ac 192-193,431,459,1194-1198
+rust/sglang-radix-tree/src/python_bindings.rs
+  s_2af2e12d6510ef::t_1ebba5140d18d5 2026-2036,3407-3416
+rust/sglang-radix-tree/src/tests/components/full.rs
+  s_2af2e12d6510ef::t_04774f435c4f3d 6,276-585,3467-3512
+rust/sglang-radix-tree/src/tests/components/swa.rs
+  s_2af2e12d6510ef::t_7f9c9ba84ee07e 3381-3432
+rust/sglang-radix-tree/src/tests/unified_tree_core.rs
+  s_2af2e12d6510ef::t_e1eb4f415777e6 3872-3875,5083-5122
+rust/sglang-radix-tree/src/unified_tree_core.rs
+  s_2af2e12d6510ef::t_2592e10ea8608d 634,1012,1056,2654,2658-2664,2901-2904,2909-2936,2950-2951,2954-2963,3182-3186,3308-3317,3469-3472,3637-3674,4843-4853,4978-4982,4987-4998
+rust/sglang-server/src/api_server/http/openai/template.rs
+  s_2af2e12d6510ef::t_9e8398902931b5 84-120
+scripts/ci/cuda/ci_install_dependency.sh
+  s_2af2e12d6510ef::t_1166293929bb1f 814
+scripts/ci/slurm/launch_mi355x.sh
+  s_2af2e12d6510ef::t_1d270cd396b090 9,13-17,51-53,92-98,191-193,268-270,486-490,492-494,530-533,587-588,591-593,615,666-669,928,943,953,968,1009,1016,1026,1033,1110,1145-1146,1428-1435,1437-1455,1457-1461,1463-1468,1470-1477,1873-1892,1898,1988-1990,2085,2116
+scripts/ci/slurm/nightly-configs.yaml
+  s_2af2e12d6510ef::t_95b89fef3bd76f 55-57,312,509,516-518,529,531-533,544,546-548,559,561-563,574,576-578,589,591-593,604
+scripts/ci/slurm/recipes/mi355x-fp4/glm51/1k1k/1p1d-dp8ep8-mtp.yaml
+  s_2af2e12d6510ef::t_ceb87fac55e7b9 1,58
+scripts/ci/slurm/recipes/mi355x-fp4/glm51/1k1k/1p1d-dp8ep8.yaml
+  s_2af2e12d6510ef::t_ffffcbdab80ac0 1
+scripts/ci/slurm/recipes/mi355x-fp4/glm51/1k1k/1p1d-mtp.yaml
+  s_2af2e12d6510ef::t_d0e5c8d3ebd22a 1,3,69
+scripts/ci/slurm/recipes/mi355x-fp4/glm51/1k1k/1p1d.yaml
+  s_2af2e12d6510ef::t_cc24ebbb4c9c50 1,3
+scripts/ci/slurm/recipes/mi355x-fp4/glm51/1k1k/2p1d-ep16-mtp.yaml
+  s_2af2e12d6510ef::t_3770d571231a8b 1
+scripts/ci/slurm/recipes/mi355x-fp4/glm51/1k1k/2p1d-ep16.yaml
+  s_2af2e12d6510ef::t_0dda24f5bfe580 1
+scripts/ci/slurm/recipes/mi355x-fp8/kimik26/1k1k/1p1d-mtp.yaml
+  s_2af2e12d6510ef::t_0733100234235e 5-8,53
+scripts/ci/slurm/recipes/mi355x-fp8/kimik26/1k1k/2p1d-ep16-mtp-mxfp4.yaml
+  s_2af2e12d6510ef::t_7f46995fe33d7a 107
+scripts/ci/slurm/runner_disk_preflight.py
+  s_2af2e12d6510ef::t_c2ee0014677584 1-105
+scripts/ci/slurm/test_runner_disk_preflight.py
+  s_2af2e12d6510ef::t_28aa79b7fc5463 1-116
+scripts/ci/xpu/xpu_ci_start_container.sh
+  s_2af2e12d6510ef::t_f64f0621f3fd36 164-166,169
+scripts/lint/check_indirect_imports.py
+  s_2af2e12d6510ef::t_a35a737c323679 1-200
+scripts/playground/bench_speculative.py
+  s_2af2e12d6510ef::t_b058ce4d6e618c 24
+scripts/playground/load_tokenizer.py
+  s_2af2e12d6510ef::t_48ff59514248a9 4
+scripts/playground/reference_hf.py
+  s_2af2e12d6510ef::t_3b7f1214435fb1 41
+sgl-model-gateway/bindings/golang/examples/oai_server/Makefile
+  s_2af2e12d6510ef::t_4ccc73addd056e 155,158,191,205
+sgl-router/BENCHMARKS.md
+  s_2af2e12d6510ef::t_c62d2908edceeb 79
+sgl-router/Cargo.lock
+  s_2af2e12d6510ef::t_b10c4e888ce1dd 2911,2913
+sgl-router/Cargo.toml
+  s_2af2e12d6510ef::t_9d340e5f8c1f1f 65
+sgl-router/README.md
+  s_2af2e12d6510ef::t_14b49bf49a3dfe 86-90,119,282-283
+sgl-router/REFERENCE.md
+  s_2af2e12d6510ef::t_94663a8474f016 14,272-278,402,445-449,503,608-609,615-633
+sgl-router/src/config/cli.rs
+  s_2af2e12d6510ef::t_31a4664f0c9ec2 70-74,666,1555-1571
+sgl-router/src/config/mod.rs
+  s_2af2e12d6510ef::t_8351e8380cf8a1 258
+sgl-router/src/config/types.rs
+  s_2af2e12d6510ef::t_60c713854ed217 384-385,426-458
+sgl-router/src/health/circuit_breaker.rs
+  s_2af2e12d6510ef::t_c48df3ec5d670c 174-183
+sgl-router/src/policies/factory.rs
+  s_2af2e12d6510ef::t_ea5f0aeefded67 338
+sgl-router/src/policies/registry.rs
+  s_2af2e12d6510ef::t_39c8aab1fd2c99 113-120,444-446,448,465-466,470-471,795-797,804,832-841
+sgl-router/src/proxy/mod.rs
+  s_2af2e12d6510ef::t_7a53210c9788d0 50,53-57,80-83,85-97,101-103,617-621,623,837-870,874-875,899
+sgl-router/src/server/app_context.rs
+  s_2af2e12d6510ef::t_2981e1b376df00 216
+sgl-router/src/server/routes/chat.rs
+  s_2af2e12d6510ef::t_01ace38d47fbca 9-10,34,208,232-234,250-272,300-301,303-309,765-825
+sgl-router/src/server/routes/chat/preparation.rs
+  s_2af2e12d6510ef::t_39524c18e0df74 170,174-182,1579-1642,1646-1684
+sgl-router/src/server/routes/messages.rs
+  s_2af2e12d6510ef::t_72e72370f4e822 23-25,53,57-58,61-65,67
+sgl-router/src/server/routes/models.rs
+  s_2af2e12d6510ef::t_80a73e1f281b7b 51
+sgl-router/src/server/routes/tokenize.rs
+  s_2af2e12d6510ef::t_7ee3f3c53d22ea 46,126,170-182
+sgl-router/src/state/kv_events/tree.rs
+  s_2af2e12d6510ef::t_3f0d8ee7c5bca7 966-972,1570-1585,1590,1592-1609,1615-1616,1625,1627-1659,1913-1989
+sgl-router/src/tokenizer/adapter.rs
+  s_2af2e12d6510ef::t_a58facfe44c58e 7-8,219-282,288-290,292-302
+sgl-router/src/tokenizer/chat_formatter.rs
+  s_2af2e12d6510ef::t_9b9fdef7a618f9 7,45-46,48-50,91-93,121-130,133,181-184,189-191,194-195,210,226,272,291-292,306-312,812-843
+sgl-router/src/tokenizer/mod.rs
+  s_2af2e12d6510ef::t_301b50412b2d6f 240,255-261,333
+sgl-router/src/tokenizer/stats.rs
+  s_2af2e12d6510ef::t_5f0865946aad9b 18,20-22,26-30,37
+sgl-router/src/workers/manager.rs
+  s_2af2e12d6510ef::t_5f858e1013e291 668
+sgl-router/src/workers/registry.rs
+  s_2af2e12d6510ef::t_1baed7bf507274 178-184,191-192,195-197,199-212,422-454
+sgl-router/tests/component/discovery/static_urls.rs
+  s_2af2e12d6510ef::t_b84d54a8d0c541 132
+sgl-router/tests/component/policies_reorg.rs
+  s_2af2e12d6510ef::t_c3d0c6ce8d9a35 149-155
+sgl-router/tests/component/tokenizer/kimi.rs
+  s_2af2e12d6510ef::t_3ddb15e7c79fc8 4-5,7-8,16-67,71-81
+sgl-router/tests/component/tokenizer/render_parity.rs
+  s_2af2e12d6510ef::t_21b8f84a94f866 113
+sgl-router/tests/fixtures/kimi_k3/README.md
+  s_2af2e12d6510ef::t_2591809464b426 2-6
+sgl-router/tests/fixtures/kimi_k3/merges.txt
+  s_2af2e12d6510ef::t_802251c7cf765a 1-3
+sgl-router/tests/fixtures/kimi_k3/prompts.json
+  s_2af2e12d6510ef::t_b996d028b27e34 2-19
+sgl-router/tests/fixtures/kimi_k3/tokenizer_config.json
+  s_2af2e12d6510ef::t_ec92bbfeb5faff 3-8
+sgl-router/tests/proxy/bucket_routing.rs
+  s_2af2e12d6510ef::t_da146cf064b5ff 62
+sgl-router/tests/proxy/chat_routing.rs
+  s_2af2e12d6510ef::t_ad0ebfac96578e 41,999-1071,1349-1350
+sgl-router/tests/proxy/common/cache_aware_fixture.rs
+  s_2af2e12d6510ef::t_2bb02284c4ce39 46
+sgl-router/tests/proxy/failover.rs
+  s_2af2e12d6510ef::t_42f048cf19f1dd 50
+sgl-router/tests/proxy/graceful_shutdown.rs
+  s_2af2e12d6510ef::t_37a55294057427 54
+sgl-router/tests/proxy/grpc_routing.rs
+  s_2af2e12d6510ef::t_e6b249e3f03e23 650-652,657-666,672,677,679-681
+sgl-router/tests/proxy/header_forwarding.rs
+  s_2af2e12d6510ef::t_e3256dc5eb0051 32
+sgl-router/tests/proxy/messages_api.rs
+  s_2af2e12d6510ef::t_3c18093601cad5 313-383
+sgl-router/tests/proxy/pd_bootstrap_injection.rs
+  s_2af2e12d6510ef::t_8e8a2a731fb190 47
+sgl-router/tests/proxy/pd_pool_isolation.rs
+  s_2af2e12d6510ef::t_15b6592cc8b3e7 46
+sgl-router/tests/proxy/pd_protocol_binding.rs
+  s_2af2e12d6510ef::t_25671ab02d891d 134
+sgl-router/tests/proxy/retry.rs
+  s_2af2e12d6510ef::t_c55c908b8218db 40
+sgl-router/tests/proxy/roundrobin_input_ids.rs
+  s_2af2e12d6510ef::t_1733fc23a6e7d8 15,45,447-453,458,460-463
+sgl-router/tests/proxy/shared_prefill_admission.rs
+  s_2af2e12d6510ef::t_487df86ebfd1ce 150
+sgl-router/tests/proxy/sticky_input_ids.rs
+  s_2af2e12d6510ef::t_5dc03b62e9b581 55
+sgl-router/tests/proxy/sticky_routing.rs
+  s_2af2e12d6510ef::t_02593fb068d46d 43
+sgl-router/tests/proxy/timeout.rs
+  s_2af2e12d6510ef::t_41ddb02b680e94 40
+sgl-router/tests/scripts/generate_chat_render_parity.py
+  s_2af2e12d6510ef::t_2e59d5a564aa0e 22
+sgl-router/tests/scripts/generate_kimi_parity.py
+  s_2af2e12d6510ef::t_973e7991c2e9f5 47-50,67-69
+test/manual/ascend/llm_models/test_npu_deepseek_v3_modelslim_mla_fp8.py
+  s_2af2e12d6510ef::t_a0adda9508194a 1,3-6,9-14,16-60,64
+test/manual/ascend/llm_models/test_npu_kimi_k3_modelslim_mla_fp8.py
+  s_2af2e12d6510ef::t_9922ae860b1b52 1-211
+test/manual/attention/test_flashattn_backend.py
+  s_2af2e12d6510ef::t_9b204c4bae2e6f 13,18
+test/manual/attention/test_flashattn_mla_backend.py
+  s_2af2e12d6510ef::t_92920f032416cc 10,15
+test/manual/attention/test_prefix_chunk_info.py
+  s_2af2e12d6510ef::t_a886792e9c5255 6-7
+test/manual/attention/test_trtllm_mla_backend.py
+  s_2af2e12d6510ef::t_75c72b552f18e1 22,27
+test/manual/beam_search/test_beam_search_perf_sweep.py
+  s_2af2e12d6510ef::t_dfc48f86f85674 17
+test/manual/dsv4/test_dsv4_flash_mtp_tp8.py
+  s_2af2e12d6510ef::t_c953f92ce63855 12-13
+test/manual/dsv4/test_dsv4_pro_mtp.py
+  s_2af2e12d6510ef::t_d410caf4fa4ee2 23-24,187
+test/manual/lora/test_torch_backend.py
+  s_2af2e12d6510ef::t_3ad1432fd7a758 6-7
+test/manual/models/test_ernie45_vl_visual_mask.py
+  s_2af2e12d6510ef::t_335747df199009 37-38
+test/manual/openai_server/function_call/test_tool_choice.py
+  s_2af2e12d6510ef::t_77bdde73e5bf64 16
+test/manual/perf/test_bench_one_batch_1gpu.py
+  s_2af2e12d6510ef::t_0cd297b4395ece 8
+test/manual/test_expert_location_updater.py
+  s_2af2e12d6510ef::t_0c0fc38da21e1d 177-187
+test/manual/test_fim_completion.py
+  s_2af2e12d6510ef::t_713f855cea51d1 6
+test/manual/test_sagemaker_server.py
+  s_2af2e12d6510ef::t_cb644409f25274 11
+test/manual/test_schedule_policy.py
+  s_2af2e12d6510ef::t_3eff08c4ec4ccf 92,116,143,165,189,215,245,273,302,327
+test/manual/test_tokenizer_batch_encode.py
+  s_2af2e12d6510ef::t_133cae1222f020 37
+test/manual/test_tokenizer_manager.py
+  s_2af2e12d6510ef::t_9425dfd6f8e6f4 44,141,200,323
+test/manual/test_trtllm_mla.py
+  s_2af2e12d6510ef::t_2828cb9789ed0a 5
+test/manual/test_two_batch_overlap.py
+  s_2af2e12d6510ef::t_ed9fdbc43871fa 11
+test/manual/test_vlm_accuracy.py
+  s_2af2e12d6510ef::t_00f39f3450c099 14-16,18
+test/manual/vlm/test_mm_utils.py
+  s_2af2e12d6510ef::t_43d3eb7ea3f018 7-8
+test/registered/amd/disaggregation/test_mori_backend_basic.py
+  s_2af2e12d6510ef::t_1873e1d74acd72 9
+test/registered/amd/test_deepseek_v4_flash_fp4.py
+  s_2af2e12d6510ef::t_fb918f01adc4ed 135
+test/registered/amd/test_deepseek_v4_flash_fp8.py
+  s_2af2e12d6510ef::t_2f61886c70f1cf 135
+test/registered/amd/test_deepseek_v4_pro_fp4.py
+  s_2af2e12d6510ef::t_d3e70dffe9a42d 137
+test/registered/amd/test_deepseek_v4_pro_fp8.py
+  s_2af2e12d6510ef::t_50dbe17782797b 137
+test/registered/amd/test_dsv4_fused_quant_dispatch.py
+  s_2af2e12d6510ef::t_6cff0f53ffe316 1-159
+test/registered/amd/test_dsv4_hip_bcg_metadata.py
+  s_2af2e12d6510ef::t_c64edae9a43629 17
+test/registered/amd/test_minimax_hd128_asm_prefill.py
+  s_2af2e12d6510ef::t_312d9961094f1e 20
+test/registered/amd/test_minimax_rocm_verify.py
+  s_2af2e12d6510ef::t_003aa7e16cfcc1 19
+test/registered/attention/test_aiter_decode_partition_buckets.py
+  s_2af2e12d6510ef::t_768d2dea724d97 29
+test/registered/attention/test_aiter_fp8_kv_scales_paths.py
+  s_2af2e12d6510ef::t_ffe2254f5b2dd6 43
+test/registered/attention/test_dflash_mla_backends.py
+  s_2af2e12d6510ef::t_fc73c8c82642b5 13
+test/registered/attention/test_gdn_prefill_layout.py
+  s_2af2e12d6510ef::t_ccccbc3afacd8c 17
+test/registered/attention/test_kda_prefill_flashinfer.py
+  s_2af2e12d6510ef::t_4ee0f8aba67eb4 44
+test/registered/attention/test_triton_attention_kernels.py
+  s_2af2e12d6510ef::t_d36237566ca75c 24
+test/registered/attention/test_trtllm_mha_graph_metadata.py
+  s_2af2e12d6510ef::t_6ee43757a62498 29
+test/registered/attention/unittests/dense/test_extend_init_contract.py
+  s_2af2e12d6510ef::t_077cf0c5ed5294 30
+test/registered/attention/unittests/dense/test_fa3.py
+  s_2af2e12d6510ef::t_2bfec53733df37 5
+test/registered/attention/unittests/dense/test_fa4.py
+  s_2af2e12d6510ef::t_545516cb944764 5
+test/registered/attention/unittests/dense/test_flashinfer.py
+  s_2af2e12d6510ef::t_0fc375fe795155 5
+test/registered/attention/unittests/dense/test_flex_attention.py
+  s_2af2e12d6510ef::t_a5e935976a3acb 5
+test/registered/attention/unittests/dense/test_hybrid_attn.py
+  s_2af2e12d6510ef::t_5008cef3eb533e 7
+test/registered/attention/unittests/dense/test_tbo.py
+  s_2af2e12d6510ef::t_8e088180cedb5f 7
+test/registered/attention/unittests/dense/test_torch_native.py
+  s_2af2e12d6510ef::t_8d2a2227448e58 5
+test/registered/attention/unittests/dense/test_triton.py
+  s_2af2e12d6510ef::t_704311f67af0ab 5
+test/registered/attention/unittests/dense/test_trtllm_mha.py
+  s_2af2e12d6510ef::t_2333b2419e805c 7
+test/registered/attention/unittests/dsa/test_dsa.py
+  s_2af2e12d6510ef::t_a5e0f959023142 5
+test/registered/attention/unittests/dsv4/test_deepseek_v4.py
+  s_2af2e12d6510ef::t_eec184992227f3 21,533,580
+test/registered/attention/unittests/dsv4/test_dsv41_bcg_hip.py
+  s_2af2e12d6510ef::t_b6a07a2a880a86 9-10
+test/registered/attention/unittests/gdn/test_flashinfer.py
+  s_2af2e12d6510ef::t_a94962664b4f14 6
+test/registered/attention/unittests/gdn/test_torch_native.py
+  s_2af2e12d6510ef::t_ee30687f082a5b 5
+test/registered/attention/unittests/gdn/test_triton.py
+  s_2af2e12d6510ef::t_c50fa333247972 12
+test/registered/attention/unittests/hybrid_linear/test_flashinfer_mla_chunk_metadata.py
+  s_2af2e12d6510ef::t_20bf556b060846 23
+test/registered/attention/unittests/kda/test_triton.py
+  s_2af2e12d6510ef::t_5fb5049fc063b5 5
+test/registered/attention/unittests/lightning/test_triton.py
+  s_2af2e12d6510ef::t_53963ce3fc91b7 6
+test/registered/attention/unittests/mamba/test_mamba2.py
+  s_2af2e12d6510ef::t_f41ab43aa8a872 11
+test/registered/attention/unittests/mla/test_flashinfer.py
+  s_2af2e12d6510ef::t_8f160b1baa3491 5
+test/registered/attention/unittests/mla/test_flashmla.py
+  s_2af2e12d6510ef::t_eed92db489c72a 7
+test/registered/attention/unittests/mla/test_triton.py
+  s_2af2e12d6510ef::t_170f17cd178112 5
+test/registered/attention/unittests/swa/test_flashinfer.py
+  s_2af2e12d6510ef::t_e73380946d19f8 8
+test/registered/attention/unittests/swa/test_swa_out_cache_loc.py
+  s_2af2e12d6510ef::t_0c7a720e0deb77 23
+test/registered/attention/unittests/swa/test_torch_native.py
+  s_2af2e12d6510ef::t_1c01e4aeb91af4 5
+test/registered/attention/unittests/swa/test_triton.py
+  s_2af2e12d6510ef::t_ec7611ff655a9a 5
+test/registered/chunked_prefill/test_mm_chunked_embedding_unit.py
+  s_2af2e12d6510ef::t_c29897c0fb7364 19-20
+test/registered/core/test_srt_endpoint.py
+  s_2af2e12d6510ef::t_ea3edc22a3311b 22
+test/registered/core/test_srt_engine.py
+  s_2af2e12d6510ef::t_fac81b85fcdf1f 15
+test/registered/cp/test_cp_strategy_unit.py
+  s_2af2e12d6510ef::t_b76fdf14fb818e 34
+test/registered/cp/test_gqa_prefill_cp.py
+  s_2af2e12d6510ef::t_ee27491c75891b 4
+test/registered/cpu/arm64/test_moe.py
+  s_2af2e12d6510ef::t_c1c04be48f8451 17
+test/registered/cpu/test_binding.py
+  s_2af2e12d6510ef::t_7fdce7766e3fd7 6
+test/registered/cpu/test_rope.py
+  s_2af2e12d6510ef::t_51cd315634e83f 12-13,15
+test/registered/cpu/test_spec_kernels.py
+  s_2af2e12d6510ef::t_4d7de300579df6 7-8
+test/registered/cuda_graph/breakable/test_breakable_cuda_graph.py
+  s_2af2e12d6510ef::t_7bdea0b36d9725 3
+test/registered/cuda_graph/full_prefill/test_full_cuda_graph_prefill.py
+  s_2af2e12d6510ef::t_c775696166060f 18
+test/registered/dcp/test_trtllm_mla_family_dcp_metadata.py
+  s_2af2e12d6510ef::t_c78ced5535fe62 25
+test/registered/debug_utils/comparator/test_output_types.py
+  s_2af2e12d6510ef::t_8eed6205a4d915 45
+test/registered/debug_utils/test_dumper.py
+  s_2af2e12d6510ef::t_738233820e0703 2125-2126
+test/registered/disaggregation/test_disaggregation_optimistic_prefill.py
+  s_2af2e12d6510ef::t_ec43f14aaf05b5 27-31,38,477,481,483,490
+test/registered/disaggregation/test_disaggregation_xpu.py
+  s_2af2e12d6510ef::t_1076e76569e399 2,4-14,20-21,31,33,36-48,50-52,54-62,66-70,73-81,103,115-190
+test/registered/dllm/test_dllm_batching_fdfo.py
+  s_2af2e12d6510ef::t_b1253ce97ea41d 95-97
+test/registered/e2e/cp/test_cp_decode_attn_tp_server.py
+  s_2af2e12d6510ef::t_982268c983e63f 36-41
+test/registered/e2e/disaggregation/test_disaggregation_kv_cache_sharding.py
+  s_2af2e12d6510ef::t_4bb1aeb1b8fbaa 16
+test/registered/e2e/dsv4/test_dsv4_unified_fp8_backend_prefill.py
+  s_2af2e12d6510ef::t_40812dbe70bb78 27
+test/registered/e2e/entrypoints/test_engine_multi_tokenizer.py
+  s_2af2e12d6510ef::t_347c1e3c232d5e 3
+test/registered/e2e/model_executor/test_decoder_tail_moe_bound.py
+  s_2af2e12d6510ef::t_5a03fbf8af7d22 11,17
+test/registered/e2e/models/test_dsa_glm52_hisparse.py
+  s_2af2e12d6510ef::t_b326322fd08955 5
+test/registered/e2e/models/test_dsa_glm52_pd_kv_shard_hicache.py
+  s_2af2e12d6510ef::t_c81a0899f45a90 20
+test/registered/e2e/moe/test_paged_experts.py
+  s_2af2e12d6510ef::t_7d811744c915c9 3-5,11-13,27,132-190,195,198
+test/registered/e2e/quantization/test_awq.py
+  s_2af2e12d6510ef::t_e5b359f8eab1f4 46-49
+test/registered/e2e/speculative/test_dflash_domino.py
+  s_2af2e12d6510ef::t_17013eca0db90a 7
+test/registered/e2e/xpu/test_xpu_fp8_linear.py
+  s_2af2e12d6510ef::t_9b762161325558 15-18
+test/registered/e2e/xpu/test_xpu_mamba1_runtime.py
+  s_2af2e12d6510ef::t_7d035fc89aa7bf 16
+test/registered/hicache/test_hicache_storage_mooncake_backend.py
+  s_2af2e12d6510ef::t_e3accc782dd692 75-76
+test/registered/hicache/test_page_unified_qwen3_30b_accuracy.py
+  s_2af2e12d6510ef::t_1d614513705056 63
+test/registered/hicache/test_pp_with_hicache.py
+  s_2af2e12d6510ef::t_2a3dfbc3cf1d03 102-103
+test/registered/kernels/benchmark/gemm/bench_bf16xfp32_router_gemm.py
+  s_2af2e12d6510ef::t_b7ab3ffde4502f 18,63
+test/registered/kernels/benchmark/gemm/bench_dsv3_fused_a_gemm.py
+  s_2af2e12d6510ef::t_fb60a05168ea23 11,81
+test/registered/kernels/benchmark/kvcache/bench_set_mla_kv_buffer.py
+  s_2af2e12d6510ef::t_bdf1fadedbba69 19-24
+test/registered/kernels/benchmark/moe/bench_moe_route_warp.py
+  s_2af2e12d6510ef::t_5d56906a087d1f 1-2,6-8,12,15,17-21,25-32,34-38,40-46,48-49
+test/registered/kernels/benchmark/sampling/bench_softmax.py
+  s_2af2e12d6510ef::t_50b6f63bf67f78 5,8,49
+test/registered/kernels/ops/attention/dsv4/test_dsv41_decode_glue_hip.py
+  s_2af2e12d6510ef::t_6a8900b273fbab 287-291,302-303
+test/registered/kernels/ops/attention/dsv4/test_flydsl_v4nm_decode.py
+  s_2af2e12d6510ef::t_b015c1aad1efb2 25
+test/registered/kernels/ops/attention/qsa/test_qsa.py
+  s_2af2e12d6510ef::t_590061d8ad8456 39
+test/registered/kernels/ops/attention/qsa/test_qsa_fused_kv_prepare.py
+  s_2af2e12d6510ef::t_15fbfb341d8e18 126,454
+test/registered/kernels/ops/attention/qsa/test_qsa_hicache.py
+  s_2af2e12d6510ef::t_e33081ebcf1f99 15-17,19,35-50,88-89,233
+test/registered/kernels/ops/attention/test_deep_select.py
+  s_2af2e12d6510ef::t_db1a78bd752cd1 29,225-244
+test/registered/kernels/ops/attention/test_dsa_indexer.py
+  s_2af2e12d6510ef::t_1dc98919e0faef 37-38
+test/registered/kernels/ops/attention/test_dsa_metadata_replay.py
+  s_2af2e12d6510ef::t_2d15f13856b315 11
+test/registered/kernels/ops/attention/test_dsv41_prefill_sparse_indexer.py
+  s_2af2e12d6510ef::t_7401ab72001006 4,6,15-18,34-35,226,240,245-298,370-377,382-402,574-650
+test/registered/kernels/ops/attention/test_fp4_indexer.py
+  s_2af2e12d6510ef::t_7b33b37f2fcfef 630-654
+test/registered/kernels/ops/attention/test_gdn_prefill_graph.py
+  s_2af2e12d6510ef::t_2c5a2d24fdcdea 27
+test/registered/kernels/ops/attention/test_inkling_checkpoint_indices.py
+  s_2af2e12d6510ef::t_9da9306e3fbf5b 21,751
+test/registered/kernels/ops/attention/test_kda_fused_verify_backend.py
+  s_2af2e12d6510ef::t_1bfacd21eeb150 21
+test/registered/kernels/ops/attention/test_kda_prefill_graph.py
+  s_2af2e12d6510ef::t_fcf79e19d2e73c 26
+test/registered/kernels/ops/attention/test_kda_recurrent_launch_gfx950.py
+  s_2af2e12d6510ef::t_5bebe108c25c90 1-134
+test/registered/kernels/ops/attention/test_q8kv8_sparse_prefill_backend.py
+  s_2af2e12d6510ef::t_09fb6c15e253f3 32-33,726-728
+test/registered/kernels/ops/attention/test_table_qk_norm_rope.py
+  s_2af2e12d6510ef::t_6d554fa069e543 2,8,11,58,78-130,175
+test/registered/kernels/ops/communication/test_amd_deterministic_allreduce_fixed_order.py
+  s_2af2e12d6510ef::t_7b814043eddca3 1-132
+test/registered/kernels/ops/diffusion/test_activation.py
+  s_2af2e12d6510ef::t_a9f4a18a2a8b3e 24,33-44
+test/registered/kernels/ops/diffusion/test_model_fast_paths.py
+  s_2af2e12d6510ef::t_25b51a48660338 155-158,842-961
+test/registered/kernels/ops/embeddings/test_engram_gather.py
+  s_2af2e12d6510ef::t_8f01399f41d03a 6-9,11,13,15-18,21-26,28-87
+test/registered/kernels/ops/gemm/test_cutedsl_bf16_gemm.py
+  s_2af2e12d6510ef::t_babc553d40f5b0 9-10,34,67
+test/registered/kernels/ops/gemm/test_cutedsl_dsv3_fused_a_gemm.py
+  s_2af2e12d6510ef::t_b64a2ea510820f 8-9,33
+test/registered/kernels/ops/gemm/test_cutedsl_dual_gemm.py
+  s_2af2e12d6510ef::t_ec052fce7d4da5 4,9,120,329-332
+test/registered/kernels/ops/gemm/test_dsv3_fused_a_gemm.py
+  s_2af2e12d6510ef::t_fd71b111bca827 9-10,30
+test/registered/kernels/ops/gemm/test_tiny_gemm.py
+  s_2af2e12d6510ef::t_e036faef2891b9 8-9,42,58
+test/registered/kernels/ops/kvcache/test_minimax_m31_hicache.py
+  s_2af2e12d6510ef::t_01debe04be7ec6 53
+test/registered/kernels/ops/layernorm/test_mhc_kernels.py
+  s_2af2e12d6510ef::t_7f1bfb2502c863 308
+test/registered/kernels/ops/layernorm/test_mhc_post_combine_norm_decode.py
+  s_2af2e12d6510ef::t_f4a4819b8d01c2 45-47,51,53-54,56,109
+test/registered/kernels/ops/lora/test_chunked_sgmv_cuda_graph.py
+  s_2af2e12d6510ef::t_a789c25ed524d5 41
+test/registered/kernels/ops/lora/test_dense_lora_backend.py
+  s_2af2e12d6510ef::t_737c7978932d0d 17
+test/registered/kernels/ops/lora/test_moe_lora_contiguous_row_domain.py
+  s_2af2e12d6510ef::t_56d501870e8846 12-13,19
+test/registered/kernels/ops/lora/test_moe_lora_moe_runner_numerics.py
+  s_2af2e12d6510ef::t_2c733d345da885 12
+test/registered/kernels/ops/lora/test_moe_lora_nvfp4_provider_numerics.py
+  s_2af2e12d6510ef::t_b4b7472001a997 15,19
+test/registered/kernels/ops/lora/test_moe_lora_shared_outer_numerics.py
+  s_2af2e12d6510ef::t_3a49e5efe9e323 15,19
+test/registered/kernels/ops/moe/test_marlin_packed_topk_unpack.py
+  s_2af2e12d6510ef::t_0c5f66e39c4b86 91-93,104-105,107,110,112-114,117,121,123,127,129-132,134,137-141
+test/registered/kernels/ops/moe/test_moe_front.py
+  s_2af2e12d6510ef::t_b67c73f7a16967 91,96
+test/registered/kernels/ops/moe/test_moe_route_warp.py
+  s_2af2e12d6510ef::t_b094917fcadaa0 1-443
+test/registered/kernels/ops/moe/test_moe_wna16_marlin.py
+  s_2af2e12d6510ef::t_756c901b2ec17d 20,22,693-696
+test/registered/kernels/ops/moe/test_muse_spark_routing.py
+  s_2af2e12d6510ef::t_d6b9b10354fa7b 62-66,68-69,72,75-82
+test/registered/kernels/ops/moe/test_paged_experts_kernels.py
+  s_2af2e12d6510ef::t_caef1c60a6f565 249-304
+test/registered/kernels/ops/moe/test_sm120_topk_gate_small_m.py
+  s_2af2e12d6510ef::t_f31ec27321d7c8 20-25
+test/registered/kernels/ops/quantization/test_fp8_wo_a.py
+  s_2af2e12d6510ef::t_3d0199a967d901 13,16,101-161
+test/registered/kernels/ops/speculative/test_draft_decode_window.py
+  s_2af2e12d6510ef::t_09fc97260bf099 54,56
+test/registered/kernels/ops/speculative/test_next_verify_prep.py
+  s_2af2e12d6510ef::t_0e8eeb5b33758b 149-150
+test/registered/kernels/ops/speculative/test_speculative_sampling.py
+  s_2af2e12d6510ef::t_4285b136104d31 2,8-10,14-15,19,23-29,234-308
+test/registered/kv_canary/test_self_e2e_bench_speed.py
+  s_2af2e12d6510ef::t_6aca167329d596 10
+test/registered/kv_canary/test_self_unit_radix_walker.py
+  s_2af2e12d6510ef::t_769af80479c656 11
+test/registered/kv_canary/test_self_unit_token_oracle.py
+  s_2af2e12d6510ef::t_2e21a867c0f9c3 11
+test/registered/mem_cache/test_post_capture_kv_sizing.py
+  s_2af2e12d6510ef::t_518367dcde77db 15
+test/registered/mock_model/test_self_unit_canary_mock_wiring.py
+  s_2af2e12d6510ef::t_d8e600db772724 11-12
+test/registered/mock_model/test_self_unit_oracle_torch_vs_ref.py
+  s_2af2e12d6510ef::t_04401f4d9b0221 8
+test/registered/mock_model/test_self_unit_sampler_hookpoint.py
+  s_2af2e12d6510ef::t_e9df122556eb03 17
+test/registered/moe/test_topk_padded_region.py
+  s_2af2e12d6510ef::t_88b85931764e90 5,9-12,40-86,129-156
+test/registered/moe/test_torch_compile_moe.py
+  s_2af2e12d6510ef::t_10b13f207a83e7 77-78
+test/registered/moe/test_triton_moe_padding.py
+  s_2af2e12d6510ef::t_f8b8a4616dd761 19,21
+test/registered/npu/accuracy/deepseek_v4_flash/test_npu_deepseek_v4_flash_0731_w8a8_1p1d_16p_gpqa.py
+  s_2af2e12d6510ef::t_8fbc76cca09a9c 1-261
+test/registered/npu/accuracy/deepseek_v4_flash/test_npu_deepseek_v4_flash_fp8_4p_gpqa_a5.py
+  s_2af2e12d6510ef::t_44cec2a970e0d1 144-146
+test/registered/npu/accuracy/deepseek_v4_pro/test_npu_deepseek_v4_pro_0813_w4a8_1p1d_32p_gpqa.py
+  s_2af2e12d6510ef::t_ca3cf6c5e4ee4c 1-233
+test/registered/npu/accuracy/kimi_k3/test_npu_kimi_k3_w4a8_32p_gpqa.py
+  s_2af2e12d6510ef::t_b9ba6053ec185f 11-12,17,102-110,138,144-164
+test/registered/npu/basic_function/parameter/test_npu_fim_completion.py
+  s_2af2e12d6510ef::t_f91110f23a593d 6
+test/registered/npu/basic_function/pd_disaggregation/test_npu_pd_decode_retraction_backup.py
+  s_2af2e12d6510ef::t_77854e09c76604 29
+test/registered/npu/basic_function/pd_disaggregation/test_npu_pd_disaggregation.py
+  s_2af2e12d6510ef::t_a274133dca01fe 12
+test/registered/npu/interface/test_npu_openai_server_ignore_eos.py
+  s_2af2e12d6510ef::t_f5e10f24bf1306 6
+test/registered/npu/performance/deepseek_v4_flash/expert-layout-ais-replicas16.json
+  s_2af2e12d6510ef::t_bdd85882f90890 1
+test/registered/npu/performance/deepseek_v4_flash/test_npu_deepseek_v4_flash_w8a8_1p1d_16p_in128k_out1k_prefix90_20ms.py
+  s_2af2e12d6510ef::t_5aa101a9453a81 2,17-19,37,39-50,53-71,73-74,78,80,83-84,101,103,105,107,109-111,125-128,130-147,150-151,164,170-171,173,177,183-199,203,205-206,208-211,213-214,217-218,220-223,229,232,235-240,243-249,251-252
+test/registered/npu/performance/deepseek_v4_pro/test_npu_deepseek_v4_pro_w4a8_16p_in128k_out1k_prefix90_20ms.py
+  s_2af2e12d6510ef::t_abc3dc971b0407 1-157
+test/registered/npu/performance/kimi_k3/test_npu_kimi_k3_w4a8_32p_mix_in128k_out1_prefill.py
+  s_2af2e12d6510ef::t_30acbf894a51bf 1-121
+test/registered/npu/performance/kimi_k3/test_npu_kimi_k3_w4a8_32p_mix_in128k_out1k_decode_prefix.py
+  s_2af2e12d6510ef::t_da142c99a62e24 1-151
+test/registered/openai_server/basic/test_openai_server.py
+  s_2af2e12d6510ef::t_e189c12cd028f6 20
+test/registered/openai_server/features/test_openai_server_hidden_states.py
+  s_2af2e12d6510ef::t_52f0c867533601 7
+test/registered/openai_server/function_call/test_openai_function_calling.py
+  s_2af2e12d6510ef::t_a70cb5524665c7 7
+test/registered/openai_server/validation/test_large_max_new_tokens.py
+  s_2af2e12d6510ef::t_80506dfaacccf4 13
+test/registered/ops/test_aiter_allreduce_fusion_amd.py
+  s_2af2e12d6510ef::t_41f0cbbebb97dc 16
+test/registered/pp/test_pp_parallel_compat.py
+  s_2af2e12d6510ef::t_b44480e8fd99a2 4
+test/registered/pp/test_pp_single_node.py
+  s_2af2e12d6510ef::t_54d1590ee86020 18
+test/registered/prefill_only/test_multi_item_scoring_metadata.py
+  s_2af2e12d6510ef::t_33e2a7e682dba8 14
+test/registered/rotary/test_mrope_axis_map.py
+  s_2af2e12d6510ef::t_5012e91d425d1e 133
+test/registered/sampling/test_sampling_mask.py
+  s_2af2e12d6510ef::t_277e570ee990d2 167-194
+test/registered/scripted_runtime/test_scripted_runtime_core.py
+  s_2af2e12d6510ef::t_9dee106c2529a3 3
+test/registered/sessions/test_session_control.py
+  s_2af2e12d6510ef::t_50b74fd61422c1 21
+test/registered/sessions/test_session_latency.py
+  s_2af2e12d6510ef::t_82f2d05efb0ac7 21
+test/registered/spec/dspark/test_dspark_dp_spec_prefill_coordination.py
+  s_2af2e12d6510ef::t_f78d342cc930eb 11
+test/registered/spec/dspark/test_dspark_kernel_parity.py
+  s_2af2e12d6510ef::t_3094a5a85dde42 28,31
+test/registered/spec/dspark/test_dspark_simulated_bonus.py
+  s_2af2e12d6510ef::t_3ee82659d5bf3b 9,11,37,57,79
+test/registered/spec/dspark/test_dspark_stacked_ctx_kv_parity.py
+  s_2af2e12d6510ef::t_d16e2806cab168 19,21
+test/registered/spec/eagle/test_dp_spec_prefill_coordination.py
+  s_2af2e12d6510ef::t_3dce6c69463d41 9
+test/registered/spec/eagle/test_dp_spec_prefill_coordination_mixed.py
+  s_2af2e12d6510ef::t_a0e57693bf891e 12
+test/registered/spec/eagle/test_eagle_dp_attention.py
+  s_2af2e12d6510ef::t_2880b12b91aa8c 7
+test/registered/tokenizer/test_multi_tokenizer.py
+  s_2af2e12d6510ef::t_1515f0e00c32c7 5
+test/registered/unit/attention/test_triton_sparse_mla_prefill.py
+  s_2af2e12d6510ef::t_a30624c98e3795 226,236,243
+test/registered/unit/batch_overlap/test_tbo_children_dummy_token_mask.py
+  s_2af2e12d6510ef::t_bf3958e9fc8359 24-25
+test/registered/unit/batch_overlap/test_tbo_filter_batch_marker.py
+  s_2af2e12d6510ef::t_f44999f5a38461 18-19,62-74
+test/registered/unit/configs/test_cohere2_moe_config.py
+  s_2af2e12d6510ef::t_ada1bf26291d6c 20-21
+test/registered/unit/configs/test_locate_anything_config.py
+  s_2af2e12d6510ef::t_3568662e7ee8ff 8
+test/registered/unit/configs/test_model_config.py
+  s_2af2e12d6510ef::t_8c52147b6c1edf 18
+test/registered/unit/configs/test_multimodal_piecewise_cuda_graph.py
+  s_2af2e12d6510ef::t_5d2fdd3bd0fd30 20
+test/registered/unit/constrained/test_grammar_manager.py
+  s_2af2e12d6510ef::t_b37c7714c6c6ed 9,38,473,489,491,493,501,503,505,514,517,519,526-527,534,536,538,572,595,601-603,611,626,634-653,665,692,698,717,737,769,785,800,1054
+test/registered/unit/cp/test_qsa_cp_unit.py
+  s_2af2e12d6510ef::t_bfb93e81ee6764 19
+test/registered/unit/disaggregation/test_admission_abort_not_enqueued.py
+  s_2af2e12d6510ef::t_765fe99eb975e5 29,31-33,35-38,75,86,96,150,182,220,253,270,292,299,319
+test/registered/unit/disaggregation/test_ascend_page_dcp.py
+  s_2af2e12d6510ef::t_44a88a60281784 8,16-85,88,95,117-224
+test/registered/unit/disaggregation/test_common_sender_lifecycle.py
+  s_2af2e12d6510ef::t_1dddb33c6ae61f 12
+test/registered/unit/disaggregation/test_decode_queue_cleanup.py
+  s_2af2e12d6510ef::t_93b15f7aacf845 17-20,23-26,30,134,139,187,212,250,287,307,347,378-380,393,501
+test/registered/unit/disaggregation/test_deferred_decode_kv_release.py
+  s_2af2e12d6510ef::t_2b99f2d37cee37 37-40,42,490-493,533,566,570,599,604,639,656,665,681-682,699,715-717,810,878,912,924,935,940,951,959,980,992,997,1020,1030,1044,1046,1057,1063,1101,1112-1118
+test/registered/unit/disaggregation/test_encode_server.py
+  s_2af2e12d6510ef::t_eeabd936b8997f 33
+test/registered/unit/disaggregation/test_fake_kv_sender.py
+  s_2af2e12d6510ef::t_15c094e292a671 9
+test/registered/unit/disaggregation/test_kimi_k3_encoder_mode.py
+  s_2af2e12d6510ef::t_312b94ae61c286 26
+test/registered/unit/disaggregation/test_kv_checksum.py
+  s_2af2e12d6510ef::t_407cb138e6de9e 258,583-606
+test/registered/unit/disaggregation/test_mooncake_transfer_batching.py
+  s_2af2e12d6510ef::t_57c880cc1508e8 15
+test/registered/unit/disaggregation/test_mori_deferred_kv_release.py
+  s_2af2e12d6510ef::t_a477e4acce06bc 56
+test/registered/unit/disaggregation/test_nixl_backend_basic.py
+  s_2af2e12d6510ef::t_fc1d2eb9458f63 19-20
+test/registered/unit/disaggregation/test_pd_role_switch.py
+  s_2af2e12d6510ef::t_5867372f77d0a8 8
+test/registered/unit/disaggregation/test_prefill_abort_result_cleanup.py
+  s_2af2e12d6510ef::t_600340b2d06d78 11-17,29,65,74,88,191,218,227,231,238,241,245
+test/registered/unit/disaggregation/test_prefill_complete_integration.py
+  s_2af2e12d6510ef::t_fb35420208f284 8-10,27-32,42,283,292-293,329,338,357-361,366,371,373,375-377,389,391,393-397,437-438,443-444,451,454,463-464,470-474,481-483,502-503,505-506,508,512-552,557-558,582,601,619-621,626,630,634-636
+test/registered/unit/disaggregation/test_prefill_result_polling.py
+  s_2af2e12d6510ef::t_3054ae70d7c4ce 18,20,34-38,42,125-130,188-189,192,239,321,328-330,483,585,724,774,840,919,954,1053,1091,1131,1133,1162,1168,1178,1198-1199,1219,1221,1262,1267,1275-1277,1288-1292,1299,1311-1314
+test/registered/unit/disaggregation/test_unified_memory_move_gate.py
+  s_2af2e12d6510ef::t_838182f5f18f24 21-23,28,41,92-93,321-322
+test/registered/unit/dllm/test_gemma4_cuda_graph.py
+  s_2af2e12d6510ef::t_c1b881727c3b07 13
+test/registered/unit/dllm/test_gemma4_diffusion.py
+  s_2af2e12d6510ef::t_afe4faab2c40b3 21,94-98,105,148-161
+test/registered/unit/dllm/test_gemma4_renoise.py
+  s_2af2e12d6510ef::t_b0924a01032c54 7-8,17
+test/registered/unit/dllm/test_gemma4_uniform_lifecycle.py
+  s_2af2e12d6510ef::t_cdbec16395b98b 16,372
+test/registered/unit/entrypoints/anthropic/test_serving.py
+  s_2af2e12d6510ef::t_6985a0c2c6e233 893,910-911,914-924,927,946-986
+test/registered/unit/entrypoints/openai/test_serving_chat.py
+  s_2af2e12d6510ef::t_7e173e0bec2bd0 38,1330-1332,2941-3013,3552-3565,6246-6264
+test/registered/unit/entrypoints/test_embedding_responses.py
+  s_2af2e12d6510ef::t_f22d5fc1c28dc1 1-3,7,9-14,19,22-29,32-34,36-50
+test/registered/unit/entrypoints/test_http_server_warmup.py
+  s_2af2e12d6510ef::t_9e8d78a603c813 6
+test/registered/unit/entrypoints/test_rust_server_dp_ports.py
+  s_2af2e12d6510ef::t_46ab779c9c2c16 9
+test/registered/unit/eplb/test_megamoe_prefill_recorder.py
+  s_2af2e12d6510ef::t_7a437f0f191631 15
+test/registered/unit/function_call/test_function_call_parser.py
+  s_2af2e12d6510ef::t_cd1c0b68a758cd 52
+test/registered/unit/function_call/test_kimik3_structural_tag.py
+  s_2af2e12d6510ef::t_fb3a94fcb68b31 331-425
+test/registered/unit/hardware_backend/mlx/test_max_running_requests.py
+  s_2af2e12d6510ef::t_30f435d99bcd91 129
+test/registered/unit/hardware_backend/mlx/test_scheduler_mixin.py
+  s_2af2e12d6510ef::t_29340a318b8f78 352
+test/registered/unit/hardware_backend/mlx/test_tp_worker_routing.py
+  s_2af2e12d6510ef::t_3eee6a42858461 42
+test/registered/unit/kernel_plugins/amd/test_mono_framework.py
+  s_2af2e12d6510ef::t_c9e83f07e30bfc 37
+test/registered/unit/kernel_plugins/nvidia/test_eagle_binding.py
+  s_2af2e12d6510ef::t_65f7dffec1bd63 27-28
+test/registered/unit/kernel_plugins/nvidia/test_megakernel_binding.py
+  s_2af2e12d6510ef::t_b47c19bb71cb8d 26
+test/registered/unit/kernels/test_kernels_namespace.py
+  s_2af2e12d6510ef::t_42f679e21cea6a 160,565
+test/registered/unit/layer_boundary/test_append_stages.py
+  s_2af2e12d6510ef::t_997d386708b712 39-40
+test/registered/unit/layer_boundary/test_aux_capture_deferred_allreduce.py
+  s_2af2e12d6510ef::t_b2f1dc59980530 17-18
+test/registered/unit/layer_boundary/test_aux_hidden_states.py
+  s_2af2e12d6510ef::t_c9b4467f0f1277 190
+test/registered/unit/layer_boundary/test_boundary_output_contracts.py
+  s_2af2e12d6510ef::t_6c06061a00b021 27
+test/registered/unit/layer_boundary/test_cp_decode_dispatch.py
+  s_2af2e12d6510ef::t_50e3df4c41fa65 24
+test/registered/unit/layer_boundary/test_custom_all_reduce_fusion.py
+  s_2af2e12d6510ef::t_3b8d6d018acb06 26
+test/registered/unit/layer_boundary/test_cutedsl_ar_fusion.py
+  s_2af2e12d6510ef::t_99a408672c9e0a 25,42
+test/registered/unit/layer_boundary/test_declared_decoder_boundary.py
+  s_2af2e12d6510ef::t_7f842087ae64dd 41,61
+test/registered/unit/layer_boundary/test_dp_attention_cp_gather.py
+  s_2af2e12d6510ef::t_46b209fda1ae1c 30
+test/registered/unit/layer_boundary/test_gated_residual_ops.py
+  s_2af2e12d6510ef::t_4e162c10c2fe48 11
+test/registered/unit/layer_boundary/test_independent_stage_construction.py
+  s_2af2e12d6510ef::t_0f1cec48b30ff8 28
+test/registered/unit/layer_boundary/test_layernorm_sp.py
+  s_2af2e12d6510ef::t_2f3509eef999d9 28
+test/registered/unit/layer_boundary/test_nemotron_h_aux_capture.py
+  s_2af2e12d6510ef::t_ebd5036baf8e16 8
+test/registered/unit/layer_boundary/test_nemotron_h_stages.py
+  s_2af2e12d6510ef::t_ff8e44f670ec74 31
+test/registered/unit/layer_boundary/test_producer_completion.py
+  s_2af2e12d6510ef::t_fcf13d00d02889 32,43,676,678
+test/registered/unit/layer_boundary/test_reduction_fusion.py
+  s_2af2e12d6510ef::t_dc5f46760c16cf 30
+test/registered/unit/layer_boundary/test_residual_stream.py
+  s_2af2e12d6510ef::t_e8984c81f9504d 28
+test/registered/unit/layer_boundary/test_row_transport.py
+  s_2af2e12d6510ef::t_736e15c4cfa151 25
+test/registered/unit/layer_boundary/test_short_conv_boundary.py
+  s_2af2e12d6510ef::t_a9313129a98e07 32
+test/registered/unit/layers/attention/test_aiter_verify_metadata.py
+  s_2af2e12d6510ef::t_e0276ccade2109 10
+test/registered/unit/layers/attention/test_attention_graph_metadata_reuse.py
+  s_2af2e12d6510ef::t_45863960eb915a 13
+test/registered/unit/layers/attention/test_dsa_backend_dp_padding.py
+  s_2af2e12d6510ef::t_e167fb4fbeb477 18
+test/registered/unit/layers/attention/test_dsa_indexer_idle.py
+  s_2af2e12d6510ef::t_aaa56b165376e1 11
+test/registered/unit/layers/attention/test_dsa_q8kv8_bf16_prefill_routing.py
+  s_2af2e12d6510ef::t_a8c1c01a2bfae3 14
+test/registered/unit/layers/attention/test_dsv4_cutedsl_h16_dispatch.py
+  s_2af2e12d6510ef::t_0294116a3630c5 7
+test/registered/unit/layers/attention/test_encoder_decoder_varlen_gather.py
+  s_2af2e12d6510ef::t_ed22db3d11f207 8-10,182
+test/registered/unit/layers/attention/test_flashattention_graph_metadata.py
+  s_2af2e12d6510ef::t_88c642ff66d832 16-17
+test/registered/unit/layers/attention/test_flashattention_return_lse.py
+  s_2af2e12d6510ef::t_9abf3f3c2ef753 11-12
+test/registered/unit/layers/attention/test_fused_draft_window_metadata.py
+  s_2af2e12d6510ef::t_bf027e930ce8da 460
+test/registered/unit/layers/attention/test_gdn_prefill_backend_policy.py
+  s_2af2e12d6510ef::t_148bfd9af73099 27
+test/registered/unit/layers/attention/test_index_topk_share.py
+  s_2af2e12d6510ef::t_621395ff5a2aba 11
+test/registered/unit/layers/attention/test_kv_shard_hooks.py
+  s_2af2e12d6510ef::t_9a3030e2536725 25
+test/registered/unit/layers/attention/test_mamba_track_state_dtype.py
+  s_2af2e12d6510ef::t_3da86c1a0ba354 18
+test/registered/unit/layers/attention/test_minimax_sparse_nvfp4_idle.py
+  s_2af2e12d6510ef::t_4cdf5d09582602 10
+test/registered/unit/layers/attention/test_triton_verify_metadata.py
+  s_2af2e12d6510ef::t_9c950589f74c2f 13
+test/registered/unit/layers/attention/test_trtllm_mha_paged_kv.py
+  s_2af2e12d6510ef::t_654633b7fe7b80 27,29,31,149-257
+test/registered/unit/layers/attention/test_verify_mask.py
+  s_2af2e12d6510ef::t_4aed6c309bc837 7,17
+test/registered/unit/layers/attention/test_verify_widening_is_wired.py
+  s_2af2e12d6510ef::t_18f4286513e676 39
+test/registered/unit/layers/moe/paged_experts/test_paged_experts.py
+  s_2af2e12d6510ef::t_ca97cc48f4227c 1,8,13,137-145,148-151,171-175,179-180,547,552-554,562-595,626,633-639,648-652,673-1081
+test/registered/unit/layers/moe/test_aiter_megamoe_rank_sync.py
+  s_2af2e12d6510ef::t_6fecb90efe10c5 7-8
+test/registered/unit/layers/moe/test_mega_moe_decode_capacity.py
+  s_2af2e12d6510ef::t_177117dba40aca 18
+test/registered/unit/layers/moe/test_mega_moe_deepgemm_api.py
+  s_2af2e12d6510ef::t_e82c46837e4729 28,885,893-897
+test/registered/unit/layers/moe/test_topk_routing_inputs.py
+  s_2af2e12d6510ef::t_055e1049ff9e72 40,47
+test/registered/unit/layers/moe/test_w4afp8_deepep_post_reorder.py
+  s_2af2e12d6510ef::t_e78a55f5563b94 22-25
+test/registered/unit/layers/quantization/test_dense_swiglu_fp8.py
+  s_2af2e12d6510ef::t_bb8ecfc4824270 12
+test/registered/unit/layers/quantization/test_gguf_inactive_routes.py
+  s_2af2e12d6510ef::t_c31afc15062519 22,24
+test/registered/unit/layers/quantization/test_halops_mxfp8.py
+  s_2af2e12d6510ef::t_cbe2251e9b96c0 1-334
+test/registered/unit/layers/quantization/test_nvfp4_cutedsl_w4a16_situ_moe.py
+  s_2af2e12d6510ef::t_dc00ce1f368a75 1,3-8,10,14-18,20-24,26-174,178
+test/registered/unit/layers/quantization/test_unquant_gfx115_weight_padding.py
+  s_2af2e12d6510ef::t_10c434a4d75405 1-320
+test/registered/unit/layers/test_dsv41_candidate_graph_variants.py
+  s_2af2e12d6510ef::t_f4cf0b2d20ea2e 12
+test/registered/unit/layers/test_dsv41_indexer_tp_shard.py
+  s_2af2e12d6510ef::t_763d3ecbf9e994 1-178
+test/registered/unit/layers/test_dsv41_late_layer_tail_readers.py
+  s_2af2e12d6510ef::t_8f9f380d2c6763 23-24
+test/registered/unit/layers/test_dsv4_nonpaged_indexer.py
+  s_2af2e12d6510ef::t_26de4dc2db6a61 29
+test/registered/unit/layers/test_dual_gemm.py
+  s_2af2e12d6510ef::t_9cb4b6096d45b5 9,86
+test/registered/unit/layers/test_engram_history.py
+  s_2af2e12d6510ef::t_2409cd146f1528 11-12
+test/registered/unit/layers/test_kpool_stream_scheduling.py
+  s_2af2e12d6510ef::t_a4e45b49c69d72 17
+test/registered/unit/layers/test_linear_parallel_groups.py
+  s_2af2e12d6510ef::t_b299f2ef0d2c11 509-511,587-589
+test/registered/unit/layers/test_mamba_prefill_track_metadata.py
+  s_2af2e12d6510ef::t_242512e9d29d54 19-20
+test/registered/unit/layers/test_minicpm_sparse_cache.py
+  s_2af2e12d6510ef::t_4f458f90d60df7 84
+test/registered/unit/layers/test_minicpm_sparse_metadata.py
+  s_2af2e12d6510ef::t_291d82644aebf5 14-26,42-47
+test/registered/unit/layers/test_radix_attention.py
+  s_2af2e12d6510ef::t_f1976120210dfb 13
+test/registered/unit/layers/test_radix_attention_padded_extend.py
+  s_2af2e12d6510ef::t_da09febb701028 8
+test/registered/unit/layers/test_radix_linear_attention.py
+  s_2af2e12d6510ef::t_ca80c96901b327 9
+test/registered/unit/lora/test_dense_prefill_graph_replay.py
+  s_2af2e12d6510ef::t_b5ee8ba0109ebb 10
+test/registered/unit/lora/test_lm_head_pruning.py
+  s_2af2e12d6510ef::t_9f6bc8fad749c9 24
+test/registered/unit/lora/test_lora_pp.py
+  s_2af2e12d6510ef::t_8a4a1410a6cf01 36-40,119-120,134-135,141,146-148
+test/registered/unit/lora/test_lora_spec_verify_batch_info.py
+  s_2af2e12d6510ef::t_c46e385c0cd207 23
+test/registered/unit/lora/test_mem_pool_ep_unit.py
+  s_2af2e12d6510ef::t_6d0e14c32794a8 27-29
+test/registered/unit/lora/test_moe_lora_info.py
+  s_2af2e12d6510ef::t_01b1a99e9af28a 15
+test/registered/unit/lora/test_moe_lora_plan_tables.py
+  s_2af2e12d6510ef::t_9e03d9cf9fbaa2 10
+test/registered/unit/lora/test_triton_dp_attention_unit.py
+  s_2af2e12d6510ef::t_2883400ad90b0e 31-32
+test/registered/unit/managers/scheduler_components/test_dp_attn.py
+  s_2af2e12d6510ef::t_bdb47a9f7d247f 22
+test/registered/unit/managers/scheduler_components/test_invariant_checker.py
+  s_2af2e12d6510ef::t_aaf92963fb3f50 15,27,208-213
+test/registered/unit/managers/scheduler_components/test_request_list.py
+  s_2af2e12d6510ef::t_92bfe8841a95a0 1-100
+test/registered/unit/managers/scheduler_components/test_request_retirer.py
+  s_2af2e12d6510ef::t_a392eac3e75e91 1-75
+test/registered/unit/managers/test_async_shm_materializer.py
+  s_2af2e12d6510ef::t_9c0eeae48c2226 9
+test/registered/unit/managers/test_auxiliary_output.py
+  s_2af2e12d6510ef::t_27c03649597ab2 22-26,36,522,539,557-558,565
+test/registered/unit/managers/test_bailing_modality_metadata.py
+  s_2af2e12d6510ef::t_424e4aa224738b 11,20
+test/registered/unit/managers/test_batch_result_processor_hidden_states.py
+  s_2af2e12d6510ef::t_bf3d3e4f7c2d76 14-15,20,90,225,287-288,291,340,344,386-387,393
+test/registered/unit/managers/test_deferred_output.py
+  s_2af2e12d6510ef::t_6c10e690a500e8 11,13-14,32,54
+test/registered/unit/managers/test_detailed_annotations.py
+  s_2af2e12d6510ef::t_0b77d6f29944f0 18
+test/registered/unit/managers/test_deterministic_chunk_align.py
+  s_2af2e12d6510ef::t_2618a834e8e81f 8
+test/registered/unit/managers/test_disagg_idle_step_counters.py
+  s_2af2e12d6510ef::t_dec4b11f92c3e6 14,23-27,29,74-78,440,550-551,572,582-583
+test/registered/unit/managers/test_finish_length_speculative.py
+  s_2af2e12d6510ef::t_2060734c121ea3 21,26
+test/registered/unit/managers/test_hisparse_unit.py
+  s_2af2e12d6510ef::t_8c884e1ba68fea 33,64
+test/registered/unit/managers/test_io_struct.py
+  s_2af2e12d6510ef::t_3555b4594032c9 27,29
+test/registered/unit/managers/test_kv_page_invariants.py
+  s_2af2e12d6510ef::t_710f9b3df4e5f3 10,39,66-68,85-87,91-93,100,111-113,127-129
+test/registered/unit/managers/test_load_inquirer.py
+  s_2af2e12d6510ef::t_4a82ebd6cab8d9 4,6-7,15-18,20,22,73,117-160,240
+test/registered/unit/managers/test_mix_with_running_mamba_track.py
+  s_2af2e12d6510ef::t_c6081cfc0eb164 26
+test/registered/unit/managers/test_mm_hashes.py
+  s_2af2e12d6510ef::t_99e3ae0b811eee 28-29
+test/registered/unit/managers/test_mm_pad_input_tokens.py
+  s_2af2e12d6510ef::t_657d270ed28033 9-10
+test/registered/unit/managers/test_mm_process_config.py
+  s_2af2e12d6510ef::t_8ed890a00b5a97 521-522,570-571,584-585
+test/registered/unit/managers/test_mm_shm_error_consensus.py
+  s_2af2e12d6510ef::t_a78b94990a4929 34,42
+test/registered/unit/managers/test_mm_token_counts.py
+  s_2af2e12d6510ef::t_ad3324b0f5cf63 5-7
+test/registered/unit/managers/test_mm_utils_split.py
+  s_2af2e12d6510ef::t_d4a4d14d51399e 33,35
+test/registered/unit/managers/test_multimodal_abort_cleanup.py
+  s_2af2e12d6510ef::t_08595815f6a58a 13,19,24,27,34,94-96,104-105,118
+test/registered/unit/managers/test_output_streamer_customized_info.py
+  s_2af2e12d6510ef::t_78574d5d705ff6 13,29-30
+test/registered/unit/managers/test_output_streamer_logprobs.py
+  s_2af2e12d6510ef::t_8674732f424309 5
+test/registered/unit/managers/test_overlap_uocr_decode.py
+  s_2af2e12d6510ef::t_e976068703831c 3,11-12,14-17,26,29,78,148,312,320-321,346-362
+test/registered/unit/managers/test_pp_decode_transfer_outcome.py
+  s_2af2e12d6510ef::t_41c7d5b23379a3 17-20,23,33-35,93,106,159,174,193,199
+test/registered/unit/managers/test_pp_output_exchange_order.py
+  s_2af2e12d6510ef::t_8b7055fb992587 30
+test/registered/unit/managers/test_priority_scheduling_disaggregation.py
+  s_2af2e12d6510ef::t_edaff713a87ea7 6,16,21,25-26,28-30,39-43,69,79-81,86-87,141,158,162,171,183,186,190,200,203,206-230,275,284-285,305,315,337,454-456,475,477,487-488,491-494,512,535,573-575,621-627,636,656,682,742,768-770,1008,1024,1030,1034-1035,1057,1065
+test/registered/unit/managers/test_req_finish_state.py
+  s_2af2e12d6510ef::t_6ffde5b0042a19 8-9
+test/registered/unit/managers/test_request_class_override_points.py
+  s_2af2e12d6510ef::t_b3a06a3f14d0f0 20
+test/registered/unit/managers/test_schedule_batch_convert_decode_to_extend.py
+  s_2af2e12d6510ef::t_f647a811adb560 19,24
+test/registered/unit/managers/test_schedule_batch_out_of_place.py
+  s_2af2e12d6510ef::t_3c9927d0d638f8 24-25,288-289,292,296-298
+test/registered/unit/managers/test_schedule_batch_req_pool_indices.py
+  s_2af2e12d6510ef::t_6adaf9818c5742 13
+test/registered/unit/managers/test_schedule_policy.py
+  s_2af2e12d6510ef::t_244589ffa40529 62,93,152,169
+test/registered/unit/managers/test_scheduler_chunked_abort_race.py
+  s_2af2e12d6510ef::t_dfd704710332ab 18-19,21,52,65,86,100,109-130
+test/registered/unit/managers/test_scheduler_chunked_req_gate.py
+  s_2af2e12d6510ef::t_e7571364d7f65d 13,16-20,100,103
+test/registered/unit/managers/test_scheduler_dp_converted_batch_full.py
+  s_2af2e12d6510ef::t_d6612c18c9ee3f 12,15-18,61
+test/registered/unit/managers/test_scheduler_flush_cache_after_retract.py
+  s_2af2e12d6510ef::t_72b3ae0ae96946 10,12-19,53,67-79
+test/registered/unit/managers/test_scheduler_held_row_admission.py
+  s_2af2e12d6510ef::t_3552fea7e79bbc 12,16-20,69-71,74,109
+test/registered/unit/managers/test_scheduler_hicache_events.py
+  s_2af2e12d6510ef::t_a6b41e6f792e9c 18-22,40,79,112
+test/registered/unit/managers/test_scheduler_on_idle_load.py
+  s_2af2e12d6510ef::t_40e96504514f2c 21,26-30,117,127-134
+test/registered/unit/managers/test_scheduler_pause_generation.py
+  s_2af2e12d6510ef::t_4c513674a32cb1 16,20,23,27,37-41,45-46,48,107-109,137-142,144,768,774,902-968
+test/registered/unit/managers/test_scheduler_prefill_decode_interval.py
+  s_2af2e12d6510ef::t_a72a97e6bebcd7 1,16-18,23,31,36-41,71-106
+test/registered/unit/managers/test_scheduler_recv_skipper.py
+  s_2af2e12d6510ef::t_b98c43f7112d9d 13
+test/registered/unit/managers/test_scheduler_running_reqs.py
+  s_2af2e12d6510ef::t_e5e5031e6ffee4 18,20-21,27,30,79,81,87-89,116-130,138-144,146-148,150-153,155-159,161-170,173,175,177-221,229,232,234-236,239-241,243-244,246-259,272,380,383,417-418
+test/registered/unit/managers/test_scheduler_sampling_mask_validation.py
+  s_2af2e12d6510ef::t_3a6f868da3151f 13
+test/registered/unit/managers/test_scheduler_timeouts.py
+  s_2af2e12d6510ef::t_4b3d7a507fd399 14,28-29,31-33,39,61-63,86,89,97-98,107,125,132-171,205,220-221,228,269-271
+test/registered/unit/managers/test_scheduler_weight_version_tracking.py
+  s_2af2e12d6510ef::t_c0796a16b14a57 7,20-23,33,115-116
+test/registered/unit/managers/test_tokenizer_manager_rid_cleanup.py
+  s_2af2e12d6510ef::t_0a64a8a869a0b2 32
+test/registered/unit/managers/test_vocab_boundary_finish.py
+  s_2af2e12d6510ef::t_9ec5ebdac6780f 10-11
+test/registered/unit/mem_cache/test_buffer_mode_sidecar.py
+  s_2af2e12d6510ef::t_2e80e333fa5c7e 34
+test/registered/unit/mem_cache/test_buffer_swa_tail_only.py
+  s_2af2e12d6510ef::t_9b72364d9abd44 27
+test/registered/unit/mem_cache/test_component_split_contract.py
+  s_2af2e12d6510ef::t_b833512f6f92da 12-15
+test/registered/unit/mem_cache/test_decode_radix_lock_ref.py
+  s_2af2e12d6510ef::t_664d19d3ee6a2b 46-49,60,430,576-577,581
+test/registered/unit/mem_cache/test_decode_retraction_backup.py
+  s_2af2e12d6510ef::t_bf1dfbfea051ea 20-23,55,251,376-379,381,560,610,680,682,779-780,833
+test/registered/unit/mem_cache/test_dllm_fdfo_kv_reuse.py
+  s_2af2e12d6510ef::t_1f3e1daa14cc53 14,233-242,244,246-248
+test/registered/unit/mem_cache/test_dsv4_compressed_pools.py
+  s_2af2e12d6510ef::t_480a67b06c3517 43,665-701
+test/registered/unit/mem_cache/test_embedding_cache_controller.py
+  s_2af2e12d6510ef::t_bda3a03ac38950 21
+test/registered/unit/mem_cache/test_fcfs_waiting_prefix_refresh.py
+  s_2af2e12d6510ef::t_7bdf5cef42ad29 90,94
+test/registered/unit/mem_cache/test_hicache_controller_request_id_unit.py
+  s_2af2e12d6510ef::t_dfa5c17f0dd65c 1-317
+test/registered/unit/mem_cache/test_hicache_sidecar_restore.py
+  s_2af2e12d6510ef::t_4771582137a463 16-17
+test/registered/unit/mem_cache/test_hybrid_pool_assembler.py
+  s_2af2e12d6510ef::t_d51cd53fa71ccc 36,179,493-500,745-754,979,1011,1106,1134-1136,1169,1171-1173,1335-1336,1344-1351,1358,1375,1381,1387,1442-1445,1448,1454,1462,1953,1955-1956,1958-1959,1965-1968,1970-1974,1976-1977,1979-1983,1985-1986,1989-1990
+test/registered/unit/mem_cache/test_iteration_ids.py
+  s_2af2e12d6510ef::t_0027487d471338 53
+test/registered/unit/mem_cache/test_kv_cache_configurator_draft_gate.py
+  s_2af2e12d6510ef::t_3a7af77ad00dc3 61
+test/registered/unit/mem_cache/test_kv_cache_configurator_npu_indexer.py
+  s_2af2e12d6510ef::t_386e8d29abe072 19
+test/registered/unit/mem_cache/test_linker_pool_assembler.py
+  s_2af2e12d6510ef::t_2e0039f3f5c6b4 920-987
+test/registered/unit/mem_cache/test_mamba_capacity.py
+  s_2af2e12d6510ef::t_ef6b71628c9137 10-13,21,234,247,249-250,279,296
+test/registered/unit/mem_cache/test_mamba_donated_alloc_ratio.py
+  s_2af2e12d6510ef::t_f9af92c49d453b 32,34-37
+test/registered/unit/mem_cache/test_mamba_path_state_cap.py
+  s_2af2e12d6510ef::t_81e7aad1d1d7ed 16,20-24
+test/registered/unit/mem_cache/test_mooncake_store_request_context_unit.py
+  s_2af2e12d6510ef::t_749b87531defbb 1-2,4-8,10-12,14-15,17-20,22-24,26-68,70-71,73-75,77-79,81-83,85-540
+test/registered/unit/mem_cache/test_npu_index_k_elision.py
+  s_2af2e12d6510ef::t_f68fd03e957f1a 42
+test/registered/unit/mem_cache/test_page_sharded_dsa_attention.py
+  s_2af2e12d6510ef::t_f6c6d2699b192e 757,881
+test/registered/unit/mem_cache/test_rust_tree_core_integration.py
+  s_2af2e12d6510ef::t_01331a5b44f1d0 28-29,81
+test/registered/unit/mem_cache/test_streaming_session_unit.py
+  s_2af2e12d6510ef::t_f9b07cfd6eaad0 6-7
+test/registered/unit/mem_cache/test_swa_eviction_interval.py
+  s_2af2e12d6510ef::t_c07c699ffa0d1c 12
+test/registered/unit/mem_cache/test_umbp_host_allocator.py
+  s_2af2e12d6510ef::t_a9c5ee66bfa425 198
+test/registered/unit/mem_cache/test_unified_dynamic_gate_capacity.py
+  s_2af2e12d6510ef::t_1218eaf683e498 8,98-99
+test/registered/unit/mem_cache/test_unified_hicache_regressions.py
+  s_2af2e12d6510ef::t_5a988ae0d6923f 252,256-259
+test/registered/unit/mem_cache/test_unified_hicache_transfer_lifecycle.py
+  s_2af2e12d6510ef::t_f69331c6159882 53
+test/registered/unit/mem_cache/test_unified_kv_storage.py
+  s_2af2e12d6510ef::t_3bd4d775831989 201
+test/registered/unit/mem_cache/test_unified_pending_event_batches.py
+  s_2af2e12d6510ef::t_23deff1bb9880a 9
+test/registered/unit/mem_cache/test_unified_radix_cache_bench.py
+  s_2af2e12d6510ef::t_a88a6d8e6f61f8 37
+test/registered/unit/mem_cache/test_unified_radix_hicache_dispatch.py
+  s_2af2e12d6510ef::t_124ce99335006f 11,69,122,129
+test/registered/unit/mem_cache/test_write_back_eviction_batching.py
+  s_2af2e12d6510ef::t_f3c96ccd255210 1-646
+test/registered/unit/mem_cache/test_write_back_eviction_parity.py
+  s_2af2e12d6510ef::t_f3ac97e8fe0e88 1-419
+test/registered/unit/mem_cache/unified_radix_cache/test_unified_radix_cache_core.py
+  s_2af2e12d6510ef::t_d5db076bd8a0ea 10-11,38-42
+test/registered/unit/mem_cache/unified_radix_cache/test_unified_radix_cache_hicache.py
+  s_2af2e12d6510ef::t_f140b68ea78249 18,1046-1129
+test/registered/unit/mem_cache/unified_radix_cache/test_unified_radix_cache_insert_walk.py
+  s_2af2e12d6510ef::t_7e310cab714c39 10,24
+test/registered/unit/mem_cache/unified_radix_cache/test_unified_radix_cache_load_back.py
+  s_2af2e12d6510ef::t_34337a6d3a52ca 27
+test/registered/unit/mem_cache/unified_radix_cache/test_unified_radix_cache_storage.py
+  s_2af2e12d6510ef::t_6c548e9bedab34 43-44
+test/registered/unit/model_executor/model_runner_components/test_aux_hidden_state_capture.py
+  s_2af2e12d6510ef::t_a3d85291189ae2 10,12
+test/registered/unit/model_executor/runner/test_decode_cuda_graph_shared_read_fence.py
+  s_2af2e12d6510ef::t_23d4c36cba6923 10
+test/registered/unit/model_executor/runner/test_dsv41_target_verify_metadata_glue.py
+  s_2af2e12d6510ef::t_4d174ca6402c20 13
+test/registered/unit/model_executor/runner/test_early_verify_metadata.py
+  s_2af2e12d6510ef::t_6e9d9426c34325 24
+test/registered/unit/model_executor/runner/test_flashinfer_autotune_sync.py
+  s_2af2e12d6510ef::t_5f6dc2ec9f1474 371
+test/registered/unit/model_executor/runner/test_graph_routing_context.py
+  s_2af2e12d6510ef::t_753dad524ceef3 31
+test/registered/unit/model_executor/runner/test_hidden_state_graph_recapture.py
+  s_2af2e12d6510ef::t_3df0181da92200 10
+test/registered/unit/model_executor/runner/test_prefill_cuda_graph_padding.py
+  s_2af2e12d6510ef::t_34d28080aaad52 18
+test/registered/unit/model_executor/runner/test_prefill_shared_read_done.py
+  s_2af2e12d6510ef::t_2ef6bc0d991fc1 10
+test/registered/unit/model_executor/test_aux_hidden_state_row_alignment.py
+  s_2af2e12d6510ef::t_564f41aa80ef31 11-12
+test/registered/unit/model_executor/test_encoder_swa_replay.py
+  s_2af2e12d6510ef::t_a0965fe05587dc 25,38-39,41
+test/registered/unit/model_executor/test_forward_metadata_plan_record.py
+  s_2af2e12d6510ef::t_65f6f664a0a0c5 20-21
+test/registered/unit/model_executor/test_hisparse_pool_configurator.py
+  s_2af2e12d6510ef::t_77937dffb57bbe 44
+test/registered/unit/model_executor/test_mlp_sync_hybrid_target_verify.py
+  s_2af2e12d6510ef::t_98ed6725ec7521 8-9
+test/registered/unit/model_executor/test_mlp_sync_pad_unpad.py
+  s_2af2e12d6510ef::t_654e665d185d44 23-24
+test/registered/unit/model_executor/test_num_token_non_padded_localization.py
+  s_2af2e12d6510ef::t_a654882d82591e 46
+test/registered/unit/model_executor/test_pool_configurator.py
+  s_2af2e12d6510ef::t_a5cdfae469229b 99,962-1019
+test/registered/unit/model_executor/test_prefill_cuda_graph_dcp.py
+  s_2af2e12d6510ef::t_de1198f7c7adbc 18
+test/registered/unit/model_executor/test_prefill_cuda_graph_runner.py
+  s_2af2e12d6510ef::t_1e0bbf41586003 13,23-24,33
+test/registered/unit/model_executor/test_prefill_cuda_graph_runner_helpers.py
+  s_2af2e12d6510ef::t_4738916c77157a 16-17
+test/registered/unit/model_executor/test_unified_out_cache_loc_rebind.py
+  s_2af2e12d6510ef::t_026de61abae2f8 34-35
+test/registered/unit/models/test_cosmos3.py
+  s_2af2e12d6510ef::t_e18d08ec161bbe 28
+test/registered/unit/models/test_cosmos3_edge.py
+  s_2af2e12d6510ef::t_85ecc5f6aa9d49 28,30
+test/registered/unit/models/test_deepseek_mla_dispatch.py
+  s_2af2e12d6510ef::t_bfa0463c0af927 19
+test/registered/unit/models/test_deepseek_nextn_mm_embed.py
+  s_2af2e12d6510ef::t_911f60eaffd6d1 14
+test/registered/unit/models/test_deepseek_pp_mtp_embedding.py
+  s_2af2e12d6510ef::t_732d12de97d511 13
+test/registered/unit/models/test_deepseek_v41_bcg_multimodal.py
+  s_2af2e12d6510ef::t_4b994f77355867 12
+test/registered/unit/models/test_deepseek_v4_amd_tp4.py
+  s_2af2e12d6510ef::t_1b3e76a2052327 178,267
+test/registered/unit/models/test_deepseek_v4_boundary.py
+  s_2af2e12d6510ef::t_491b452d9c4999 25,111
+test/registered/unit/models/test_deepseek_v4_pipeline.py
+  s_2af2e12d6510ef::t_3a6243882dcef4 22
+test/registered/unit/models/test_deepseek_v4_tbo_collectives.py
+  s_2af2e12d6510ef::t_8814dd8bb9e561 10
+test/registered/unit/models/test_deepseek_v4_unified_fp8_q_pair.py
+  s_2af2e12d6510ef::t_2d2f96926cdf24 19,82
+test/registered/unit/models/test_fused_set_kv_buffer_gate.py
+  s_2af2e12d6510ef::t_cc7cc2478fa504 98-102,164-193
+test/registered/unit/models/test_inkling_aux_hidden_states.py
+  s_2af2e12d6510ef::t_11daf5f0f97b3d 17
+test/registered/unit/models/test_interns1pro_processor.py
+  s_2af2e12d6510ef::t_2fce95a4d8766b 13
+test/registered/unit/models/test_kimi_k25.py
+  s_2af2e12d6510ef::t_7034470812c35a 22,49
+test/registered/unit/models/test_kimi_k3_vision.py
+  s_2af2e12d6510ef::t_1c06e13e691844 493,495,563,569,652,654
+test/registered/unit/models/test_kimi_vl.py
+  s_2af2e12d6510ef::t_d51f6535421d8d 10,13
+test/registered/unit/models/test_llava.py
+  s_2af2e12d6510ef::t_6fd5bae75988ae 5,7
+test/registered/unit/models/test_locate_anything.py
+  s_2af2e12d6510ef::t_6c3d0cb86e02a3 15-17,24
+test/registered/unit/models/test_minimax_m31_model.py
+  s_2af2e12d6510ef::t_2c0ef5b43a4159 261,426
+test/registered/unit/models/test_nano_nemotron_vl.py
+  s_2af2e12d6510ef::t_29398fae6c0039 11-12,18
+test/registered/unit/models/test_native_moe_routing_policy.py
+  s_2af2e12d6510ef::t_452a8e5101a761 384
+test/registered/unit/models/test_qwen3_qk_norm_rope.py
+  s_2af2e12d6510ef::t_0467719d1ac1fe 13,61-77,88,98-99,102,136-140,152-164,166,180-182
+test/registered/unit/models/test_qwen3_vl_feature_materialization.py
+  s_2af2e12d6510ef::t_5f33cf624f8b1f 10,12
+test/registered/unit/models/test_unlimited_ocr_spatial_metadata.py
+  s_2af2e12d6510ef::t_7da89c65023d41 7,174-175
+test/registered/unit/models/test_zaya_cca.py
+  s_2af2e12d6510ef::t_159d3681caca4b 176
+test/registered/unit/multimodal/rust/shared/test_rust_server_extension.py
+  s_2af2e12d6510ef::t_ffe348403a795e 136
+test/registered/unit/multimodal/rust/shared/test_wrap_encoded.py
+  s_2af2e12d6510ef::t_732ee167ba4172 19-20
+test/registered/unit/multimodal/test_audio_container_decode.py
+  s_2af2e12d6510ef::t_909d10ca3d5f52 21
+test/registered/unit/multimodal/test_base_processor_bad_input.py
+  s_2af2e12d6510ef::t_a0563d5d19f9a4 22
+test/registered/unit/multimodal/test_base_processor_image_decode.py
+  s_2af2e12d6510ef::t_3444171298c811 30
+test/registered/unit/multimodal/test_cuda_ipc_transport.py
+  s_2af2e12d6510ef::t_481be71ca6a269 17,22,270-271
+test/registered/unit/multimodal/test_cuda_vmm_transport.py
+  s_2af2e12d6510ef::t_bab191ccb9806e 18-19
+test/registered/unit/multimodal/test_dots_note_omni.py
+  s_2af2e12d6510ef::t_6ed9ec2b75313b 14
+test/registered/unit/multimodal/test_evs.py
+  s_2af2e12d6510ef::t_841b4ff9fc02b0 58
+test/registered/unit/multimodal/test_glm4v_mixed_offsets.py
+  s_2af2e12d6510ef::t_067d135045d2a4 7
+test/registered/unit/multimodal/test_gpu_feature_transport.py
+  s_2af2e12d6510ef::t_75bc035b842a48 19,24,206-207,229-230,262-263,282-283,326,330,363,367,399,403,871
+test/registered/unit/multimodal/test_kimi_image_identity.py
+  s_2af2e12d6510ef::t_eda4be84b1d2a1 23,29
+test/registered/unit/multimodal/test_kimi_k3_gpu_preprocess.py
+  s_2af2e12d6510ef::t_905171a131ddbc 10-12
+test/registered/unit/multimodal/test_media_artifact_processor.py
+  s_2af2e12d6510ef::t_befb5513af07cb 16
+test/registered/unit/multimodal/test_minimax_m31_processor.py
+  s_2af2e12d6510ef::t_7287117a595827 18
+test/registered/unit/multimodal/test_nano_nemotron_vl_processor.py
+  s_2af2e12d6510ef::t_03f94b27765bfb 11,14
+test/registered/unit/multimodal/test_pixtral_processor.py
+  s_2af2e12d6510ef::t_2508a0021231bb 10-11
+test/registered/unit/multimodal/test_precomputed_embedding_validation.py
+  s_2af2e12d6510ef::t_4f06a3f2edcba0 12-13
+test/registered/unit/multimodal/test_preprocess_cache.py
+  s_2af2e12d6510ef::t_8b4b5872523fdf 13,24
+test/registered/unit/multimodal_gen/test_hunyuan3d_gpu_grid.py
+  s_2af2e12d6510ef::t_d6390ef8f7a4c2 1,3,5-6,8-58,62
+test/registered/unit/npu/attention/test_npu_ascend_backend.py
+  s_2af2e12d6510ef::t_a29a21dbd4998f 12-14,40,563-830,891,900
+test/registered/unit/npu/attention/test_npu_ascend_dsv4_backend.py
+  s_2af2e12d6510ef::t_ad59c5f5df86e0 13-15,523,579-604,616,618,636,638-640,642
+test/registered/unit/npu/attention/test_npu_dcp.py
+  s_2af2e12d6510ef::t_21d664feb753b3 18-20
+test/registered/unit/npu/attention/test_npu_mla_prefix_cache.py
+  s_2af2e12d6510ef::t_4d002a5e85a0a9 1-165
+test/registered/unit/npu/graph_runner/test_npu_cudagraph_backend.py
+  s_2af2e12d6510ef::t_390e4fb63a1181 57,62,76
+test/registered/unit/npu/graph_runner/test_npu_graph_runner.py
+  s_2af2e12d6510ef::t_a68689855db787 26,77-137
+test/registered/unit/observability/test_forward_pass_metrics.py
+  s_2af2e12d6510ef::t_4f2a530ceb5448 21,31,34,45,53,444,1024,1046-1115,1138,1141,1143
+test/registered/unit/observability/test_prealloc_token_usage.py
+  s_2af2e12d6510ef::t_599d0f6ed9e75f 17,24,38,43-45
+test/registered/unit/observability/test_ray_wrappers.py
+  s_2af2e12d6510ef::t_5fa3704c2c2b3a 19
+test/registered/unit/observability/test_stat_loggers_di.py
+  s_2af2e12d6510ef::t_d82704930aea8c 29,33,287,290,370,507-509,579
+test/registered/unit/observability/test_trace.py
+  s_2af2e12d6510ef::t_b5a66728d7b298 500-605
+test/registered/unit/parser/test_deepseek_recipe_renderer.py
+  s_2af2e12d6510ef::t_bacd5a782e847b 197-253
+test/registered/unit/parser/test_glm53_chat_template.py
+  s_2af2e12d6510ef::t_e2d0ce6a8568bc 481-482,501
+test/registered/unit/parser/test_template_manager.py
+  s_2af2e12d6510ef::t_451b9ff55287bd 34-35,1033,1053,1072,1086,1105,1132,1156,1166,1176,1197,1210,1221,1234,1249,1262,1287,1318,1330,1349,1382
+test/registered/unit/server_args/test_attn_dp_size.py
+  s_2af2e12d6510ef::t_1e0e6dbac4c218 142
+test/registered/unit/server_args/test_declared_fallbacks.py
+  s_2af2e12d6510ef::t_6245ff4509ce81 33-34
+test/registered/unit/server_args/test_model_config_cache.py
+  s_2af2e12d6510ef::t_d8e84d67af3f4d 26-27
+test/registered/unit/server_args/test_model_source_paths.py
+  s_2af2e12d6510ef::t_293ddc9bedc55a 39,96
+test/registered/unit/server_args/test_resolution_declarations.py
+  s_2af2e12d6510ef::t_79060e4b5aa794 547,555,560,565-567
+test/registered/unit/server_args/test_server_args.py
+  s_2af2e12d6510ef::t_265e2f9c42b580 211,583-613,1850-1851,2103,2115,3276,3291,3307,3905,3913,4958-4959,5355,5493-5503
+test/registered/unit/session/test_uocr_doc_prefetch_cuda.py
+  s_2af2e12d6510ef::t_b977e1bf58b68d 12,32,35
+test/registered/unit/session/test_uocr_doc_prefetch_unit.py
+  s_2af2e12d6510ef::t_571a12dd82118f 8,12,24,35,37-41,45-49,110-123,139-140,144-145,153-154
+test/registered/unit/session/test_uocr_doc_reuse_unit.py
+  s_2af2e12d6510ef::t_26aa8e7ca295bc 24-25,1582
+test/registered/unit/spec/test_dflash_dp_attention.py
+  s_2af2e12d6510ef::t_fc8a3e6bc179a5 13-14
+test/registered/unit/spec/test_dflash_draft_graph_eligibility.py
+  s_2af2e12d6510ef::t_290daabcacd9b8 10
+test/registered/unit/spec/test_dflash_extra_buffer_lazy.py
+  s_2af2e12d6510ef::t_41766f9edd32a6 18
+test/registered/unit/spec/test_dflash_mla.py
+  s_2af2e12d6510ef::t_0790c5888e3b7d 20
+test/registered/unit/spec/test_dflash_overlap_hostsync.py
+  s_2af2e12d6510ef::t_f970564eda14a9 167
+test/registered/unit/spec/test_dp_spec_prefill_coordination.py
+  s_2af2e12d6510ef::t_2bc688845838d6 11-12
+test/registered/unit/spec/test_draft_construction_isolation.py
+  s_2af2e12d6510ef::t_2e82370f7e2765 14
+test/registered/unit/spec/test_dspark_accept_tail.py
+  s_2af2e12d6510ef::t_11e650130f7708 72-73
+test/registered/unit/spec/test_dspark_dp_spec_prefill_coordination.py
+  s_2af2e12d6510ef::t_452330481cac47 8
+test/registered/unit/spec/test_dspark_sim_draw_ahead.py
+  s_2af2e12d6510ef::t_6cec7b5f862a30 2-3,18,40-41,68
+test/registered/unit/spec/test_eagle_draft_cuda_graph_runner.py
+  s_2af2e12d6510ef::t_d3e435ab20b0e1 23
+test/registered/unit/spec/test_eagle_draft_extend_cuda_graph_runner.py
+  s_2af2e12d6510ef::t_a9915b6466ffd2 35
+test/registered/unit/spec/test_eagle_draft_extend_logits.py
+  s_2af2e12d6510ef::t_8ba8a2e2249174 7
+test/registered/unit/spec/test_eagle_post_verify_graphs.py
+  s_2af2e12d6510ef::t_5dcb898fcd0c51 23,33,35
+test/registered/unit/spec/test_eagle_worker_v2_topk1_fastpath.py
+  s_2af2e12d6510ef::t_a1eda0c1432033 17
+test/registered/unit/spec/test_minimax_dflash.py
+  s_2af2e12d6510ef::t_c28a400045b07b 91
+test/registered/unit/spec/test_multimodal_draft_embeddings.py
+  s_2af2e12d6510ef::t_b54fe7808faca9 9
+test/registered/unit/spec/test_oot_dflash_hooks.py
+  s_2af2e12d6510ef::t_f33f42c3e67c32 140
+test/registered/unit/spec/test_simulated_acc_len_ranks.py
+  s_2af2e12d6510ef::t_179cc5211d0448 1-75
+test/registered/unit/state_capturer/test_routed_experts_scattered_a2a.py
+  s_2af2e12d6510ef::t_70db13ccaf7aba 1-2,12-13,154-234
+test/registered/unit/test_model_overrides.py
+  s_2af2e12d6510ef::t_73d606d2f406b2 21,74,320-321,336,450-452,477,489,1964-1965,1969-1972,1979-1980,1985-1996,2001,2007-2046,2048-2049,2062-2063,2075-2076,2200,2239-2240,2275-2276,2296-2297,2324,2667-2668,2705-2706,2814,2914-2915,2982-2983,3028-3029,3058-3059,3121,3250,3434,3491-3492,3495,3594,3816-3817,3854
+test/registered/unit/test_mxfp8_moe_runner_backend.py
+  s_2af2e12d6510ef::t_8af6054d75be9e 13-14
+test/registered/unit/test_runtime_context.py
+  s_2af2e12d6510ef::t_21d5e9c57da45f 26,28-29,55,678-687
+test/registered/unit/test_split_attention_backend_decisions.py
+  s_2af2e12d6510ef::t_36e630969436de 34-37,97
+test/registered/unit/utils/test_common.py
+  s_2af2e12d6510ef::t_a09126b21b5bfb 18-21,260-291
+test/registered/unit/utils/test_hf_transformers.py
+  s_2af2e12d6510ef::t_a5e57ddd3d29de 828
+test/registered/unit/utils/test_weight_versions.py
+  s_2af2e12d6510ef::t_dba49b6fd1214c 4,7-8,20-21,298-304,314-316,320-321,325-326,335-336,345,355,417-420,422-430,433,453,456
+test/registered/vlm/test_vision_openai_server_a.py
+  s_2af2e12d6510ef::t_6f7483f0bb2483 20,22
+test/registered/vlm/test_vlm_input_format.py
+  s_2af2e12d6510ef::t_807dfb1a76d5c0 41
+test/registered/xpu/test_deepseek_ocr.py
+  s_2af2e12d6510ef::t_89d192b91b1236 14,16
+test/registered/xpu/test_dsa_indexer_xpu.py
+  s_2af2e12d6510ef::t_e791227f0b320e 31-32,39-40
+test/registered/xpu/test_gemma_4_e2b.py
+  s_2af2e12d6510ef::t_06ae2a87b27484 28,30
+test/registered/xpu/test_intel_xpu_linear_attn_dispatch.py
+  s_2af2e12d6510ef::t_0f46cab08de893 11
+test/registered/xpu/test_xpu_dcp.py
+  s_2af2e12d6510ef::t_33716c943adc05 73
+test/registered/xpu/test_xpu_gemma_bidirectional_attn.py
+  s_2af2e12d6510ef::t_57dcf785917843 1-2,6-8,224-294
+test/registered/xpu/test_xpu_rerank.py
+  s_2af2e12d6510ef::t_ffa690825128ad 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "c69a9f3977e938c4ff2005dd2ac9c2bb415fbee9",
+  "prompts": {},
+  "sessions": {
+    "s_2af2e12d6510ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1626c-636e-7212-9b43-ab63008a0954",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "xiaoqiu <xiaoqiu.gxx@antgroup.com>"
+    }
+  }
+}
