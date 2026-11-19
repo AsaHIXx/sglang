@@ -11,6 +11,9 @@ from typing import Callable, Optional
 
 import torch
 
+from sglang.kernels.ops.attention.linear.gdn_replayssm_spec_fold import (
+    commit_gdn_tree_after_verify,
+)
 from sglang.kernels.ops.attention.linear.kda_replayssm_spec_decode import (
     commit_kda_tree_after_verify,
 )
@@ -73,6 +76,7 @@ class UBTreeVerifyEpilogue:
             Callable[[], tuple[torch.Tensor, ...]]
         ] = None
         self.kda_spec_state = None
+        self.gdn_spec_state = None
         self.mamba_index_mapping: Optional[torch.Tensor] = None
         self.mamba_track_interval = 0
         if (target_kvcache is None) != (req_to_token is None):
@@ -343,6 +347,28 @@ class UBTreeVerifyEpilogue:
         self.mamba_index_mapping = mamba_index_mapping
         self.mamba_track_interval = int(mamba_track_interval)
 
+    def attach_gdn_tree_commit(
+        self,
+        *,
+        spec_state,
+        mamba_index_mapping: torch.Tensor,
+        mamba_track_interval: int,
+    ) -> None:
+        """Attach factorized GDN exact-fold and conv commit to the graph tail."""
+
+        if spec_state is None or spec_state.tree_rawv is None:
+            raise ValueError("GDN tree commit requires factorized tree state")
+        if int(spec_state.tree_rawv.shape[-2]) < self.node_count:
+            raise ValueError(
+                "GDN tree cache is smaller than epilogue node count: "
+                f"{spec_state.tree_rawv.shape[-2]} < {self.node_count}"
+            )
+        if mamba_index_mapping is None or mamba_index_mapping.dtype != torch.int32:
+            raise ValueError("GDN tree commit requires the int32 mamba slot mapping")
+        self.gdn_spec_state = spec_state
+        self.mamba_index_mapping = mamba_index_mapping
+        self.mamba_track_interval = int(mamba_track_interval)
+
     @property
     def folds_target_kv(self) -> bool:
         return self.target_kvcache is not None
@@ -354,6 +380,14 @@ class UBTreeVerifyEpilogue:
     @property
     def folds_kda_commit(self) -> bool:
         return self.kda_spec_state is not None
+
+    @property
+    def folds_gdn_commit(self) -> bool:
+        return self.gdn_spec_state is not None
+
+    @property
+    def folds_tree_commit(self) -> bool:
+        return self.folds_kda_commit or self.folds_gdn_commit
 
     def __call__(
         self,
@@ -462,7 +496,7 @@ class UBTreeVerifyEpilogue:
             out=self.bonus_tokens_i32_buf[:bs],
         )
         self.bonus_tokens_buf[:bs].copy_(self.bonus_tokens_i32_buf[:bs].reshape(-1))
-        if self.folds_target_kv or self.folds_draft_kv or self.folds_kda_commit:
+        if self.folds_target_kv or self.folds_draft_kv or self.folds_tree_commit:
             if req_pool_indices is None or seq_lens is None:
                 raise ValueError(
                     "folded KV commit requires graph-stable request metadata"
@@ -555,6 +589,41 @@ class UBTreeVerifyEpilogue:
                 )
             commit_kda_tree_after_verify(
                 spec_state=self.kda_spec_state,
+                state_batch_indices=state_batch_indices,
+                factor_cache_indices=self.factor_cache_indices_buf[:bs],
+                accept_index=accept_index,
+                accept_lens=commit_lens,
+                tree_width=self.node_count,
+                mamba_track_indices=(mamba_track_indices[:bs] if has_track else None),
+                mamba_steps_to_track=mamba_steps_to_track,
+                null_block_id=-1,
+            )
+
+        if self.folds_gdn_commit:
+            state_batch_indices = self.state_batch_indices_buf[:bs]
+            torch.index_select(
+                self.mamba_index_mapping,
+                0,
+                req_pool_indices[:bs],
+                out=state_batch_indices,
+            )
+            has_track = mamba_track_indices is not None
+            mamba_steps_to_track = None
+            if has_track:
+                _, mamba_steps_to_track = fused_commit_track_indices(
+                    accept_index,
+                    # This helper requires a nonempty path. Only the commit
+                    # kernels consume the gated length; they skip zero rows
+                    # before reading or writing temporal/conv/track state.
+                    accept_lens,
+                    self.seq_lens_buf[:bs],
+                    self.node_count,
+                    self.mamba_track_interval,
+                    last_correct_out=self.last_correct_step_buf,
+                    track_steps_out=self.mamba_steps_to_track_buf,
+                )
+            commit_gdn_tree_after_verify(
+                spec_state=self.gdn_spec_state,
                 state_batch_indices=state_batch_indices,
                 factor_cache_indices=self.factor_cache_indices_buf[:bs],
                 accept_index=accept_index,

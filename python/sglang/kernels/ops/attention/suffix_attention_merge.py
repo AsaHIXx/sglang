@@ -94,6 +94,8 @@ def _fused_suffix_attention_merge_kernel(
     prefix_lse = tl.load(
         prefix_lse_ptr + q_head * prefix_lse_stride_h + token * prefix_lse_stride_t
     ).to(tl.float32)
+    # Match merge_state_v2: FlashAttention may use +inf for an empty prefix.
+    prefix_lse = tl.where(prefix_lse == float("inf"), -float("inf"), prefix_lse)
     global_max = tl.maximum(prefix_lse, suffix_max)
     prefix_weight = tl.exp(prefix_lse - global_max)
     suffix_weights = tl.exp(scores - global_max)
@@ -136,6 +138,8 @@ def merge_suffix_attention_in_place(
     prefix: torch.Tensor,
     prefix_lse: torch.Tensor,
     softmax_scale: float,
+    *,
+    max_suffix_length: int | None = None,
 ) -> torch.Tensor:
     """Compute a short sparse suffix and merge it into ``prefix`` in place.
 
@@ -143,6 +147,11 @@ def merge_suffix_attention_in_place(
     num_queries]``. The suffix page table contains physical token slots, one
     row per query, and only its first ``suffix_cache_seqlens[row]`` entries are
     visible.
+
+    ``max_suffix_length`` may supply a static upper bound on every suffix length
+    (including the query itself). The caller must guarantee this bound. For a
+    branching tree it can be much smaller than the page-table width, avoiding
+    register and reduction work on invisible entries without a device sync.
     """
     if q.ndim != 3:
         raise ValueError("q must have shape [num_queries, num_q_heads, head_dim]")
@@ -166,6 +175,11 @@ def merge_suffix_attention_in_place(
         raise ValueError("suffix cache lengths must have one value per query")
     if suffix_page_table.shape[1] == 0 or num_queries == 0:
         return prefix
+    if max_suffix_length is not None and max_suffix_length <= 0:
+        raise ValueError("max_suffix_length must be positive")
+    suffix_width = suffix_page_table.shape[1]
+    if max_suffix_length is not None:
+        suffix_width = min(suffix_width, max_suffix_length)
 
     _fused_suffix_attention_merge_kernel[(num_queries, num_q_heads)](
         q,
@@ -195,7 +209,7 @@ def merge_suffix_attention_in_place(
         NUM_Q_HEADS=num_q_heads,
         NUM_KV_HEADS=num_kv_heads,
         HEAD_DIM=head_dim,
-        BLOCK_SUFFIX=triton.next_power_of_2(suffix_page_table.shape[1]),
+        BLOCK_SUFFIX=triton.next_power_of_2(suffix_width),
         BLOCK_D=triton.next_power_of_2(head_dim),
         num_warps=4,
         num_stages=1,

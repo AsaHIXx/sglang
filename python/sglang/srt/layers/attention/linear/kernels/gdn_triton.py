@@ -43,6 +43,43 @@ class TritonGDNKernel(LinearAttnKernelBase):
     supports_packed_decode: bool = not is_cpu() and not is_npu()
     supports_strided_target_verify_qkv: bool = True
 
+    def __init__(self):
+        # Graph-stable, GDN-only factor scratch.  Keep this independent from
+        # TritonKDAKernel so enabling the GDN tree path cannot alter KDA state.
+        self._tree_factor_scratch = {}
+        self._tree_prepared_scratch = {}
+
+    def _get_tree_factor_scratch(self, q, v, query_start_loc, tree_width):
+        n = query_start_loc.shape[0] - 1
+        hv, k = v.shape[2], q.shape[-1]
+        key = (q.device.index, n, hv, tree_width, k)
+        pair = self._tree_factor_scratch.get(key)
+        if pair is None:
+            pair = (
+                torch.empty(
+                    (n, hv, tree_width, k), device=q.device, dtype=torch.float32
+                ),
+                torch.empty(
+                    (n, hv, tree_width, tree_width),
+                    device=q.device,
+                    dtype=torch.float32,
+                ),
+            )
+            self._tree_factor_scratch[key] = pair
+        return pair
+
+    def _get_tree_prepared_scratch(self, q, v):
+        tokens, hv, k = q.shape[1], v.shape[2], q.shape[-1]
+        key = (q.device.index, tokens, hv, k)
+        buffers = self._tree_prepared_scratch.get(key)
+        if buffers is None:
+            buffers = tuple(
+                torch.empty(shape, device=q.device, dtype=torch.float32)
+                for shape in [(tokens, hv, k)] * 2 + [(tokens, hv)] * 3
+            )
+            self._tree_prepared_scratch[key] = buffers
+        return buffers
+
     def packed_decode(
         self,
         mixed_qkv: torch.Tensor,
@@ -235,12 +272,60 @@ class TritonGDNKernel(LinearAttnKernelBase):
         ssm_states: torch.Tensor,
         cache_indices: torch.Tensor,
         query_start_loc: torch.Tensor,
-        intermediate_states_buffer: torch.Tensor,
+        intermediate_states_buffer: torch.Tensor | None,
         intermediate_state_indices: torch.Tensor,
         cache_steps: int,
-        retrieve_parent_token: torch.Tensor,
+        retrieve_parent_token: torch.Tensor | None,
+        tree_depths: torch.Tensor | None = None,
+        tree_max_depth: int = 0,
+        cache_ring: bool = False,
+        replayssm_rawv: torch.Tensor | None = None,
+        replayssm_rawk: torch.Tensor | None = None,
+        replayssm_g: torch.Tensor | None = None,
+        replayssm_beta: torch.Tensor | None = None,
+        factor_cache_indices: torch.Tensor | None = None,
         **kwargs,
     ) -> torch.Tensor:
+        factorized_tree = (
+            retrieve_parent_token is not None
+            and 8 <= cache_steps <= 65
+            and tree_max_depth > 0
+            and cache_ring
+            and factor_cache_indices is not None
+            and replayssm_rawv is not None
+            and replayssm_rawk is not None
+            and replayssm_g is not None
+            and replayssm_beta is not None
+            and replayssm_g.ndim == 3
+        )
+        if factorized_tree:
+            tree_query_factors, tree_value_factors = self._get_tree_factor_scratch(
+                q, v, query_start_loc, cache_steps
+            )
+        else:
+            tree_query_factors = tree_value_factors = None
+        # Other platform wrappers keep their existing call signature.
+        verify_kwargs = {}
+        if factorized_tree and kwargs.get("gdn_verify_shared_prep", False):
+            verify_kwargs["gdn_tree_prepared"] = self._get_tree_prepared_scratch(q, v)
+        if factorized_tree and kwargs.get("gdn_verify_use_tf32x3", False):
+            verify_kwargs["gdn_verify_use_tf32x3"] = True
+        tree_kwargs = {}
+        if factorized_tree:
+            tree_kwargs = dict(
+                tree_depths=tree_depths,
+                tree_max_depth=tree_max_depth,
+                tree_query_factors=tree_query_factors,
+                tree_value_factors=tree_value_factors,
+                force_factorized_gdn_tree=True,
+                cache_ring=True,
+                replayssm_rawv=replayssm_rawv,
+                replayssm_rawk=replayssm_rawk,
+                replayssm_g=replayssm_g,
+                replayssm_beta=replayssm_beta,
+                factor_cache_indices=factor_cache_indices,
+                **verify_kwargs,
+            )
         return fused_sigmoid_gating_delta_rule_update(
             A_log=A_log,
             dt_bias=dt_bias,
@@ -262,4 +347,5 @@ class TritonGDNKernel(LinearAttnKernelBase):
             intermediate_state_indices=intermediate_state_indices,
             cache_steps=cache_steps,
             retrieve_parent_token=retrieve_parent_token,
+            **tree_kwargs,
         )

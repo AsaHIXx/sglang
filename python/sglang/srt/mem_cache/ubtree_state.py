@@ -1,4 +1,4 @@
-"""Shared eligibility and scratch sizing for UBTree's compact KDA state."""
+"""Shared eligibility and scratch sizing for UBTree's compact KDA/GDN state."""
 
 from math import prod
 
@@ -26,10 +26,35 @@ def use_ubtree_factorized_kda(
     )
 
 
+def use_ubtree_factorized_gdn(
+    *,
+    enabled: bool,
+    cache_params: BaseLinearStateParams,
+    spec_state_size: int,
+    speculative_num_draft_tokens: int | None,
+    speculative_eagle_topk: int | None,
+) -> bool:
+    """C1 Qwen GDN trees use scalar gates and accepted-path state replay."""
+    from sglang.srt.configs.mamba_utils import Mamba2CacheParams
+
+    return bool(
+        enabled
+        and current_platform.is_cuda()
+        and spec_state_size == 1
+        and isinstance(cache_params, Mamba2CacheParams)
+        and not cache_params.is_kda
+        and cache_params.shape.temporal[-2:] == (128, 128)
+        and speculative_eagle_topk is not None
+        and speculative_eagle_topk > 1
+        and speculative_num_draft_tokens is not None
+        and 8 <= speculative_num_draft_tokens <= 65
+    )
+
+
 def ubtree_spec_state_bytes_per_req(
     cache_params: BaseLinearStateParams, num_draft_tokens: int
 ) -> int:
-    """Raw v/k/g/beta plus dense conv windows, across all KDA layers.
+    """Raw v/k/g/beta plus dense conv windows, across all linear-attention layers.
 
     The caller supplies the active request count plus the pool's padding slot;
     persistent temporal/conv states are budgeted separately.
@@ -39,7 +64,7 @@ def ubtree_spec_state_bytes_per_req(
     activation_bytes = cache_params.dtype.conv.itemsize
     per_node = (
         (hv * v_dim + h_k * k_dim) * activation_bytes  # raw v/k
-        + hv * (k_dim + 1) * 4  # fp32 g/beta
+        + hv * ((k_dim if cache_params.is_kda else 1) + 1) * 4  # fp32 g/beta
         + sum(prod(shape) for shape in cache_params.shape.conv) * activation_bytes
     )
     return per_node * num_draft_tokens * len(cache_params.layers)

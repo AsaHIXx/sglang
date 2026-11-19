@@ -1716,6 +1716,24 @@ class Envs:
     # graph and reuse its scheduler metadata across MHA layers. Ignored by
     # other speculative algorithms, draft workers and unsupported layouts.
     SGLANG_OPT_FA3_VERIFY_METADATA_IN_GRAPH = EnvBool(False)
+    # Experimental UBTree MHA verify path: fuse sparse suffix attention and
+    # prefix-state merge. Changes floating-point reduction order; opt-in only.
+    SGLANG_OPT_UBTREE_FUSED_SUFFIX_MERGE = EnvBool(False)
+    # Experimental SM90 GDN tree output recovery. TF32x3 changes rounding;
+    # disabled for deterministic / UBTree consistency configurations.
+    SGLANG_OPT_UBTREE_GDN_VERIFY_TF32X3 = EnvBool(False)
+    # Node-parallel GDN tree convolution; preserves the compact raw-input cache.
+    SGLANG_OPT_UBTREE_PARALLEL_TREE_CONV = EnvBool(False)
+    # Reuse FP32 normalization/gates across GDN ancestor traversals.
+    SGLANG_OPT_UBTREE_GDN_SHARED_PREP = EnvBool(False)
+    # Reuse strided projection/QKV views during UBTree target verification.
+    SGLANG_OPT_UBTREE_GDN_LAYOUT_VIEWS = EnvBool(False)
+    # Experimental SM90 BF16 gate/up fusion; may change numerical rounding.
+    SGLANG_OPT_UBTREE_FUSED_GATE_UP = EnvBool(False)
+    # Experimental C1/SM90 tree attention + gate; FA3 remains the fallback.
+    SGLANG_OPT_UBTREE_FUSED_TREE_ATTENTION = EnvBool(False)
+    # Global best-first proposal selection; set before graph capture.
+    SGLANG_USE_UBTREE_BEST_FIRST_TREE = EnvBool(False)
     SGLANG_OPT_FUSED_KDA_VERIFY = EnvBool(False)
     # Use compact tree-only visibility with UBTree's FA3 target verification.
     SGLANG_OPT_UBTREE_FA3_TREE_ONLY_MASK = EnvBool(True)

@@ -472,8 +472,11 @@ def _handle_ubtree(server_args: ServerArgs) -> None:
     if attn_dp_enabled_of(cfg):
         raise ValueError("UBTREE does not support DP attention")
     target_archs = model_config_of(server_args).hf_config.architectures
-    if "BailingMoeV3ForCausalLM" not in target_archs:
-        raise ValueError("UBTREE currently supports Ling3 BailingMoeV3 targets")
+    is_qwen_gdn = "Qwen3_5ForConditionalGeneration" in target_archs
+    if "BailingMoeV3ForCausalLM" not in target_archs and not is_qwen_gdn:
+        raise ValueError(
+            "UBTREE currently supports Ling3 BailingMoeV3 and dense Qwen3.5 targets"
+        )
 
     draft = get_config(
         cfg.speculative_draft_model_path,
@@ -483,6 +486,8 @@ def _handle_ubtree(server_args: ServerArgs) -> None:
     )
     tree = parse_ubtree_config(draft)
     width = resolve_verify_width(tree, cfg.speculative_num_draft_tokens)
+    if is_qwen_gdn and not 8 <= width <= 65:
+        raise ValueError("UBTREE Qwen GDN verification currently requires 8..65 nodes")
     if cfg.speculative_dflash_block_size not in (None, tree.block_size):
         raise ValueError("UBTREE draft block size does not match the checkpoint")
     # The backend uses topk>1 to enable direct-parent tree metadata. UBTree's

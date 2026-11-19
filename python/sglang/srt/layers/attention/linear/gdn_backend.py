@@ -47,6 +47,7 @@ from sglang.srt.runtime_context import (
     get_exec,
     get_memory,
     get_schedule,
+    get_spec,
     mamba_cache_chunk_size,
 )
 from sglang.srt.utils import is_cpu, is_cuda, is_hip, is_npu, is_xpu
@@ -538,6 +539,17 @@ class GDNKernelDispatcher:
         )
 
 
+def _use_ubtree_gdn_verify_tf32x3(*, is_draft_worker: bool) -> bool:
+    return (
+        envs.SGLANG_OPT_UBTREE_GDN_VERIFY_TF32X3.get()
+        and is_cuda()
+        and get_spec().speculative_algorithm == "UBTREE"
+        and not is_draft_worker
+        and not get_exec().deterministic.enable_deterministic_inference
+        and torch.cuda.get_device_capability() == (9, 0)
+    )
+
+
 class GDNAttnBackend(MambaAttnBackendBase):
     """Attention backend for GDN (Gated Delta Network) linear attention."""
 
@@ -555,6 +567,27 @@ class GDNAttnBackend(MambaAttnBackendBase):
     def __init__(self, model_runner: ModelRunner):
         _validate_gdn_linear_attn_backends(model_runner.linear_attn_backends)
         super().__init__(model_runner)
+        self.ubtree_gdn_verify_tf32x3 = _use_ubtree_gdn_verify_tf32x3(
+            is_draft_worker=model_runner.is_draft_worker
+        )
+        self.ubtree_parallel_tree_conv = (
+            envs.SGLANG_OPT_UBTREE_PARALLEL_TREE_CONV.get()
+            and is_cuda()
+            and get_spec().speculative_algorithm == "UBTREE"
+            and not model_runner.is_draft_worker
+        )
+        self.ubtree_gdn_shared_prep = (
+            envs.SGLANG_OPT_UBTREE_GDN_SHARED_PREP.get()
+            and is_cuda()
+            and get_spec().speculative_algorithm == "UBTREE"
+            and not model_runner.is_draft_worker
+        )
+        self.ubtree_gdn_layout_views = (
+            envs.SGLANG_OPT_UBTREE_GDN_LAYOUT_VIEWS.get()
+            and is_cuda()
+            and get_spec().speculative_algorithm == "UBTREE"
+            and not model_runner.is_draft_worker
+        )
         self.enable_mis = get_exec().features.enable_mis
         self.mis_metadata: Optional[GDNMISMetadata] = None
         self.conv_states_shape = self.state_pool.mamba_cache.conv[0].shape
@@ -1236,6 +1269,11 @@ class GDNAttnBackend(MambaAttnBackendBase):
                 ssm_states=ssm_states,
                 cache_indices=cache_indices,
             )
+        tree_factorized_on = bool(
+            is_target_verify
+            and getattr(self.state_pool, "factorized_gdn_tree", False)
+            and retrieve_parent_token is not None
+        )
         if is_target_verify:
             assert isinstance(mamba_cache_params, MambaPool.SpeculativeState)
             intermediate_state_cache = mamba_cache_params.intermediate_ssm
@@ -1296,19 +1334,50 @@ class GDNAttnBackend(MambaAttnBackendBase):
             mixed_qkv_reshaped = mixed_qkv.view(
                 batch_size, draft_token_num, -1
             ).transpose(1, 2)
-            mixed_qkv_processed = causal_conv1d_update(
-                mixed_qkv_reshaped,
-                conv_states,
-                layer.conv_weights,
-                layer.bias,
-                layer.activation,
-                conv_state_indices=cache_indices[:batch_size],
-                intermediate_conv_window=intermediate_conv_window_cache,
-                intermediate_state_indices=intermediate_state_indices[:batch_size],
-                retrieve_next_token=retrieve_next_token,
-                retrieve_next_sibling=retrieve_next_sibling,
-                retrieve_parent_token=retrieve_parent_token,
-            )
+            if (
+                self.ubtree_parallel_tree_conv
+                and tree_factorized_on
+                and forward_metadata.has_direct_parent
+                and layer.conv_weights.shape[-1] == 4
+                and mixed_qkv.dtype == layer.conv_weights.dtype == conv_states.dtype
+            ):
+                from sglang.kernels.ops.mamba.parallel_tree_conv import (
+                    parallel_tree_conv_update,
+                )
+
+                mixed_qkv_processed = parallel_tree_conv_update(
+                    mixed_qkv_reshaped,
+                    layer.conv_weights,
+                    layer.bias,
+                    conv_states,
+                    cache_indices[:batch_size],
+                    intermediate_conv_window_cache,
+                    intermediate_state_indices[:batch_size],
+                    retrieve_parent_token,
+                    activation=layer.activation,
+                )
+            else:
+                mixed_qkv_processed = causal_conv1d_update(
+                    mixed_qkv_reshaped,
+                    conv_states,
+                    layer.conv_weights,
+                    layer.bias,
+                    layer.activation,
+                    conv_state_indices=cache_indices[:batch_size],
+                    intermediate_conv_window=intermediate_conv_window_cache,
+                    intermediate_state_indices=intermediate_state_indices[:batch_size],
+                    retrieve_next_token=retrieve_next_token,
+                    retrieve_next_sibling=retrieve_next_sibling,
+                    retrieve_parent_token=retrieve_parent_token,
+                    **(
+                        dict(
+                            direct_parent=forward_metadata.has_direct_parent,
+                            save_tree_raw_only=True,
+                        )
+                        if tree_factorized_on
+                        else {}
+                    ),
+                )
             mixed_qkv = mixed_qkv_processed.transpose(1, 2).view(seq_len, -1)
         else:
             if forward_metadata.has_mamba_track_mask:
@@ -1329,8 +1398,12 @@ class GDNAttnBackend(MambaAttnBackendBase):
 
         actual_seq_len = mixed_qkv.shape[0]
         qkv_dim = layer.q_dim + layer.k_dim + layer.v_dim
+        use_tree_views = (
+            is_target_verify and tree_factorized_on and self.ubtree_gdn_layout_views
+        )
         if (
-            (is_cuda() or is_hip() or is_xpu())
+            not use_tree_views
+            and (is_cuda() or is_hip() or is_xpu())
             and qkv_dim <= MAX_FUSED_QKV_SPLIT_DIM
             and not self._use_strided_target_verify_qkv
         ):
@@ -1357,7 +1430,34 @@ class GDNAttnBackend(MambaAttnBackendBase):
             # ReplaySSM verify protocols: fold-every-commit (ring-write during
             # verify, fold on commit), circular ring, or the snapshotting
             # fallback when neither ring is allocated.
-            if use_replayssm_fold:
+            if tree_factorized_on:
+                core_attn_out = self.kernel_dispatcher.target_verify(
+                    A_log=layer.A_log,
+                    dt_bias=layer.dt_bias,
+                    q=query,
+                    k=key,
+                    v=value,
+                    a=a,
+                    b=b,
+                    ssm_states=ssm_states,
+                    cache_indices=cache_indices,
+                    query_start_loc=query_start_loc,
+                    intermediate_states_buffer=None,
+                    intermediate_state_indices=intermediate_state_indices,
+                    cache_steps=draft_token_num,
+                    retrieve_parent_token=retrieve_parent_token,
+                    tree_depths=forward_metadata.tree_depths,
+                    tree_max_depth=forward_metadata.tree_max_depth,
+                    cache_ring=True,
+                    replayssm_rawv=mamba_cache_params.tree_rawv,
+                    replayssm_rawk=mamba_cache_params.tree_rawk,
+                    replayssm_g=mamba_cache_params.tree_g,
+                    replayssm_beta=mamba_cache_params.tree_beta,
+                    factor_cache_indices=intermediate_state_indices[:batch_size],
+                    gdn_verify_use_tf32x3=self.ubtree_gdn_verify_tf32x3,
+                    gdn_verify_shared_prep=self.ubtree_gdn_shared_prep,
+                )
+            elif use_replayssm_fold:
                 core_attn_out = self._replayssm_fold_target_verify(
                     layer=layer,
                     query=query,

@@ -13,6 +13,8 @@ import torch
 import triton
 import triton.language as tl
 
+from sglang.srt.environ import envs
+
 
 @dataclass
 class UBTreeBatch:
@@ -640,6 +642,310 @@ def _build_ubtree_batch_torch(
     )
 
 
+@triton.jit
+def _build_best_first_tree_kernel(
+    anchor_tokens,
+    candidate_ids,
+    edge_log_probs,
+    tokens_out,
+    parents_out,
+    depths_out,
+    scores_out,
+    anchor_stride: tl.constexpr,
+    candidate_batch_stride: tl.constexpr,
+    candidate_depth_stride: tl.constexpr,
+    candidate_stride: tl.constexpr,
+    edge_batch_stride: tl.constexpr,
+    edge_depth_stride: tl.constexpr,
+    edge_parent_stride: tl.constexpr,
+    edge_candidate_stride: tl.constexpr,
+    num_depths: tl.constexpr,
+    num_candidates: tl.constexpr,
+    num_nodes: tl.constexpr,
+    depth_bonus: tl.constexpr,
+    node_block: tl.constexpr,
+    pool_block: tl.constexpr,
+):
+    batch = tl.program_id(0)
+    nodes = tl.arange(0, node_block)
+    entries = tl.arange(0, pool_block)
+    pool_parents = entries // num_candidates
+    pool_candidates = entries % num_candidates
+    edge_base = edge_log_probs + batch * edge_batch_stride
+    candidate_base = candidate_ids + batch * candidate_batch_stride
+
+    tokens = tl.where(nodes == 0, tl.load(anchor_tokens + batch * anchor_stride), 0)
+    parents = tl.full((node_block,), -1, tl.int64)
+    depths = tl.zeros((node_block,), tl.int32)
+    scores = tl.zeros((node_block,), tl.float32)
+    candidate_indices = tl.zeros((node_block,), tl.int32)
+    active = entries < num_candidates
+    pool = (
+        tl.load(
+            edge_base + pool_candidates * edge_candidate_stride,
+            mask=active,
+            other=-float("inf"),
+        ).to(tl.float32)
+        + depth_bonus
+    )
+
+    # A selected node exposes its children. Parent-before-child ordering makes
+    # the output prefix closed without a separate prune/remap pass. The pool
+    # tracks validity separately so zero-probability (-inf) edges remain valid
+    # candidates when filling the fixed node budget.
+    for node in range(1, num_nodes):
+        best = tl.max(tl.where(active, pool, -float("inf")), 0)
+        chosen = tl.min(tl.where(active & (pool == best), entries, pool_block), 0)
+        parent = chosen // num_candidates
+        candidate = chosen % num_candidates
+        parent_depth = tl.sum(tl.where(nodes == parent, depths, 0), 0)
+        parent_candidate = tl.sum(tl.where(nodes == parent, candidate_indices, 0), 0)
+        parent_score = tl.sum(tl.where(nodes == parent, scores, 0), 0)
+        edge = tl.load(
+            edge_base
+            + parent_depth * edge_depth_stride
+            + parent_candidate * edge_parent_stride
+            + candidate * edge_candidate_stride
+        ).to(tl.float32)
+        score = parent_score + edge
+        depth = parent_depth + 1
+        token = tl.load(
+            candidate_base
+            + parent_depth * candidate_depth_stride
+            + candidate * candidate_stride
+        )
+        tokens = tl.where(nodes == node, token, tokens)
+        parents = tl.where(nodes == node, parent.to(tl.int64), parents)
+        depths = tl.where(nodes == node, depth, depths)
+        scores = tl.where(nodes == node, score, scores)
+        candidate_indices = tl.where(nodes == node, candidate, candidate_indices)
+
+        expand = (pool_parents == node) & (depth < num_depths)
+        child_edges = tl.load(
+            edge_base
+            + depth * edge_depth_stride
+            + candidate * edge_parent_stride
+            + pool_candidates * edge_candidate_stride,
+            mask=expand,
+            other=-float("inf"),
+        ).to(tl.float32)
+        child_scores = score + child_edges
+        pool = tl.where(expand, child_scores + depth_bonus * (depth + 1), pool)
+        active = (active & (entries != chosen)) | expand
+
+    output = batch * num_nodes + nodes
+    tl.store(tokens_out + output, tokens, mask=nodes < num_nodes)
+    tl.store(parents_out + output, parents, mask=nodes < num_nodes)
+    tl.store(depths_out + output, depths, mask=nodes < num_nodes)
+    tl.store(scores_out + output, scores, mask=nodes < num_nodes)
+
+
+@triton.jit
+def _build_best_first_tree_cached_kernel(
+    anchor_tokens,
+    candidate_ids,
+    edge_log_probs,
+    tokens_out,
+    parents_out,
+    depths_out,
+    scores_out,
+    anchor_stride: tl.constexpr,
+    candidate_batch_stride: tl.constexpr,
+    candidate_depth_stride: tl.constexpr,
+    candidate_stride: tl.constexpr,
+    edge_batch_stride: tl.constexpr,
+    edge_depth_stride: tl.constexpr,
+    edge_parent_stride: tl.constexpr,
+    edge_candidate_stride: tl.constexpr,
+    num_depths: tl.constexpr,
+    num_candidates: tl.constexpr,
+    num_nodes: tl.constexpr,
+    depth_bonus: tl.constexpr,
+    node_block: tl.constexpr,
+    candidate_block: tl.constexpr,
+):
+    # Each parent contributes only its best remaining child to the global
+    # choice. Selecting a child changes two rows: its parent and the new node.
+    # The uint64 mask indexes candidates, not tree nodes; N may exceed 64.
+    tl.static_assert(num_candidates <= 64)
+    batch = tl.program_id(0)
+    nodes = tl.arange(0, node_block)
+    candidates = tl.arange(0, candidate_block)
+    valid = candidates < num_candidates
+    bits = tl.full((candidate_block,), 1, tl.uint64) << candidates
+    edge_base = edge_log_probs + batch * edge_batch_stride
+    candidate_base = candidate_ids + batch * candidate_batch_stride
+    tokens = tl.where(nodes == 0, tl.load(anchor_tokens + batch * anchor_stride), 0)
+    parents = tl.full((node_block,), -1, tl.int64)
+    depths = tl.zeros((node_block,), tl.int32)
+    scores = tl.zeros((node_block,), tl.float32)
+    candidate_indices = tl.zeros((node_block,), tl.int32)
+    used = tl.zeros((node_block,), tl.uint64)
+    root_edges = tl.load(
+        edge_base + candidates * edge_candidate_stride,
+        mask=valid,
+        other=-float("inf"),
+    ).to(tl.float32)
+    root_priorities = root_edges + depth_bonus
+    root_best = tl.max(root_priorities, 0)
+    root_candidate = tl.min(
+        tl.where(valid & (root_priorities == root_best), candidates, num_candidates), 0
+    )
+    row_priorities = tl.where(nodes == 0, root_best, -float("inf"))
+    row_candidates = tl.where(nodes == 0, root_candidate, 0)
+    active = nodes == 0
+
+    for node in range(1, num_nodes):
+        best = tl.max(tl.where(active, row_priorities, -float("inf")), 0)
+        parent = tl.min(
+            tl.where(active & (row_priorities == best), nodes, num_nodes), 0
+        )
+        candidate = tl.sum(tl.where(nodes == parent, row_candidates, 0), 0)
+        parent_depth = tl.sum(tl.where(nodes == parent, depths, 0), 0)
+        parent_candidate = tl.sum(tl.where(nodes == parent, candidate_indices, 0), 0)
+        parent_score = tl.sum(tl.where(nodes == parent, scores, 0), 0)
+        parent_used = tl.sum(tl.where(nodes == parent, used, 0), 0)
+        parent_used |= tl.full((), 1, tl.uint64) << candidate
+        used = tl.where(nodes == parent, parent_used, used)
+        parent_edges = tl.load(
+            edge_base
+            + parent_depth * edge_depth_stride
+            + parent_candidate * edge_parent_stride
+            + candidates * edge_candidate_stride,
+            mask=valid,
+            other=-float("inf"),
+        ).to(tl.float32)
+        edge = tl.sum(tl.where(candidates == candidate, parent_edges, 0), 0)
+        score = parent_score + edge
+        depth = parent_depth + 1
+        token = tl.load(
+            candidate_base
+            + parent_depth * candidate_depth_stride
+            + candidate * candidate_stride
+        )
+        tokens = tl.where(nodes == node, token, tokens)
+        parents = tl.where(nodes == node, parent.to(tl.int64), parents)
+        depths = tl.where(nodes == node, depth, depths)
+        scores = tl.where(nodes == node, score, scores)
+        candidate_indices = tl.where(nodes == node, candidate, candidate_indices)
+
+        remaining = valid & ((bits & parent_used) == 0)
+        priorities = parent_score + parent_edges + depth_bonus * (parent_depth + 1)
+        parent_best = tl.max(tl.where(remaining, priorities, -float("inf")), 0)
+        parent_next = tl.min(
+            tl.where(
+                remaining & (priorities == parent_best), candidates, num_candidates
+            ),
+            0,
+        )
+        row_priorities = tl.where(nodes == parent, parent_best, row_priorities)
+        row_candidates = tl.where(nodes == parent, parent_next, row_candidates)
+        active = tl.where(
+            nodes == parent, tl.sum(remaining.to(tl.int32), 0) > 0, active
+        )
+
+        child_edges = tl.load(
+            edge_base
+            + depth * edge_depth_stride
+            + candidate * edge_parent_stride
+            + candidates * edge_candidate_stride,
+            mask=valid & (depth < num_depths),
+            other=-float("inf"),
+        ).to(tl.float32)
+        child_priorities = score + child_edges + depth_bonus * (depth + 1)
+        child_best = tl.max(tl.where(valid, child_priorities, -float("inf")), 0)
+        child_next = tl.min(
+            tl.where(
+                valid & (child_priorities == child_best), candidates, num_candidates
+            ),
+            0,
+        )
+        row_priorities = tl.where(nodes == node, child_best, row_priorities)
+        row_candidates = tl.where(nodes == node, child_next, row_candidates)
+        active |= (nodes == node) & (depth < num_depths)
+
+    output = batch * num_nodes + nodes
+    tl.store(tokens_out + output, tokens, mask=nodes < num_nodes)
+    tl.store(parents_out + output, parents, mask=nodes < num_nodes)
+    tl.store(depths_out + output, depths, mask=nodes < num_nodes)
+    tl.store(scores_out + output, scores, mask=nodes < num_nodes)
+
+
+def _build_ubtree_batch_best_first(
+    *,
+    anchor_tokens: torch.Tensor,
+    candidate_ids: torch.Tensor,
+    edge_log_probs: torch.Tensor,
+    budget: int,
+    depth_bonus: float,
+) -> UBTreeBatch:
+    """Select directly from the lattice; ties use (parent index, candidate index).
+
+    Inputs are the same non-positive edge log probabilities as the beam builder.
+    Candidate tokens must be unique at each depth, as provided by vocab top-k.
+    Unlike beam construction, output nodes are in selection order, not depth order.
+    """
+    if not candidate_ids.is_cuda:
+        raise ValueError("UBTree best-first construction requires CUDA tensors")
+    batch, num_depths, num_candidates = candidate_ids.shape
+    num_nodes = budget + 1
+    anchor_tokens = anchor_tokens.reshape(batch)
+    tokens = torch.empty(
+        (batch, num_nodes), dtype=torch.long, device=candidate_ids.device
+    )
+    parents = torch.empty_like(tokens)
+    depths = torch.empty_like(tokens)
+    scores = torch.empty_like(tokens, dtype=torch.float32)
+    if num_candidates <= 64:
+        kernel = _build_best_first_tree_cached_kernel
+        block_kwargs = {"candidate_block": triton.next_power_of_2(num_candidates)}
+        num_warps = 1
+    else:
+        kernel = _build_best_first_tree_kernel
+        block_kwargs = {
+            "pool_block": triton.next_power_of_2(num_nodes * num_candidates)
+        }
+        num_warps = 4
+    kernel[(batch,)](
+        anchor_tokens,
+        candidate_ids,
+        edge_log_probs,
+        tokens,
+        parents,
+        depths,
+        scores,
+        anchor_stride=anchor_tokens.stride(0),
+        candidate_batch_stride=candidate_ids.stride(0),
+        candidate_depth_stride=candidate_ids.stride(1),
+        candidate_stride=candidate_ids.stride(2),
+        edge_batch_stride=edge_log_probs.stride(0),
+        edge_depth_stride=edge_log_probs.stride(1),
+        edge_parent_stride=edge_log_probs.stride(2),
+        edge_candidate_stride=edge_log_probs.stride(3),
+        num_depths=num_depths,
+        num_candidates=num_candidates,
+        num_nodes=num_nodes,
+        depth_bonus=float(depth_bonus),
+        node_block=triton.next_power_of_2(num_nodes),
+        **block_kwargs,
+        num_warps=num_warps,
+        enable_fp_fusion=False,
+    )
+    visibility, retrieve_index, next_token, next_sibling = _tree_metadata(
+        parents, max_depth=num_depths + 1
+    )
+    return UBTreeBatch(
+        tokens=tokens,
+        parent_ids=parents,
+        depths=depths,
+        path_scores=scores,
+        visibility=visibility,
+        retrieve_index=retrieve_index,
+        retrieve_next_token=next_token,
+        retrieve_next_sibling=next_sibling,
+    )
+
+
 @torch.inference_mode()
 def build_ubtree_batch(
     *,
@@ -668,6 +974,14 @@ def build_ubtree_batch(
         raise ValueError("budget must be in [1, depth * supertree_width]")
     if depth_bonus > 0:
         raise ValueError("depth_bonus must be non-positive for prefix closure")
+    if envs.SGLANG_USE_UBTREE_BEST_FIRST_TREE.get():
+        return _build_ubtree_batch_best_first(
+            anchor_tokens=anchor_tokens,
+            candidate_ids=candidate_ids,
+            edge_log_probs=edge_log_probs,
+            budget=budget,
+            depth_bonus=depth_bonus,
+        )
     if candidate_ids.is_cuda:
         return _build_ubtree_batch_fused(
             anchor_tokens=anchor_tokens,

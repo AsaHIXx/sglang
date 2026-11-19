@@ -134,6 +134,7 @@ from sglang.srt.runtime_context import (
     get_lora,
     get_model,
     get_parallel,
+    get_spec,
     get_stream,
     linear_attn_parallel_group,
 )
@@ -312,6 +313,118 @@ if _is_npu:
     from sgl_kernel_npu.fla.utils import fused_qkvzba_split_reshape_cat_contiguous
 
 
+def _make_ubtree_gate_up(mlp, quant_config):
+    if not (
+        envs.SGLANG_OPT_UBTREE_FUSED_GATE_UP.get()
+        and _is_cuda
+        and get_spec().speculative_algorithm == "UBTREE"
+        and not get_exec().deterministic.enable_deterministic_inference
+        and not get_lora().enable_lora
+        and not get_lora().lora_paths
+        and quant_config is None
+        and type(mlp) is Qwen2MoeMLP
+        and mlp.act_fn.__class__.__name__ == "SiluAndMul"
+        and torch.cuda.get_device_capability() == (9, 0)
+    ):
+        return None
+    from sglang.kernels.ops.ubtree_gate_up import UBTreeGateUp
+
+    return UBTreeGateUp()
+
+
+def _forward_ubtree_dense_mlp(mlp, kernel, hidden_states, forward_batch):
+    if kernel is not None and forward_batch.forward_mode.is_target_verify():
+        activated = kernel.try_forward(hidden_states, mlp.gate_up_proj.weight)
+        if activated is not None:
+            # Keep the ordinary down projection, bias and TP collective policy.
+            return mlp.down_proj(activated)[0]
+    return mlp(hidden_states)
+
+
+def _make_ubtree_attention():
+    if not (
+        envs.SGLANG_OPT_UBTREE_FUSED_TREE_ATTENTION.get()
+        and _is_cuda
+        and get_spec().speculative_algorithm == "UBTREE"
+        and not get_exec().deterministic.enable_deterministic_inference
+        and torch.cuda.get_device_capability() == (9, 0)
+    ):
+        return None
+    from sglang.kernels.ops.attention.ubtree_attention import UBTreeAttention
+
+    return UBTreeAttention()
+
+
+def _try_ubtree_attention(kernel, layer, q, k, v, gate, forward_batch):
+    if kernel is None or not forward_batch.forward_mode.is_target_verify():
+        return None
+    from sglang.srt.layers.attention.flashattention_backend import FlashAttentionBackend
+    from sglang.srt.mem_cache.memory_pool import KVWriteLoc
+    from sglang.srt.model_executor.forward_context import get_attn_backend
+
+    backend = get_attn_backend()
+    fa = getattr(backend, "full_attn_backend", backend)
+    if not isinstance(fa, FlashAttentionBackend):
+        return None
+    metadata = fa.forward_metadata
+    suffix = fa.forward_metadata_spec_decode_expand
+    if not (
+        forward_batch.spec_algorithm.is_ubtree()
+        and forward_batch.batch_size == 1
+        and fa.fa_impl_ver == 3
+        and fa.topk > 1
+        and fa.page_size == 1
+        and fa.attn_cp_size == 1
+        and not fa.is_draft_runner
+        and not fa.use_mla
+        and not fa.fa_skip_kv_cache
+        and not fa.has_local_attention
+        and not fa.use_sliding_window_kv_pool
+        and metadata is not None
+        and suffix is not None
+        and not layer.logit_cap
+        and not layer.is_cross_attention
+        and layer.k_scale is None
+        and layer.v_scale is None
+        and (layer.sliding_window_size is None or layer.sliding_window_size < 0)
+        and (layer.tp_q_head_num, layer.tp_k_head_num, layer.head_dim)
+        in ((6, 1, 256), (3, 1, 256))
+        and layer.tp_v_head_num == 1
+        and layer.v_head_dim == 256
+        and q.dtype == torch.bfloat16
+    ):
+        return None
+    nodes = forward_batch.spec_info.draft_token_num
+    if q.shape[0] != nodes or not 1 <= nodes <= 65:
+        return None
+    key_cache, value_cache = fa.kv_layers.read(layer.layer_id).kv()
+    key_cache = key_cache.view(-1, 1, 256)
+    value_cache = value_cache.view(-1, 1, 256)
+    if key_cache.dtype != q.dtype or key_cache.stride() != value_cache.stride():
+        return None
+    # Same write location and scale contract as the ordinary FA3 extend path.
+    fa.kv_layers.layer(layer.layer_id).store(
+        layer,
+        KVWriteLoc.for_layer(forward_batch, layer, swa_loc=metadata.swa_out_cache_loc),
+        k.view(-1, 1, 256),
+        v.view(-1, 1, 256),
+        layer.k_scale,
+        layer.v_scale,
+    )
+    gate = None if gate is None else gate.view(nodes, layer.tp_q_head_num, 256)
+    return kernel.forward(
+        q.view(nodes, layer.tp_q_head_num, 256),
+        key_cache,
+        value_cache,
+        metadata.page_table[0],
+        metadata.cache_seqlens_int32[:1],
+        suffix.page_table[:nodes],
+        suffix.cache_seqlens_int32[:nodes],
+        gate,
+        layer.scaling,
+    )
+
+
 def _linear_accepts_fp8_tuple(linear: nn.Module) -> bool:
     quant_method = getattr(linear, "quant_method", None)
     return quant_method.__class__.__name__ == "Fp8LinearMethod" and (
@@ -370,6 +483,12 @@ class Qwen3_5GatedDeltaNet(nn.Module):
         prefix: str = "",
     ) -> None:
         super().__init__()
+        self.ubtree_gdn_projection_views = (
+            envs.SGLANG_OPT_UBTREE_GDN_LAYOUT_VIEWS.get()
+            and _is_cuda
+            and get_spec().speculative_algorithm == "UBTREE"
+        )
+
         self.config = config
         parallel_group = linear_attn_parallel_group()
         self.attn_tp_rank, self.attn_tp_size = resolve_linear_parallel_group(
@@ -1055,9 +1174,12 @@ class Qwen3_5GatedDeltaNet(nn.Module):
                 num_v_heads_tp = triton.cdiv(self.num_v_heads, self.attn_tp_size)
             # The strided views feed only prefill GDN; DP-relabeled decode rows
             # run the decode kernels, so pick the layout from the logical mode.
-            use_strided_prefill_z = (
-                _is_cuda
-                and forward_batch.logical_forward_mode.is_extend_without_speculative()
+            use_strided_prefill_z = _is_cuda and (
+                forward_batch.logical_forward_mode.is_extend_without_speculative()
+                or (
+                    self.ubtree_gdn_projection_views
+                    and forward_batch.forward_mode.is_target_verify()
+                )
             )
             split_fn = (
                 qwen3_5_gdn_prefill_projection_views
@@ -1195,6 +1317,7 @@ class Qwen3_5LinearDecoderLayer(nn.Module):
         else:
             raise ValueError(f"Invalid model type: {config.model_type}")
 
+        self.ubtree_gate_up = _make_ubtree_gate_up(self.mlp, quant_config)
         self.input_layernorm = GemmaRMSNorm(config.hidden_size, eps=config.rms_norm_eps)
         self.post_attention_layernorm = GemmaRMSNorm(
             config.hidden_size, eps=config.rms_norm_eps
@@ -1251,7 +1374,9 @@ class Qwen3_5LinearDecoderLayer(nn.Module):
                     defer_finalize=ffn_exit.defer_moe_finalize,
                 )
             else:
-                hidden_states = self.mlp(hidden_states)
+                hidden_states = _forward_ubtree_dense_mlp(
+                    self.mlp, self.ubtree_gate_up, hidden_states, forward_batch
+                )
         return ffn_exit.finish(hidden_states)
 
 
@@ -1296,6 +1421,7 @@ class Qwen3_5AttentionDecoderLayer(nn.Module):
         build_stages: bool = True,
     ) -> None:
         super().__init__()
+        self.ubtree_tree_attention = _make_ubtree_attention()
         self.config = config
         self.hidden_size = config.hidden_size
         self.attn_tp_rank = get_parallel().attn_tp_rank
@@ -1418,6 +1544,7 @@ class Qwen3_5AttentionDecoderLayer(nn.Module):
         else:
             raise ValueError(f"Invalid model type: {config.model_type}")
 
+        self.ubtree_gate_up = _make_ubtree_gate_up(self.mlp, quant_config)
         self.input_layernorm = GemmaRMSNorm(config.hidden_size, eps=config.rms_norm_eps)
         self.post_attention_layernorm = GemmaRMSNorm(
             config.hidden_size, eps=config.rms_norm_eps
@@ -1651,9 +1778,14 @@ class Qwen3_5AttentionDecoderLayer(nn.Module):
             forward_batch=forward_batch,
         )
 
-        attn_output = self.attn(q, k, v, forward_batch)
+        attn_output = _try_ubtree_attention(
+            self.ubtree_tree_attention, self.attn, q, k, v, gate, forward_batch
+        )
+        fused_gate = attn_output is not None
+        if attn_output is None:
+            attn_output = self.attn(q, k, v, forward_batch)
 
-        if self.attn_output_gate:
+        if self.attn_output_gate and not fused_gate:
             if _fp8_tuple_input(self.o_proj, attn_output.shape[0]):
                 attn_output = fused_sigmoid_mul(attn_output, gate, quant=True)
             elif not _is_npu:
@@ -1699,7 +1831,9 @@ class Qwen3_5AttentionDecoderLayer(nn.Module):
                     defer_finalize=ffn_exit.defer_moe_finalize,
                 )
             else:
-                hidden_states = self.mlp(hidden_states)
+                hidden_states = _forward_ubtree_dense_mlp(
+                    self.mlp, self.ubtree_gate_up, hidden_states, forward_batch
+                )
         return ffn_exit.finish(hidden_states)
 
 

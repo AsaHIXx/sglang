@@ -83,7 +83,10 @@ from sglang.srt.mem_cache.layout.token_major import (
     build_mamba_entry_views,
     mamba_entry_bytes,
 )
-from sglang.srt.mem_cache.ubtree_state import use_ubtree_factorized_kda
+from sglang.srt.mem_cache.ubtree_state import (
+    use_ubtree_factorized_gdn,
+    use_ubtree_factorized_kda,
+)
 from sglang.srt.mem_cache.utils import maybe_init_custom_mem_pool
 from sglang.srt.platforms import current_platform
 from sglang.srt.runtime_context import get_flags, get_parallel, get_platform
@@ -671,6 +674,7 @@ class MambaPool:
         enable_linear_replayssm_spec: bool = False,
         replayssm_request_ring: bool = False,
         enable_ubtree_factorized_kda: bool = False,
+        enable_ubtree_factorized_gdn: bool = False,
     ):
         conv_state_shape = cache_params.shape.conv
         temporal_state_shape = cache_params.shape.temporal
@@ -698,6 +702,13 @@ class MambaPool:
         )
         self.factorized_kda_tree = use_ubtree_factorized_kda(
             enabled=enable_ubtree_factorized_kda,
+            cache_params=cache_params,
+            spec_state_size=spec_state_size,
+            speculative_num_draft_tokens=speculative_num_draft_tokens,
+            speculative_eagle_topk=speculative_eagle_topk,
+        )
+        self.factorized_gdn_tree = use_ubtree_factorized_gdn(
+            enabled=enable_ubtree_factorized_gdn,
             cache_params=cache_params,
             spec_state_size=spec_state_size,
             speculative_num_draft_tokens=speculative_num_draft_tokens,
@@ -898,7 +909,7 @@ class MambaPool:
                     )
 
             tree_rawv = tree_rawk = tree_g = tree_beta = None
-            if self.factorized_kda_tree:
+            if self.factorized_kda_tree or self.factorized_gdn_tree:
                 hv, v_dim, k_dim = temporal_state_shape
                 h_k = getattr(cache_params.shape, "num_k_heads_per_tp", hv)
                 tree_width = speculative_num_draft_tokens
@@ -913,7 +924,11 @@ class MambaPool:
                     device=device,
                 )
                 tree_g = torch.zeros(
-                    (num_mamba_layers, spec_state_size + 1, hv, tree_width, k_dim),
+                    (
+                        (num_mamba_layers, spec_state_size + 1, hv, tree_width, k_dim)
+                        if self.factorized_kda_tree
+                        else (num_mamba_layers, spec_state_size + 1, hv, tree_width)
+                    ),
                     dtype=torch.float32,
                     device=device,
                 )
@@ -939,7 +954,11 @@ class MambaPool:
                 # KDA verify kernel takes intermediate_states_buffer=None (skips the
                 # per-step write, CACHE_INTERMEDIATE_STATES=False) and the commit
                 # replays the ring into the checkpoint instead. This is the memory win.
-                if enable_linear_replayssm_spec or self.factorized_kda_tree:
+                if (
+                    enable_linear_replayssm_spec
+                    or self.factorized_kda_tree
+                    or self.factorized_gdn_tree
+                ):
                     intermediate_ssm_state_cache = None
                 else:
                     intermediate_ssm_state_cache = torch.zeros(
@@ -1456,6 +1475,7 @@ class HybridReqToTokenPool(ReqToTokenPool):
         ngram_eos_token_id: int = 0,
         replayssm_request_ring: bool = False,
         enable_ubtree_factorized_kda: bool = False,
+        enable_ubtree_factorized_gdn: bool = False,
     ):
         super().__init__(
             size=size,
@@ -1496,6 +1516,7 @@ class HybridReqToTokenPool(ReqToTokenPool):
             ngram_eos_token_id=ngram_eos_token_id,
             replayssm_request_ring=replayssm_request_ring,
             enable_ubtree_factorized_kda=enable_ubtree_factorized_kda,
+            enable_ubtree_factorized_gdn=enable_ubtree_factorized_gdn,
         )
 
     def _init_mamba_pool(
@@ -1518,6 +1539,7 @@ class HybridReqToTokenPool(ReqToTokenPool):
         ngram_eos_token_id: int = 0,
         replayssm_request_ring: bool = False,
         enable_ubtree_factorized_kda: bool = False,
+        enable_ubtree_factorized_gdn: bool = False,
     ):
         self.state = StateStorage.empty(self.state_sub_pool)
         self.mamba_pool = self.mamba_pool_cls(
@@ -1535,6 +1557,7 @@ class HybridReqToTokenPool(ReqToTokenPool):
             enable_linear_replayssm_spec=enable_linear_replayssm_spec,
             replayssm_request_ring=replayssm_request_ring,
             enable_ubtree_factorized_kda=enable_ubtree_factorized_kda,
+            enable_ubtree_factorized_gdn=enable_ubtree_factorized_gdn,
         )
         self.mamba_allocator = MambaSlotAllocator(
             size=mamba_size,

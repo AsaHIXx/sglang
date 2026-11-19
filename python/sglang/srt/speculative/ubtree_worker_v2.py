@@ -223,11 +223,12 @@ class UBTreeWorkerV2(DFlashWorkerV2):
                 and hasattr(draft_pool, "set_kv_buffer_prefix_valid")
             )
             mamba_pool = target_kvcache.layer_router.part_view(STATE_PART)
-            if not can_fold_draft_kv or not getattr(
-                mamba_pool, "factorized_kda_tree", False
+            is_gdn_tree = getattr(mamba_pool, "factorized_gdn_tree", False)
+            if not can_fold_draft_kv or not (
+                getattr(mamba_pool, "factorized_kda_tree", False) or is_gdn_tree
             ):
                 raise ValueError(
-                    "UBTREE requires fused draft KV materialization and factorized KDA state"
+                    "UBTREE requires fused draft KV materialization and factorized KDA/GDN state"
                 )
             epilogue = self._verify_epilogue
             epilogue.attach_target_kv_commit(
@@ -239,7 +240,12 @@ class UBTreeWorkerV2(DFlashWorkerV2):
                 req_to_token=req_to_token_pool.req_to_token,
                 get_workspace_tensors=self._fused_kv_helper.get_workspace_tensors,
             )
-            epilogue.attach_kda_tree_commit(
+            attach_tree_commit = (
+                epilogue.attach_gdn_tree_commit
+                if is_gdn_tree
+                else epilogue.attach_kda_tree_commit
+            )
+            attach_tree_commit(
                 spec_state=mamba_pool.get_speculative_mamba2_params_all_layers(),
                 mamba_index_mapping=req_to_token_pool.req_index_to_mamba_index_mapping,
                 mamba_track_interval=mamba_track_grid(
@@ -251,7 +257,8 @@ class UBTreeWorkerV2(DFlashWorkerV2):
                     "UBTREE draft hidden/KV commit is folded into the target verify CUDA Graph tail"
                 )
                 logger.info(
-                    "UBTREE factorized KDA accepted-path commit is folded into the target verify CUDA Graph tail"
+                    "UBTREE factorized %s accepted-path commit is folded into the target verify CUDA Graph tail",
+                    "GDN" if is_gdn_tree else "KDA",
                 )
         return result
 

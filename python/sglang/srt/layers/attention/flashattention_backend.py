@@ -1953,7 +1953,16 @@ class FlashAttentionBackend(AttentionBackend):
                 o, softmax_lse, *rest = result
             if (
                 use_cascade_attn
-                and forward_batch.spec_algorithm.is_uno()
+                and (
+                    forward_batch.spec_algorithm.is_uno()
+                    or (
+                        forward_batch.spec_algorithm.is_ubtree()
+                        and self.fa_impl_ver == 3
+                        and not use_local_attn
+                        and not get_exec().deterministic.enable_deterministic_inference
+                        and envs.SGLANG_OPT_UBTREE_FUSED_SUFFIX_MERGE.get()
+                    )
+                )
                 and can_use_fused_suffix_attention_merge(
                     layer=layer,
                     q=q,
@@ -1972,6 +1981,14 @@ class FlashAttentionBackend(AttentionBackend):
                     prefix=o,
                     prefix_lse=softmax_lse,
                     softmax_scale=layer.scaling,
+                    # UBTree proposes at most block_size - 1 draft positions;
+                    # each visible path also includes the root. The number of
+                    # branches does not increase this static depth bound.
+                    max_suffix_length=(
+                        get_spec().speculative_dflash_block_size
+                        if forward_batch.spec_algorithm.is_ubtree()
+                        else None
+                    ),
                 )
             elif use_cascade_attn:
                 o_expand, softmax_lse_expand, *rest_expand = (
